@@ -1,0 +1,18 @@
+Hello {!Contact.FirstName}{!Case.Lead_First_Name__c},
+
+In order to ensure that all support requests are handled consistently and coming from an authorized party, support tickets must be submitted via the Bigcommerce support portal.
+
+To log a case:
+1) Visit http://support.bigcommerce.com and click the link Submit a Ticket
+2) Fill in a valid store BigCommerce URL and Support Pin (What is my Support Pin and Where do I find it?)
+3) Complete required information and click Submit Case
+
+You can also use our Live Chat option located at http://support.bigcommerce.com, or give us a call at 1-888-699-8911.
+
+If you're emailing about an existing case, you can still respond directly to that case via email, and it will be updated accordingly.
+
+Thanks,
+
+Your Friendly Support Team
+
+{!Case.E2CP__Case_Thread_Id__c}

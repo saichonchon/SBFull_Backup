@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>thomas.blahnik@bigcommerce.com</contactEmail>
+    <contactPhone>512) 865-4560</contactPhone>
+    <iconUrl>https://login.salesforce.com/logos/Salesforce/Clouds/logo.png</iconUrl>
+    <label>Client Success Ninja Tool Belt</label>
+    <logoUrl>https://login.salesforce.com/logos/Salesforce/Clouds/logo.png</logoUrl>
+    <oauthConfig>
+        <callbackUrl>https://login.salesforce.com/services/oauth2/callback</callbackUrl>
+        <consumerKey>3MVG9Nc1qcZ7BbZ0Ep18pfQsltXfBYZDt0rggpPg3jAKw3Or6Ybtkj0oh4P9APxaVE1HlEFzljG0.M7L1zbbr</consumerKey>
+        <scopes>Api</scopes>
+        <scopes>Web</scopes>
+    </oauthConfig>
+</ConnectedApp>

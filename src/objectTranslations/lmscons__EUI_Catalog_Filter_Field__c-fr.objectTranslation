@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Champ du filtre de catalogue EUI</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Champs du filtre de catalogue EUI</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nom du champ du filtre de catalogue EUI</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

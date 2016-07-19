@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Licenza formazione utente</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Licenze formazione utente</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Licenza utente ID</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

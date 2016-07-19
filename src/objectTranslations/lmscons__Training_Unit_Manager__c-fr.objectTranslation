@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Directeur de l&apos;unité de formation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Directeurs de l&apos;unité de formation</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nom du directeur de l&apos;unité de formation</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>EUI 目錄篩選範圍</value>
+    </caseValues>
+    <nameFieldLabel>EUI 目錄篩選範圍名稱</nameFieldLabel>
+</CustomObjectTranslation>

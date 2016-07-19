@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>Maggie.frederick@bigcommerce.com</contactEmail>
+    <contactPhone>5128654521</contactPhone>
+    <description>BMP</description>
+    <label>BMP</label>
+    <oauthConfig>
+        <callbackUrl>https://test.salesforce.com/services/oauth2/callback</callbackUrl>
+        <consumerKey>3MVG9Nc1qcZ7BbZ0Ep18pfQsltXfBYZDt0rggG.agrM0AhPaQ4U5rXA716p9aFk5BY1y7j_bAWGqzpG7yV1aD</consumerKey>
+        <scopes>Full</scopes>
+    </oauthConfig>
+</ConnectedApp>

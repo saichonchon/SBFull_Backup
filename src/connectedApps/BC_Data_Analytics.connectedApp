@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>ian.stock@bigcommerce.com</contactEmail>
+    <contactPhone>512-865-4578</contactPhone>
+    <description>Data Analytics for BigCommerce</description>
+    <label>BC Data Analytics</label>
+    <logoUrl>https://login.salesforce.com/logos/Salesforce/Clouds/logo.png</logoUrl>
+    <oauthConfig>
+        <callbackUrl>https://login.salesforce.com/services/oauth2/callback</callbackUrl>
+        <consumerKey>3MVG9Nc1qcZ7BbZ0Ep18pfQsltXfBYZDt0rgg26NAfjdzn1e8P0sz.dQSbkG87Y66wUQyM_nU2BPmqyerWLAE</consumerKey>
+        <scopes>Basic</scopes>
+        <scopes>Api</scopes>
+        <scopes>Web</scopes>
+        <scopes>Chatter</scopes>
+    </oauthConfig>
+</ConnectedApp>

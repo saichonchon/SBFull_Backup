@@ -1,0 +1,36 @@
+<apex:page controller="SubmitCaseThanksController" showHeader="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0" title="Bigcommerce Support" standardStylesheets="false">
+<html class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Request Submitted | Bigcommerce Support</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+   <apex:stylesheet value="{!URLFOR($Resource.support_assets, 'support_assets/stylesheets/vendor/normalize.min.css')}" />
+  <apex:stylesheet value="{!URLFOR($Resource.support_assets, 'support_assets/stylesheets/vendor/foundation.min.css')}" />
+  <apex:stylesheet value="{!URLFOR($Resource.support_assets, 'support_assets/stylesheets/chatstyles.css')}" />
+  <apex:includeScript value="{!$Resource.jQuery}"/>
+</head>
+<body class="page-thanks">
+  <div class="container">
+    <div class="row row-centered">
+      <div class="col-sm-12 col-md-6 content col-centered">
+        <header id="header">
+          <div class="row">
+            <div class="col-xs-12 text-center">
+              <a href="http://support.bigcommerce.com/" id="link-home" title="support.bigcommerce.com"><apex:image value="{!URLFOR($Resource.support_assets, 'support_assets/images/logo.png')}" alt="Bigcommerce Logo; click to go to bigcommerce.com"  /></a>
+            </div>
+          </div>
+        </header>
+        <div class="text-center">
+          <h1>Thank you</h1>
+          <p>Your cancellation request has been submitted. We will be in contact with you shortly at <span class="user-email">{!contactEmail}</span>.</p>
+          <p>Case ID for your reference: {!caseNum}</p>
+          <a href="https://support.bigcommerce.com">Visit Support Portal</a>
+        </div>
+      </div><!-- /.col-centered -->
+    </div><!-- /.row-centered -->
+  </div><!-- /.container -->
+</body>
+</html>
+</apex:page>

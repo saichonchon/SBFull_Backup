@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Attribution de cours</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Attributions de cours</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <nameFieldLabel>ID de l&apos;attribution de cours</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

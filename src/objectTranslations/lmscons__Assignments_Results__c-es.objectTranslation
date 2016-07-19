@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Resultado de la asignación</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Resultados de la asignación</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nombre del resultado de la asignación</nameFieldLabel>
+</CustomObjectTranslation>

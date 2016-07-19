@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Gatilho Atribuidor de Status</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Gatilhos Atribuidores de Status</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nome do Gatilho Atribuir de Status</nameFieldLabel>
+</CustomObjectTranslation>

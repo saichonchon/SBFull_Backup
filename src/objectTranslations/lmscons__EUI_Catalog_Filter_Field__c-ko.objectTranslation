@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>EUI 카탈로그 필터 필드</value>
+    </caseValues>
+    <nameFieldLabel>EUI 카탈로그 필터 필드 이름</nameFieldLabel>
+</CustomObjectTranslation>

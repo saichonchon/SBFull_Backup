@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LiveChatAgentConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <profiles>
+            <profile>Sales Rep - Midmarket</profile>
+        </profiles>
+        <users>
+            <user>baldemar.zamora@bigcommerce.com</user>
+            <user>farah.tary@bigcommerce.com</user>
+            <user>joe.maragoni@bigcommerce.com</user>
+            <user>leonard.dingle@bigcommerce.com</user>
+            <user>scott.richards@bigcommerce.com</user>
+        </users>
+    </assignments>
+    <autoGreeting>Welcome to Bigcommerce. Are you looking to sell online?</autoGreeting>
+    <capacity>3</capacity>
+    <criticalWaitTime>30</criticalWaitTime>
+    <enableAgentFileTransfer>false</enableAgentFileTransfer>
+    <enableAgentSneakPeek>true</enableAgentSneakPeek>
+    <enableAssistanceFlag>false</enableAssistanceFlag>
+    <enableAutoAwayOnDecline>false</enableAutoAwayOnDecline>
+    <enableAutoAwayOnPushTimeout>false</enableAutoAwayOnPushTimeout>
+    <enableChatConferencing>false</enableChatConferencing>
+    <enableChatMonitoring>true</enableChatMonitoring>
+    <enableChatTransferToAgent>true</enableChatTransferToAgent>
+    <enableChatTransferToButton>false</enableChatTransferToButton>
+    <enableChatTransferToSkill>true</enableChatTransferToSkill>
+    <enableLogoutSound>true</enableLogoutSound>
+    <enableNotifications>true</enableNotifications>
+    <enableRequestSound>true</enableRequestSound>
+    <enableSneakPeek>true</enableSneakPeek>
+    <enableVisitorBlocking>false</enableVisitorBlocking>
+    <enableWhisperMessage>true</enableWhisperMessage>
+    <label>Sales Configuration</label>
+    <supervisorDefaultAgentStatusFilter>Online</supervisorDefaultAgentStatusFilter>
+    <supervisorSkills>
+        <skill>Sales_Skill</skill>
+    </supervisorSkills>
+</LiveChatAgentConfig>

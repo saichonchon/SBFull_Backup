@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>RV Account Custom</layout>
+        <sections>
+            <label><!-- Account Contact Information --></label>
+            <section>Account Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Comments Information --></label>
+            <section>Comments Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Details --></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label><!-- Onboarding Details --></label>
+            <section>Onboarding Details</section>
+        </sections>
+        <sections>
+            <label><!-- Partner Commissions - Overall --></label>
+            <section>Partner Commissions - Overall</section>
+        </sections>
+        <sections>
+            <label><!-- Partner Commissions - Recent --></label>
+            <section>Partner Commissions - Recent</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>
