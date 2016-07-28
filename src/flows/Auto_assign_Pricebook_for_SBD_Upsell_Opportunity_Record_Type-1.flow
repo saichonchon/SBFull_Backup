@@ -115,7 +115,7 @@
             </value>
         </processMetadataValues>
         <name>myRule_1_A1</name>
-        <label>Add SBD Products Price Book</label>
+        <label>Add SBD Products Pricebook</label>
         <locationX>100</locationX>
         <locationY>200</locationY>
         <filters>
@@ -158,7 +158,7 @@
             </processMetadataValues>
             <field>Pricebook2Id</field>
             <value>
-                <stringValue>01s13000000Ahb1</stringValue>
+                <stringValue>01s130000007P6S</stringValue>
             </value>
         </inputAssignments>
         <object>Opportunity</object>

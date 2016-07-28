@@ -48,6 +48,31 @@
             <value>Promoter</value>
         </values>
     </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>Donut</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>false</expandOthers>
+        <groupingColumn>BucketField_19077171</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>true</showTotal>
+        <showValues>true</showValues>
+        <size>Small</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
     <columns>
         <field>ORIGIN</field>
     </columns>
@@ -79,7 +104,7 @@
         <criteriaItems>
             <column>Case.Survey_Name__c</column>
             <operator>contains</operator>
-            <value>Support NPS Next - Web</value>
+            <value>Resolution Email Survey</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Satisfaction__c</column>
@@ -92,15 +117,15 @@
             <value>Web</value>
         </criteriaItems>
         <criteriaItems>
-            <column>ORIGIN</column>
-            <operator>equals</operator>
-            <value>Web</value>
+            <column>OWNER</column>
+            <operator>notContain</operator>
+            <value>Design,Tier 2,API,Escalated,Garrett Cluff</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Case.Primary_Case_Rep__c</field>
+        <field>BucketField_19077171</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Email CSAT - NEW</name>

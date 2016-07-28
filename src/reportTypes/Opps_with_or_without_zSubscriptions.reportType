@@ -1242,6 +1242,11 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Sample_100__c</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>mkto_si__MarketoAnalyzer__c</field>
             <table>Opportunity</table>
         </columns>

@@ -2,13 +2,13 @@
 <ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
     <baseObject>Contact</baseObject>
     <category>accounts</category>
-    <deployed>true</deployed>
+    <deployed>false</deployed>
     <description>Contacts with Webinar Information</description>
     <join>
         <outerJoin>false</outerJoin>
         <relationship>Webinars__r</relationship>
     </join>
-    <label>Contacts with Webinars</label>
+    <label>zContacts with Webinars</label>
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>

@@ -16,7 +16,7 @@
         <outerJoin>false</outerJoin>
         <relationship>Contacts</relationship>
     </join>
-    <label>Activities with account contacts and opportunities</label>
+    <label>zActivities with account contact and opportunities</label>
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>

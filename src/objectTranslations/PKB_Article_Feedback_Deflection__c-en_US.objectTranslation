@@ -31,11 +31,6 @@
         <name>Article_Title__c</name>
     </fields>
     <fields>
-        <help><!-- Article author at the time that the PKB Deflection record is created --></help>
-        <label><!-- Author --></label>
-        <name>Author__c</name>
-    </fields>
-    <fields>
         <label><!-- Case Association Count --></label>
         <name>Case_Association_Count__c</name>
     </fields>

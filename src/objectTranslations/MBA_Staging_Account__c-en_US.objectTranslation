@@ -34,7 +34,6 @@
         <name>MBAAccountID__c</name>
     </fields>
     <fields>
-        <help><!-- When migrating data from one system to another (for example, MBA to BMP), the ID of the account changes from system to system.  Enter the value of the original id from the originating system to avoid duplicate account creation. --></help>
         <label><!-- Original External Account ID --></label>
         <name>Original_External_Account_ID__c</name>
     </fields>

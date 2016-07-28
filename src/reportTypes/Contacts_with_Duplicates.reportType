@@ -2,13 +2,13 @@
 <ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
     <baseObject>Contact</baseObject>
     <category>accounts</category>
-    <deployed>true</deployed>
+    <deployed>false</deployed>
     <description>Contacts with Duplicates</description>
     <join>
         <outerJoin>false</outerJoin>
         <relationship>DuplicateRecordItems</relationship>
     </join>
-    <label>Contacts with Duplicates</label>
+    <label>zContacts with Duplicates</label>
     <sections>
         <columns>
             <checkedByDefault>true</checkedByDefault>

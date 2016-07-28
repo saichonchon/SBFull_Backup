@@ -387,6 +387,18 @@
         <type>Picklist</type>
     </fields>
     <fields>
+        <fullName>Provisioning_System__c</fullName>
+        <description>For BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <formula>TEXT( Store_Opportunity__r.Source__c )</formula>
+        <inlineHelpText>The related store&apos;s provisioning system</inlineHelpText>
+        <label>Provisioning System</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Store_Opportunity__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <description>For BAP-3698 - Partner Commissions v2</description>

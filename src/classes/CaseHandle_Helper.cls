@@ -865,20 +865,7 @@ public without sharing class CaseHandle_Helper
    		List<CaseComment> lstComments = new List<CaseComment>();
    		for (Case c:emailCases)
    		{
-   			string cBody = label.CaseAutoComment;
-            if(c.Contact_First_Name__c!=null){
-                cBody = cBody.replace('#CLIENTNAME',c.Contact_First_Name__c);
-            } else{
-                cBody = cBody.replace('#CLIENTNAME','Sir/Madam');
-            }
-            cBody = cBody.replace('#CASENUMBER',c.CaseNumber);
-            cBody = cBody.replace('#CASESUBJECT',c.Subject);
-            cBody = cBody.replace('#AGENTFIRSTNAME',userinfo.getFirstName());
-            if(c.Current_User_Title__c!=null){
-                cBody = cBody.replace('#JOBTITLE',c.Current_User_Title__c);
-            } else {
-                cBody = cBody.replace('#JOBTITLE','BigCommerce Team');
-            }
+   			string cBody = 'Email Sent \n Subject: '+c.Subject +'\n '+ 'Description: '+c.Description;
    			CaseComment newCom = new CaseComment(ParentId = c.Id, isPublished= true, commentBody = cBody);
    			lstComments.add(newCom);
    		}

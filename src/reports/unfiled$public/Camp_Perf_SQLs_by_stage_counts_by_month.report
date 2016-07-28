@@ -102,11 +102,6 @@
             <operator>contains</operator>
             <value>ACQ.prospect</value>
         </criteriaItems>
-        <criteriaItems>
-            <column>Opportunity$Campaign.Owner</column>
-            <operator>contains</operator>
-            <value>Julie</value>
-        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>

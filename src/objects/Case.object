@@ -250,18 +250,6 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>VE Assigned</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>VE In Progress</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>VE QA</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Verification</fullName>
             <default>false</default>
         </values>
@@ -4130,17 +4118,6 @@ IF(  Opportunity__r.Contact_First_Name__c  &lt;&gt; Null, Opportunity__r.Contact
         <type>Url</type>
     </fields>
     <fields>
-        <fullName>Current_User_Title__c</fullName>
-        <externalId>false</externalId>
-        <formula>$User.Title</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Current User Title</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>Custom_Page_1__c</fullName>
         <externalId>false</externalId>
         <label>Custom Page 1</label>
@@ -5359,7 +5336,7 @@ IF(Lead__r.Website &lt;&gt; NULL,Lead__r.Website ,NULL))</formula>
         <relationshipName>Cases</relationshipName>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
+        <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
     <fields>
@@ -5918,6 +5895,10 @@ IF(
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>Amazon Marketplace</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Amazon Webstore</fullName>
                 <default>false</default>
             </picklistValues>
@@ -5974,6 +5955,10 @@ IF(
                 <default>false</default>
             </picklistValues>
             <picklistValues>
+                <fullName>GoDaddy QuickCart</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>HHG multistore</fullName>
                 <default>false</default>
             </picklistValues>
@@ -6003,6 +5988,10 @@ IF(
             </picklistValues>
             <picklistValues>
                 <fullName>Magento</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Magento CE/EE</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -6677,10 +6666,6 @@ IF(
             </picklistValues>
             <picklistValues>
                 <fullName>ecommerceconsultant@bigcommerce.com</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Promoter.io</fullName>
                 <default>false</default>
             </picklistValues>
             <sorted>false</sorted>
@@ -7510,6 +7495,11 @@ NULL))</formula>
                 <cssExposed>false</cssExposed>
             </picklistValues>
             <picklistValues>
+                <fullName>Client Training Request</fullName>
+                <default>false</default>
+                <cssExposed>false</cssExposed>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Commissions</fullName>
                 <default>false</default>
                 <cssExposed>false</cssExposed>
@@ -7580,6 +7570,11 @@ NULL))</formula>
                 <cssExposed>false</cssExposed>
             </picklistValues>
             <picklistValues>
+                <fullName>Downgrade/Cancellation</fullName>
+                <default>false</default>
+                <cssExposed>false</cssExposed>
+            </picklistValues>
+            <picklistValues>
                 <fullName>DSP Application</fullName>
                 <default>false</default>
                 <cssExposed>false</cssExposed>
@@ -7590,7 +7585,17 @@ NULL))</formula>
                 <cssExposed>false</cssExposed>
             </picklistValues>
             <picklistValues>
+                <fullName>Enterprise Task</fullName>
+                <default>false</default>
+                <cssExposed>false</cssExposed>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Escalated</fullName>
+                <default>false</default>
+                <cssExposed>false</cssExposed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Escalation</fullName>
                 <default>false</default>
                 <cssExposed>false</cssExposed>
             </picklistValues>
@@ -7670,6 +7675,11 @@ NULL))</formula>
                 <cssExposed>false</cssExposed>
             </picklistValues>
             <picklistValues>
+                <fullName>Manager Callback/Escalation</fullName>
+                <default>false</default>
+                <cssExposed>false</cssExposed>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Marketing</fullName>
                 <default>false</default>
                 <cssExposed>false</cssExposed>
@@ -7725,6 +7735,11 @@ NULL))</formula>
                 <cssExposed>false</cssExposed>
             </picklistValues>
             <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <cssExposed>false</cssExposed>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Outbound Design</fullName>
                 <default>false</default>
                 <cssExposed>false</cssExposed>
@@ -7741,6 +7756,11 @@ NULL))</formula>
             </picklistValues>
             <picklistValues>
                 <fullName>Partner Portal</fullName>
+                <default>false</default>
+                <cssExposed>false</cssExposed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Payment Error</fullName>
                 <default>false</default>
                 <cssExposed>false</cssExposed>
             </picklistValues>
@@ -7865,6 +7885,16 @@ NULL))</formula>
                 <cssExposed>false</cssExposed>
             </picklistValues>
             <picklistValues>
+                <fullName>Site Security</fullName>
+                <default>false</default>
+                <cssExposed>false</cssExposed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Specialist Task</fullName>
+                <default>false</default>
+                <cssExposed>false</cssExposed>
+            </picklistValues>
+            <picklistValues>
                 <fullName>SSL</fullName>
                 <default>false</default>
                 <cssExposed>false</cssExposed>
@@ -7891,6 +7921,11 @@ NULL))</formula>
             </picklistValues>
             <picklistValues>
                 <fullName>Success Plan</fullName>
+                <default>false</default>
+                <cssExposed>false</cssExposed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Success Plan Review</fullName>
                 <default>false</default>
                 <cssExposed>false</cssExposed>
             </picklistValues>
@@ -7925,6 +7960,11 @@ NULL))</formula>
                 <cssExposed>false</cssExposed>
             </picklistValues>
             <picklistValues>
+                <fullName>Uptime/SLA Event</fullName>
+                <default>false</default>
+                <cssExposed>false</cssExposed>
+            </picklistValues>
+            <picklistValues>
                 <fullName>User didn&apos;t attend training</fullName>
                 <default>false</default>
                 <cssExposed>false</cssExposed>
@@ -7936,16 +7976,6 @@ NULL))</formula>
             </picklistValues>
             <picklistValues>
                 <fullName>Weekly Status Call</fullName>
-                <default>false</default>
-                <cssExposed>false</cssExposed>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Other</fullName>
-                <default>false</default>
-                <cssExposed>false</cssExposed>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Payment Error</fullName>
                 <default>false</default>
                 <cssExposed>false</cssExposed>
             </picklistValues>
@@ -8040,12 +8070,6 @@ NULL))</formula>
                 <fullName>Bug</fullName>
                 <default>false</default>
                 <controllingFieldValues>JIRA</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Cancellation</fullName>
-                <default>false</default>
-                <controllingFieldValues>Account Split</controllingFieldValues>
-                <controllingFieldValues>Cancellation Reasons</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Change in Payment Amount</fullName>
@@ -8306,6 +8330,10 @@ NULL))</formula>
                 <fullName>Fraud</fullName>
                 <default>false</default>
                 <controllingFieldValues>Cancellation Reasons</controllingFieldValues>
+                <controllingFieldValues>Credit</controllingFieldValues>
+                <controllingFieldValues>Denied Refund/Credit</controllingFieldValues>
+                <controllingFieldValues>Refund</controllingFieldValues>
+                <controllingFieldValues>Refund/Credit Follow-up</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Free Theme</fullName>
@@ -9329,7 +9357,7 @@ Maria: E2CP can&apos;t read the actual record type when setting org wide outboun
         <required>false</required>
         <scale>2</scale>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <type>Currency</type>
     </fields>
     <fields>
@@ -9345,7 +9373,7 @@ Maria: E2CP can&apos;t read the actual record type when setting org wide outboun
             <filterItems>
                 <field>User.Full_Name__c</field>
                 <operation>equals</operation>
-                <value>Nicole Smith,Phillip Estrada,Kit Gulick,Dustin Shipley</value>
+                <value>Phillip Estrada,Kit Gulick,Dustin Shipley</value>
             </filterItems>
             <filterItems>
                 <field>User.Full_Name__c</field>
@@ -9360,12 +9388,12 @@ Maria: E2CP can&apos;t read the actual record type when setting org wide outboun
             <filterItems>
                 <field>User.Full_Name__c</field>
                 <operation>equals</operation>
-                <value>Paul Vaillancourt,Melanie Kalemba,Robert Alvarez,Brent Bellm,Warren Washington</value>
+                <value>Paul Vaillancourt,Robert Alvarez,Brent Bellm,Warren Washington</value>
             </filterItems>
             <filterItems>
                 <field>User.Full_Name__c</field>
                 <operation>equals</operation>
-                <value>Fritz Stegmann</value>
+                <value>Russell Griffin,Fritz Stegmann,Timothy Shuman,Eric Her</value>
             </filterItems>
             <isOptional>false</isOptional>
         </lookupFilter>
@@ -12261,6 +12289,16 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         <type>Picklist</type>
     </fields>
     <fields>
+        <fullName>n2de__Is_archived__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Is archived</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>n2de__Is_distributed__c</fullName>
         <defaultValue>false</defaultValue>
         <deprecated>false</deprecated>
@@ -12301,6 +12339,16 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>n2de__Last_archive_date__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Last archive date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
         <fullName>n2de__Last_distributed__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
@@ -12319,6 +12367,18 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>n2de__Source_queue__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Source queue</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>n2de__Time_to_action_mins__c</fullName>
@@ -12478,27 +12538,6 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         <type>Lookup</type>
     </fields>
     <listViews>
-        <fullName>ADMIN_All_Cases_This_week</fullName>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>CASES.CASE_NUMBER</columns>
-        <columns>CASES.SUBJECT</columns>
-        <columns>CASES.RECORDTYPE</columns>
-        <columns>CASES.CREATED_DATE</columns>
-        <columns>CASES.LAST_UPDATE</columns>
-        <columns>Support_Case_Return_Queue__c</columns>
-        <columns>CASES.STATUS</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>CASES.CREATED_DATE</field>
-            <operation>equals</operation>
-            <value>LAST_N_DAYS:10</value>
-        </filters>
-        <label>ADMIN: All Cases This week</label>
-        <sharedTo>
-            <role>SystemAdministrator</role>
-        </sharedTo>
-    </listViews>
-    <listViews>
         <fullName>ADMIN_All_PS_E2CP_Cases_Today</fullName>
         <columns>CASES.CASE_NUMBER</columns>
         <columns>NAME</columns>
@@ -12554,10 +12593,38 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         </sharedTo>
     </listViews>
     <listViews>
+        <fullName>Account_Services</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>Parent_Record_Owner__c</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.ORIGIN</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>Department__c</columns>
+        <columns>Bigcommerce_Store_URL__c</columns>
+        <columns>CASES.REASON</columns>
+        <columns>Reason_Code__c</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Subscription__c</columns>
+        <columns>CASES.EMAIL</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OWNER_NAME</field>
+            <operation>contains</operation>
+            <value>Account Services Case Queue</value>
+        </filters>
+        <label>SBD Account Services Case Queue</label>
+        <sharedTo>
+            <group>SBD_Account_Services</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
         <fullName>All_Cases</fullName>
         <columns>Premium_Case__c</columns>
         <columns>CASES.CASE_NUMBER</columns>
         <columns>NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
         <columns>CASES.RECORDTYPE</columns>
         <columns>CASES.ORIGIN</columns>
         <columns>CASES.SUBJECT</columns>
@@ -12565,7 +12632,6 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         <columns>CASES.STATUS</columns>
         <columns>Department__c</columns>
         <columns>CASES.PRIORITY</columns>
-        <columns>CORE.USERS.ALIAS</columns>
         <columns>CASES.EMAIL</columns>
         <columns>CREATEDBY_USER.ALIAS</columns>
         <filterScope>Everything</filterScope>
@@ -12622,14 +12688,24 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         <columns>CASES.CREATED_DATE</columns>
         <columns>Unread_Email__c</columns>
         <columns>Bigcommerce_Plan__c</columns>
-        <filterScope>Queue</filterScope>
+        <columns>OWNER_NAME</columns>
+        <filterScope>Everything</filterScope>
         <filters>
             <field>CASES.STATUS</field>
             <operation>notEqual</operation>
             <value>Closed</value>
         </filters>
+        <filters>
+            <field>CASES.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Case.Premium_Account_Services</value>
+        </filters>
+        <filters>
+            <field>OWNER_NAME</field>
+            <operation>notContain</operation>
+            <value>Trash</value>
+        </filters>
         <label>Premium Account Services Queue</label>
-        <queue>BC_Consulting_Queue</queue>
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
@@ -12671,7 +12747,6 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         <fullName>Billing_Active</fullName>
         <booleanFilter>1 AND (2 OR (5 AND 6) OR 7) AND 3 AND 4</booleanFilter>
         <columns>CASES.CASE_NUMBER</columns>
-        <columns>Client_Type__c</columns>
         <columns>CASES.STATUS</columns>
         <columns>CASES.REASON</columns>
         <columns>Reason_Code__c</columns>
@@ -12771,7 +12846,6 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         <fullName>Billing_All_Open</fullName>
         <booleanFilter>1 AND ((2 AND 3) OR 4)</booleanFilter>
         <columns>CASES.CASE_NUMBER</columns>
-        <columns>Client_Type__c</columns>
         <columns>CASES.STATUS</columns>
         <columns>CASES.REASON</columns>
         <columns>Reason_Code__c</columns>
@@ -12815,58 +12889,6 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         </sharedTo>
     </listViews>
     <listViews>
-        <fullName>Billing_Client_Open</fullName>
-        <booleanFilter>1 AND (2 OR 6) AND 3 AND 4 AND 5</booleanFilter>
-        <columns>CASES.CASE_NUMBER</columns>
-        <columns>OWNER_NAME</columns>
-        <columns>CASES.STATUS</columns>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>CASES.REASON</columns>
-        <columns>Reason_Code__c</columns>
-        <columns>CASES.ORIGIN</columns>
-        <columns>CASES.CREATED_DATE</columns>
-        <columns>CREATEDBY_USER.ALIAS</columns>
-        <columns>Subscription__c</columns>
-        <columns>Bigcommerce_Store_URL__c</columns>
-        <columns>CASES.SUBJECT</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>CASES.CLOSED</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <filters>
-            <field>CASES.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Case.Billing</value>
-        </filters>
-        <filters>
-            <field>CASES.REASON</field>
-            <operation>notEqual</operation>
-            <value>Cancellation</value>
-        </filters>
-        <filters>
-            <field>CREATEDBY_USER.ALIAS</field>
-            <operation>equals</operation>
-            <value>api,guest</value>
-        </filters>
-        <filters>
-            <field>CASES.STATUS</field>
-            <operation>notEqual</operation>
-            <value>Waiting on Client,Completed by Billing</value>
-        </filters>
-        <filters>
-            <field>OWNER_NAME</field>
-            <operation>equals</operation>
-            <value>Billing Queue</value>
-        </filters>
-        <label>Billing: Client Requests</label>
-        <sharedTo>
-            <group>Billing</group>
-            <role>Client_Success_Rep_Use</role>
-        </sharedTo>
-    </listViews>
-    <listViews>
         <fullName>Billing_Downgrades</fullName>
         <columns>CASES.CASE_NUMBER</columns>
         <columns>CASES.STATUS</columns>
@@ -12897,51 +12919,6 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
             <value>Downgrade</value>
         </filters>
         <label>Billing: Downgrades</label>
-        <sharedTo>
-            <group>Billing</group>
-            <role>Client_Success_Rep_Use</role>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>Billing_Internal_Requests</fullName>
-        <columns>CASES.CASE_NUMBER</columns>
-        <columns>CASES.STATUS</columns>
-        <columns>CASES.REASON</columns>
-        <columns>Reason_Code__c</columns>
-        <columns>CASES.ORIGIN</columns>
-        <columns>CASES.CREATED_DATE</columns>
-        <columns>CREATEDBY_USER.ALIAS</columns>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>Subscription__c</columns>
-        <columns>Bigcommerce_Store_URL__c</columns>
-        <columns>CASES.SUBJECT</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>CASES.CLOSED</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <filters>
-            <field>CASES.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Case.Billing</value>
-        </filters>
-        <filters>
-            <field>CASES.REASON</field>
-            <operation>notEqual</operation>
-            <value>Cancellation</value>
-        </filters>
-        <filters>
-            <field>CREATEDBY_USER.ALIAS</field>
-            <operation>notEqual</operation>
-            <value>api,guest</value>
-        </filters>
-        <filters>
-            <field>CASES.STATUS</field>
-            <operation>notEqual</operation>
-            <value>Pending Approval,Waiting on Client,Completed by Billing</value>
-        </filters>
-        <label>Billing: Internal Requests</label>
         <sharedTo>
             <group>Billing</group>
             <role>Client_Success_Rep_Use</role>
@@ -12994,43 +12971,6 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         <sharedTo>
             <group>Billing</group>
             <role>Client_Success_Rep_Use</role>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>Billing_Need_Ops_to_Complete</fullName>
-        <columns>CASES.CASE_NUMBER</columns>
-        <columns>CASES.STATUS</columns>
-        <columns>JIRA_Status__c</columns>
-        <columns>Subscription__c</columns>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>NAME</columns>
-        <columns>CASES.REASON</columns>
-        <columns>Reason_Code__c</columns>
-        <columns>CASES.ORIGIN</columns>
-        <columns>CASES.CREATED_DATE</columns>
-        <columns>CREATEDBY_USER.ALIAS</columns>
-        <columns>Bigcommerce_Store_URL__c</columns>
-        <columns>CASES.SUBJECT</columns>
-        <columns>CASES.EMAIL</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>CASES.STATUS</field>
-            <operation>notEqual</operation>
-            <value>Completed by Billing &amp; Ops,Completed by Ops,Completed,Closed</value>
-        </filters>
-        <filters>
-            <field>CASES.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Case.Billing</value>
-        </filters>
-        <filters>
-            <field>CASES.REASON</field>
-            <operation>equals</operation>
-            <value>Account Merge,Account Split</value>
-        </filters>
-        <label>Billing: Completed by Billing/not Ops</label>
-        <sharedTo>
-            <group>Billing</group>
         </sharedTo>
     </listViews>
     <listViews>
@@ -13542,7 +13482,6 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
     <listViews>
         <fullName>My_Open_Cases</fullName>
         <columns>CASES.CASE_NUMBER</columns>
-        <columns>Client_Type__c</columns>
         <columns>Premium_Case__c</columns>
         <columns>CASES.SUBJECT</columns>
         <columns>CASES.STATUS</columns>
@@ -13562,7 +13501,6 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
     <listViews>
         <fullName>My_Open_Migration_Cases</fullName>
         <columns>CASES.CASE_NUMBER</columns>
-        <columns>Client_Type__c</columns>
         <columns>CASES.SUBJECT</columns>
         <columns>CASES.STATUS</columns>
         <columns>CASES.CREATED_DATE</columns>
@@ -13583,7 +13521,6 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
     <listViews>
         <fullName>My_Open_Support_Case</fullName>
         <columns>CASES.CASE_NUMBER</columns>
-        <columns>Client_Type__c</columns>
         <columns>NAME</columns>
         <columns>CASES.SUBJECT</columns>
         <columns>CASES.CREATED_DATE</columns>
@@ -13632,36 +13569,6 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         <sharedTo>
             <role>Launch_Team</role>
             <role>Success_Squad</role>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>Orion_Professional_Services</fullName>
-        <columns>CASES.CASE_NUMBER</columns>
-        <columns>NAME</columns>
-        <columns>CASES.SUBJECT</columns>
-        <columns>CASES.STATUS</columns>
-        <columns>CASES.PRIORITY</columns>
-        <columns>CASES.CREATED_DATE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>Product_Sold__c</columns>
-        <columns>Bigcommerce_Plan__c</columns>
-        <columns>SBD_Referral_ID__c</columns>
-        <columns>SBD_Store_Id__c</columns>
-        <columns>CASES.ORIGIN</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>CASES.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Case.Professional_Services</value>
-        </filters>
-        <filters>
-            <field>CASES.SUBJECT</field>
-            <operation>equals</operation>
-            <value>Orion Client purchase</value>
-        </filters>
-        <label>Orion Professional Services</label>
-        <sharedTo>
-            <role>SystemAdministrator</role>
         </sharedTo>
     </listViews>
     <listViews>
@@ -13931,7 +13838,6 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         <booleanFilter>(1 and 2 and 3) or (1 and 3 and 4 and 5)</booleanFilter>
         <columns>CASES.CREATED_DATE</columns>
         <columns>CASES.CASE_NUMBER</columns>
-        <columns>Client_Type__c</columns>
         <columns>Premium_Case__c</columns>
         <columns>OWNER_NAME</columns>
         <columns>CASES.ORIGIN</columns>
@@ -14009,7 +13915,6 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
         <booleanFilter>((1 AND 2) OR (1 AND 3) OR 6) AND 4 AND 5</booleanFilter>
         <columns>Flag_Indicator__c</columns>
         <columns>CASES.CASE_NUMBER</columns>
-        <columns>Client_Type__c</columns>
         <columns>Premium_Case__c</columns>
         <columns>OWNER_NAME</columns>
         <columns>CASES.ORIGIN</columns>
@@ -16450,10 +16355,6 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
                 <default>false</default>
             </values>
             <values>
-                <fullName>Cancellation Reasons</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Credit</fullName>
                 <default>false</default>
             </values>
@@ -16534,10 +16435,6 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
             </values>
             <values>
                 <fullName>Brick %26 Mortar Out of Business</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Cancellation</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -16665,6 +16562,10 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
                 <default>false</default>
             </values>
             <values>
+                <fullName>Fraud</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Free Theme</fullName>
                 <default>false</default>
             </values>
@@ -16689,7 +16590,15 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
                 <default>false</default>
             </values>
             <values>
+                <fullName>Lack of Features</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Last 4 Needed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leaving for competitor</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -16710,6 +16619,10 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
             </values>
             <values>
                 <fullName>Merge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Migration</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -16741,6 +16654,10 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
                 <default>false</default>
             </values>
             <values>
+                <fullName>Multiple Stores%2F Consolidating</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Need More Customization</fullName>
                 <default>false</default>
             </values>
@@ -16761,7 +16678,19 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
                 <default>false</default>
             </values>
             <values>
+                <fullName>No Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No products</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>No products to sell%2Fsupplier relationship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No%2FLow Sales</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -16770,6 +16699,14 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
             </values>
             <values>
                 <fullName>Not enough sales for Abandoned Cart</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not moving forward with the business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not using the store</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -16805,7 +16742,23 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
                 <default>false</default>
             </values>
             <values>
+                <fullName>Out of Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Oversold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Paid for free trial by mistake</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Personal Reason</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -16818,6 +16771,10 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
             </values>
             <values>
                 <fullName>Platform Experience</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Platform Limitations</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -16889,7 +16846,19 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
                 <default>false</default>
             </values>
             <values>
+                <fullName>Sales Experience</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sandbox Site</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Saved from Cancellation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seasonal User</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -16934,6 +16903,14 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
             </values>
             <values>
                 <fullName>Third Party Issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Too Difficult</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Too Expensive</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -17403,10 +17380,6 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
                 <default>false</default>
             </values>
             <values>
-                <fullName>Closed my business</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>DNWD%3A Did not%2Fwould not disclose</fullName>
                 <default>false</default>
             </values>
@@ -17419,19 +17392,7 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
                 <default>false</default>
             </values>
             <values>
-                <fullName>Missing product features</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Moving to Another Platform</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>NTCM%3A No time %2F Changed mind</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>No time to invest in website</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -17459,15 +17420,7 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
                 <default>false</default>
             </values>
             <values>
-                <fullName>Something Else</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>UNR%3A Unengaged %2F No response</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Value</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -27734,10 +27687,6 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
                 <default>false</default>
             </values>
             <values>
-                <fullName>Promoter%2Eio</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>SBD - Escalations</fullName>
                 <default>false</default>
             </values>
@@ -27759,14 +27708,6 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
             </values>
             <values>
                 <fullName>apisupport%40bigcommerce%2Ecom</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>billing%40bigcommerce%2Ecom</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>cancellations%40bigcommerce%2Ecom</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -31189,10 +31130,10 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
     </recordTypes>
     <recordTypes>
         <fullName>Enterprise_Account_Services</fullName>
-        <active>false</active>
+        <active>true</active>
         <businessProcess>Client Success Support Process</businessProcess>
         <description>Enterprise Account Services related cases</description>
-        <label>zEnterprise Account Services</label>
+        <label>Enterprise Account Services</label>
         <picklistValues>
             <picklist>Article_Type__c</picklist>
             <values>
@@ -34105,7 +34046,7 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
                 <default>false</default>
             </values>
             <values>
-                <fullName>Audits and Analytics</fullName>
+                <fullName>Client Training Request</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -34113,27 +34054,43 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
                 <default>false</default>
             </values>
             <values>
+                <fullName>Downgrade%2FCancellation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Enterprise Task</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Escalation</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Feature Request</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Marketing and PPC</fullName>
+                <fullName>Manager Callback%2FEscalation</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Pre-launch</fullName>
+                <fullName>Site Security</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Product Best Practices</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Store Setup and Maintenance</fullName>
+                <fullName>Specialist Task</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Strategic Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Success Plan Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Uptime%2FSLA Event</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -36275,6 +36232,10 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
                 <default>false</default>
             </values>
             <values>
+                <fullName>Amazon Marketplace</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Amazon Webstore</fullName>
                 <default>false</default>
             </values>
@@ -36311,6 +36272,10 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
                 <default>false</default>
             </values>
             <values>
+                <fullName>GoDaddy QuickCart</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Interspire %28standard SOW%29</fullName>
                 <default>false</default>
             </values>
@@ -36324,6 +36289,10 @@ Subject, &quot;Fwd:&quot;, &quot;&quot;), &quot;FW:&quot;, &quot;&quot;), &quot;
             </values>
             <values>
                 <fullName>Magento</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Magento CE%2FEE</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -59169,8 +59138,7 @@ CONTAINS(&apos;005a000000A6dmMAAR&apos;,Refund_Credit_Approver__c), /* Adam Fere
 CONTAINS(&apos;00530000007C7K4AAK&apos;,Refund_Credit_Approver__c), /* Kris Westlund */
 CONTAINS(&apos;005a0000008UcqGAAS&apos;,Refund_Credit_Approver__c), /* Alecia Wall */
 CONTAINS(&apos;00530000004WaX7AAK&apos;,Refund_Credit_Approver__c), /* Justin Platt */
-CONTAINS(&apos;005a0000007rA7YAAU&apos;,Refund_Credit_Approver__c), /* Liam Garcia */
-CONTAINS(&apos;0051300000BSTxhAAH&apos;,Refund_Credit_Approver__c)  /* Russell Griffin */
+CONTAINS(&apos;005a0000007rA7YAAU&apos;,Refund_Credit_Approver__c) /* Liam Garcia */
 ))
 
 ||
@@ -59178,7 +59146,8 @@ CONTAINS(&apos;0051300000BSTxhAAH&apos;,Refund_Credit_Approver__c)  /* Russell G
 (Refund_Credit_Amount__c &gt; 3000 &amp;&amp;
 OR(
 CONTAINS(&apos;0051300000Bt8G1AAJ&apos;,Refund_Credit_Approver__c),  /* Paul Robinson */
-CONTAINS(&apos;005a000000A6vfVAAR&apos;,Refund_Credit_Approver__c)  /* Fritz Stegmann */
+CONTAINS(&apos;005a000000A6vfVAAR&apos;,Refund_Credit_Approver__c),  /* Fritz Stegmann */
+CONTAINS(&apos;005a0000008WYShAAO&apos;,Refund_Credit_Approver__c)   /* Timothy Shuman */
 ))
 
 ||
@@ -59193,7 +59162,8 @@ CONTAINS(&apos;00513000009tW94AAE&apos;,Refund_Credit_Approver__c)  /* Phillip E
 (Refund_Credit_Amount__c &gt; 300 &amp;&amp;
 OR(
 CONTAINS(&apos;00513000009tSLzAAM&apos;,Refund_Credit_Approver__c), /* Kit Gulick */
-CONTAINS(&apos;0051300000BSCoIAAX&apos;,Refund_Credit_Approver__c)  /* Dustin Shipley */
+CONTAINS(&apos;0051300000BSCoIAAX&apos;,Refund_Credit_Approver__c), /* Dustin Shipley */
+CONTAINS(&apos;0051300000BTnmCAAT&apos;,Refund_Credit_Approver__c)  /* Eric Her */
 ))</errorConditionFormula>
         <errorMessage>The approver selected is not eligible to approve the specified Refund/Credit Amount. Please select the proper Refund/Credit Approver.</errorMessage>
     </validationRules>

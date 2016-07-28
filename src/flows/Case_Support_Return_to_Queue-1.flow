@@ -2,38 +2,6 @@
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionCalls>
         <processMetadataValues>
-            <name>textJson</name>
-            <value>
-                <stringValue>{&quot;mentions&quot;:[],&quot;message&quot;:&quot;This case is eligible for Support Case Return Queue&quot;}</stringValue>
-            </value>
-        </processMetadataValues>
-        <name>myRule_4_A1</name>
-        <label>Eligible for Support Case Return Queue</label>
-        <locationX>400</locationX>
-        <locationY>200</locationY>
-        <actionName>chatterPost</actionName>
-        <actionType>chatterPost</actionType>
-        <connector>
-            <targetReference>myRule_4_A2</targetReference>
-        </connector>
-        <inputParameters>
-            <name>text</name>
-            <value>
-                <stringValue>This case is eligible for Support Case Return Queue</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <name>type</name>
-        </inputParameters>
-        <inputParameters>
-            <name>subjectNameOrId</name>
-            <value>
-                <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </inputParameters>
-    </actionCalls>
-    <actionCalls>
-        <processMetadataValues>
             <name>filterType</name>
             <value>
                 <stringValue>objectType</stringValue>
@@ -498,7 +466,7 @@
                 <stringValue>&apos;&apos;</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_8_myRule_4_A2_Change_Owner_c</name>
+        <name>formula_8_myRule_4_A1_Change_Owner_c</name>
         <dataType>String</dataType>
         <expression>&apos;&apos;</expression>
     </formulas>
@@ -510,7 +478,7 @@
 (Left(Priorvalue([Case].OwnerId),3) = &apos;00G&apos;),Priorvalue([Case].OwnerId),&apos;00Ga0000003ATBVEA4&apos;)</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_9_myRule_4_A2_Support_Case_Return_Queue_c</name>
+        <name>formula_9_myRule_4_A1_Support_Case_Return_Queue_c</name>
         <dataType>String</dataType>
         <expression>If(
 (Left(Priorvalue({!myVariable_current.OwnerId}),3) = &apos;00G&apos;),Priorvalue({!myVariable_current.OwnerId}),&apos;00Ga0000003ATBVEA4&apos;)</expression>
@@ -521,7 +489,6 @@
             <value>
                 <stringValue>[Case].RecordType.Name = &apos;Client Success&apos; &amp;&amp;
 LEFT([Case].OwnerId, 3) = &apos;00G&apos; &amp;&amp;
-NOT(ISPICKVAL([Case].Status, &apos;Closed&apos;)) &amp;&amp;
 (ISNEW() || (PRIORVALUE([Case].OwnerId) &lt;&gt; [Case].OwnerId))
 
 
@@ -532,7 +499,6 @@ NOT(ISPICKVAL([Case].Status, &apos;Closed&apos;)) &amp;&amp;
         <dataType>Boolean</dataType>
         <expression>{!myVariable_current.RecordType.Name} = &apos;Client Success&apos; &amp;&amp;
 LEFT({!myVariable_current.OwnerId}, 3) = &apos;00G&apos; &amp;&amp;
-NOT(ISPICKVAL({!myVariable_current.Status}, &apos;Closed&apos;)) &amp;&amp;
 (ISNEW() || (PRIORVALUE({!myVariable_current.OwnerId}) &lt;&gt; {!myVariable_current.OwnerId}))</expression>
     </formulas>
     <formulas>
@@ -540,8 +506,7 @@ NOT(ISPICKVAL({!myVariable_current.Status}, &apos;Closed&apos;)) &amp;&amp;
             <name>originalFormula</name>
             <value>
                 <stringValue>[Case].RecordType.Name = &apos;Client Success&apos; &amp;&amp;
-NOT(LEFT([Case].OwnerId, 3) = &apos;00G&apos;) &amp;&amp;
-(ISNEW() || (PRIORVALUE([Case].OwnerId) &lt;&gt; [Case].OwnerId))
+NOT(LEFT([Case].OwnerId, 3) = &apos;00G&apos;)
 
 
 </stringValue>
@@ -550,16 +515,14 @@ NOT(LEFT([Case].OwnerId, 3) = &apos;00G&apos;) &amp;&amp;
         <name>formula_myRule_4</name>
         <dataType>Boolean</dataType>
         <expression>{!myVariable_current.RecordType.Name} = &apos;Client Success&apos; &amp;&amp;
-NOT(LEFT({!myVariable_current.OwnerId}, 3) = &apos;00G&apos;) &amp;&amp;
-(ISNEW() || (PRIORVALUE({!myVariable_current.OwnerId}) &lt;&gt; {!myVariable_current.OwnerId}))</expression>
+NOT(LEFT({!myVariable_current.OwnerId}, 3) = &apos;00G&apos;)</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
                 <stringValue>[Case].RecordType.Name = &apos;Client Success&apos; &amp;&amp;
-NOT(LEFT([Case].OwnerId, 3) = &apos;00G&apos;) &amp;&amp;
-(ISNEW() || (PRIORVALUE([Case].OwnerId) &lt;&gt; [Case].OwnerId))
+NOT(LEFT([Case].OwnerId, 3) = &apos;00G&apos;)
 
 
 </stringValue>
@@ -568,10 +531,9 @@ NOT(LEFT([Case].OwnerId, 3) = &apos;00G&apos;) &amp;&amp;
         <name>formula_myRule_4_pmetrule</name>
         <dataType>Boolean</dataType>
         <expression>{!myVariable_old.RecordType.Name} = &apos;Client Success&apos; &amp;&amp;
-NOT(LEFT({!myVariable_old.OwnerId}, 3) = &apos;00G&apos;) &amp;&amp;
-(ISNEW() || (PRIORVALUE({!myVariable_old.OwnerId}) &lt;&gt; {!myVariable_old.OwnerId}))</expression>
+NOT(LEFT({!myVariable_old.OwnerId}, 3) = &apos;00G&apos;)</expression>
     </formulas>
-    <interviewLabel>Case_Support_Return_to_Queue-26_Case</interviewLabel>
+    <interviewLabel>Case_Support_Return_to_Queue-1_Case</interviewLabel>
     <label>Case - Support Return to Queue</label>
     <processMetadataValues>
         <name>ObjectType</name>
@@ -685,10 +647,10 @@ NOT(LEFT({!myVariable_old.OwnerId}, 3) = &apos;00G&apos;) &amp;&amp;
                 <stringValue>[Case]</stringValue>
             </value>
         </processMetadataValues>
-        <name>myRule_4_A2</name>
+        <name>myRule_4_A1</name>
         <label>Update Case</label>
         <locationX>400</locationX>
-        <locationY>300</locationY>
+        <locationY>200</locationY>
         <connector>
             <targetReference>myWait_myRule_4</targetReference>
         </connector>
@@ -732,7 +694,7 @@ NOT(LEFT({!myVariable_old.OwnerId}, 3) = &apos;00G&apos;) &amp;&amp;
             </processMetadataValues>
             <field>Change_Owner__c</field>
             <value>
-                <elementReference>formula_8_myRule_4_A2_Change_Owner_c</elementReference>
+                <elementReference>formula_8_myRule_4_A1_Change_Owner_c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -762,7 +724,7 @@ NOT(LEFT({!myVariable_old.OwnerId}, 3) = &apos;00G&apos;) &amp;&amp;
             </processMetadataValues>
             <field>Support_Case_Return_Queue__c</field>
             <value>
-                <elementReference>formula_9_myRule_4_A2_Support_Case_Return_Queue_c</elementReference>
+                <elementReference>formula_9_myRule_4_A1_Support_Case_Return_Queue_c</elementReference>
             </value>
         </inputAssignments>
         <object>Case</object>
@@ -923,7 +885,7 @@ NOT(LEFT({!myVariable_old.OwnerId}, 3) = &apos;00G&apos;) &amp;&amp;
             <inputParameters>
                 <name>TimeOffset</name>
                 <value>
-                    <numberValue>1.0</numberValue>
+                    <numberValue>4.0</numberValue>
                 </value>
             </inputParameters>
             <label>myWaitEvent_myWait_myRule_4_event_0</label>

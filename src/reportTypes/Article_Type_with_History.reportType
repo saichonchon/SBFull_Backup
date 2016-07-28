@@ -2,9 +2,9 @@
 <ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
     <baseObject>KnowledgeArticleVersionHistory</baseObject>
     <category>other</category>
-    <deployed>true</deployed>
+    <deployed>false</deployed>
     <description>Report for the Public article type</description>
-    <label>Article Type with History</label>
+    <label>zArticle Type with History</label>
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>

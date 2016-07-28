@@ -2,13 +2,13 @@
 <ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
     <baseObject>Account</baseObject>
     <category>other</category>
-    <deployed>true</deployed>
+    <deployed>false</deployed>
     <description>Channel Partner With or Without Client Subscriptions</description>
     <join>
         <outerJoin>true</outerJoin>
         <relationship>Client_Subscriptions__r</relationship>
     </join>
-    <label>Channel Partner With/Without Client Subscriptions</label>
+    <label>zChannel Partner With/Without Client Subscriptions</label>
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>

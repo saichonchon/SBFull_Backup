@@ -5,10 +5,5 @@
         <sharedTo>james.juarez@bigcommerce.com</sharedTo>
         <sharedToType>User</sharedToType>
     </folderShares>
-    <folderShares>
-        <accessLevel>Manage</accessLevel>
-        <sharedTo>nicole.smith@bigcommerce.com</sharedTo>
-        <sharedToType>User</sharedToType>
-    </folderShares>
     <name>BizApps - User Cleanup</name>
 </ReportFolder>

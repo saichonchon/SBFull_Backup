@@ -164,111 +164,11 @@
         <inlineHelpText>Source from the lead (if any)</inlineHelpText>
         <picklist>
             <picklistValues>
-                <fullName>Phone / Queue</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Email / Ticket</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Chat</fullName>
+                <fullName>G2Crowd</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Campaign Import</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Partner</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Web Trial</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Web Form</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Webinar</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Hubspot</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>WebToLead</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>AYRM</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>EBQ DM</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>EBQ DM2</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>EBQ DM3</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Orion</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>IR Special Report 2014</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>GPN Campaign Import</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Event</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Enterprise Partner Lead</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Netline</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ACQ Hubspot Content</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ACQ Hubspot Demo Request</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ACQ Demand Gen</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>PRE Hubspot Content</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>PRE Hubspot Demo Request</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>PRE Demand Gen</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>G2Crowd</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -289,6 +189,10 @@
             </picklistValues>
             <picklistValues>
                 <fullName>Social Ads</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Blogs</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -3138,6 +3042,18 @@ for success squad surveys</description>
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Original_External_Account_ID__c</fullName>
+        <externalId>true</externalId>
+        <inlineHelpText>If the account originated from another system, stores the original system&apos;s id. This is a parallel to the MBA Account ID.</inlineHelpText>
+        <label>Original External Account ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>OwnerId</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
@@ -5050,182 +4966,6 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
         <type>Picklist</type>
     </fields>
     <fields>
-        <fullName>SBQQ__AssetQuantitiesCombined__c</fullName>
-        <defaultValue>false</defaultValue>
-        <deprecated>false</deprecated>
-        <description>Option to combine quantities of multiple assets for the same product into one line when renewal quote is generated.</description>
-        <externalId>false</externalId>
-        <inlineHelpText>Option to combine quantities of multiple assets for the same product into one line when renewal quote is generated.</inlineHelpText>
-        <label>Combine Asset Quantities</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>SBQQ__CoTermedContractsCombined__c</fullName>
-        <defaultValue>false</defaultValue>
-        <deprecated>false</deprecated>
-        <description>Flag that controls whether assets and subscriptions from multiple co-teremed contracts are rolled up together. By default, each co-termed contract generates a separate group on renewal quote.</description>
-        <externalId>false</externalId>
-        <inlineHelpText>Enable to combine assets and subscriptions from multiple co-termed contracts. By default, each co-termed contract generates a separate group on renewal quote.</inlineHelpText>
-        <label>Combine Co-Termed Contracts</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>SBQQ__CoTerminationEvent__c</fullName>
-        <deprecated>false</deprecated>
-        <description>Determines when contracts are co-terminated.</description>
-        <externalId>false</externalId>
-        <inlineHelpText>Determines when contracts are co-terminated.</inlineHelpText>
-        <label>Co-Termination Event</label>
-        <picklist>
-            <controllingField>SBQQ__ContractCoTermination__c</controllingField>
-            <picklistValues>
-                <fullName>Add-on</fullName>
-                <default>false</default>
-                <controllingFieldValues>Always</controllingFieldValues>
-                <controllingFieldValues>Prompt</controllingFieldValues>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Renewal</fullName>
-                <default>false</default>
-                <controllingFieldValues>Always</controllingFieldValues>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-    </fields>
-    <fields>
-        <fullName>SBQQ__ContractCoTermination__c</fullName>
-        <deprecated>false</deprecated>
-        <description>Determines how service and subscription contracts for this customer are co-terminated.</description>
-        <externalId>false</externalId>
-        <inlineHelpText>Determines how service and subscription contracts for this customer are co-terminated.</inlineHelpText>
-        <label>Contract Co-Termination</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Never</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Always</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Prompt</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-    </fields>
-    <fields>
-        <fullName>SBQQ__DefaultOpportunity__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <deprecated>false</deprecated>
-        <description>Default opportunity for this account used by an e-Commerce module to obtain the customer&apos;s price book and associate with &quot;shopping cart&quot; quotes.</description>
-        <externalId>false</externalId>
-        <inlineHelpText>Default opportunity for this account used by an e-Commerce module to obtain the customer&apos;s price book and associate with &quot;shopping cart&quot; quotes.</inlineHelpText>
-        <label>Default Opportunity</label>
-        <referenceTo>Opportunity</referenceTo>
-        <relationshipLabel>Accounts</relationshipLabel>
-        <relationshipName>WebAccounts</relationshipName>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>SBQQ__IgnoreParentContractedPrices__c</fullName>
-        <defaultValue>false</defaultValue>
-        <deprecated>false</deprecated>
-        <description>Select if contracted prices should not be inherited from the parent account.</description>
-        <externalId>false</externalId>
-        <inlineHelpText>Select if contracted prices should not be inherited from the parent account.</inlineHelpText>
-        <label>Ignore Parent Contracted Prices</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>SBQQ__PreserveBundle__c</fullName>
-        <defaultValue>false</defaultValue>
-        <deprecated>false</deprecated>
-        <description>Select to maintain bundle hierarchy on renewal quotes and amendments</description>
-        <externalId>false</externalId>
-        <inlineHelpText>Select checkbox to maintain bundle hierarchy on renewal quotes and amendments.</inlineHelpText>
-        <label>Preserve Bundle Structure</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>SBQQ__PriceHoldEnd__c</fullName>
-        <deprecated>false</deprecated>
-        <description>End date for any price hold that may be in effect.</description>
-        <externalId>false</externalId>
-        <inlineHelpText>Enter date until which the prices must be held.</inlineHelpText>
-        <label>Price Hold End</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>SBQQ__RenewalModel__c</fullName>
-        <deprecated>false</deprecated>
-        <description>The option to distinguish between Subscription or Asset based renewal.</description>
-        <externalId>false</externalId>
-        <inlineHelpText>Choose Asset Based to make renewals based off of an account&apos;s Assets or choose Subscription based to makes renewals based off of subscriptions created from a quote.</inlineHelpText>
-        <label>Renewal Model</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Asset Based</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Contract Based</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-    </fields>
-    <fields>
-        <fullName>SBQQ__RenewalPricingMethod__c</fullName>
-        <deprecated>false</deprecated>
-        <description>Method for pricing products on renewal.</description>
-        <externalId>false</externalId>
-        <inlineHelpText>Use &quot;Same&quot; to keep the same price paid last time. Use &quot;List&quot; to use current list price. Use &quot;Uplift&quot; to use the price paid last time plus some uplift.</inlineHelpText>
-        <label>Renewal Pricing Method</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Same</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>List</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Uplift</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-    </fields>
-    <fields>
         <fullName>SSC__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -5419,6 +5159,10 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
         <label>Status</label>
         <picklist>
             <picklistValues>
+                <fullName>New</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
                 <fullName>Pending</fullName>
                 <default>false</default>
             </picklistValues>
@@ -5436,6 +5180,10 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
             </picklistValues>
             <picklistValues>
                 <fullName>Qualification</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sales Qualification</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -5879,6 +5627,14 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
             </picklistValues>
             <picklistValues>
                 <fullName>Designer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Existing BC Client</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Payment Partner</fullName>
                 <default>false</default>
             </picklistValues>
             <sorted>false</sorted>
@@ -7022,7 +6778,7 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
         <length>255</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
@@ -7341,6 +7097,46 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>n2de__Is_distributed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Is distributed</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>n2de__Is_reassigned__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Is reassigned</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>n2de__Last_distributed__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Date last distributed to user</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>n2de__Last_reassigned__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Date last auto reassigned</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
     </fields>
     <fields>
         <fullName>qbdialer__CloseDate__c</fullName>
@@ -8057,11 +7853,11 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
         <picklistValues>
             <picklist>AccountSource</picklist>
             <values>
-                <fullName>Campaign Import</fullName>
+                <fullName>Blogs</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Chat</fullName>
+                <fullName>Campaign Import</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -8069,27 +7865,7 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
                 <default>false</default>
             </values>
             <values>
-                <fullName>Email %2F Ticket</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Enterprise Partner Lead</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>IR Special Report 2014</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Internet Retailer</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Netline</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Orion</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -8097,23 +7873,7 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
                 <default>false</default>
             </values>
             <values>
-                <fullName>Partner</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Phone %2F Queue</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>SBD Acquisition</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Web Trial</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Webinar</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -8232,14 +7992,6 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
         </picklistValues>
         <picklistValues>
             <picklist>Assign_To_Team__c</picklist>
-            <values>
-                <fullName>APAC Direct</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>APAC Enterprise</fullName>
-                <default>false</default>
-            </values>
             <values>
                 <fullName>Acquisition</fullName>
                 <default>false</default>
@@ -11048,15 +10800,7 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
         <picklistValues>
             <picklist>AccountSource</picklist>
             <values>
-                <fullName>ACQ Demand Gen</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>ACQ Hubspot Content</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>ACQ Hubspot Demo Request</fullName>
+                <fullName>Blogs</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -11064,23 +10808,7 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
                 <default>false</default>
             </values>
             <values>
-                <fullName>Chat</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Email %2F Ticket</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Enterprise Partner Lead</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>G2Crowd</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>IR Special Report 2014</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -11088,47 +10816,11 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
                 <default>false</default>
             </values>
             <values>
-                <fullName>Netline</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Orion</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Other</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>PRE Demand Gen</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>PRE Hubspot Content</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>PRE Hubspot Demo Request</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Partner</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Phone %2F Queue</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>SBD Acquisition</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Web Trial</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Webinar</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -11247,14 +10939,6 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
         </picklistValues>
         <picklistValues>
             <picklist>Assign_To_Team__c</picklist>
-            <values>
-                <fullName>APAC Direct</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>APAC Enterprise</fullName>
-                <default>false</default>
-            </values>
             <values>
                 <fullName>Acquisition</fullName>
                 <default>false</default>
@@ -13778,19 +13462,11 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
         <picklistValues>
             <picklist>AccountSource</picklist>
             <values>
+                <fullName>Blogs</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Campaign Import</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Chat</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Email %2F Ticket</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Netline</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -13798,27 +13474,7 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
                 <default>false</default>
             </values>
             <values>
-                <fullName>Partner</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Phone %2F Queue</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>SBD Acquisition</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Web Form</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Web Trial</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Webinar</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -15751,6 +15407,10 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
                 <default>false</default>
             </values>
             <values>
+                <fullName>New</fullName>
+                <default>true</default>
+            </values>
+            <values>
                 <fullName>Onboarding</fullName>
                 <default>false</default>
             </values>
@@ -15760,7 +15420,11 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
             </values>
             <values>
                 <fullName>Pending</fullName>
-                <default>true</default>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Qualification</fullName>
+                <default>false</default>
             </values>
             <values>
                 <fullName>Terminated</fullName>
@@ -15878,12 +15542,24 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
                 <default>false</default>
             </values>
             <values>
+                <fullName>Existing BC Client</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Internal</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Partner</fullName>
                 <default>true</default>
+            </values>
+            <values>
+                <fullName>Payment Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect</fullName>
+                <default>false</default>
             </values>
             <values>
                 <fullName>Solution Partner</fullName>
@@ -16453,15 +16129,11 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
         <picklistValues>
             <picklist>AccountSource</picklist>
             <values>
+                <fullName>Blogs</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Campaign Import</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Chat</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Email %2F Ticket</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -16469,27 +16141,7 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
                 <default>false</default>
             </values>
             <values>
-                <fullName>Partner</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Phone %2F Queue</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>SBD Acquisition</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Web Form</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Web Trial</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Webinar</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -19062,9 +18714,9 @@ IF(ISBLANK(PAR_TTFR__c) &amp;&amp; Today()- Partner_Approved_Date__c  &lt;30, IM
         <fullName>ChannelPartnerRecordType_Rule</fullName>
         <active>true</active>
         <description>AR-6163</description>
-        <errorConditionFormula>NOT(ISNEW())    &amp;&amp;  RecordTypeId =&quot;012a0000001NOe1&quot; &amp;&amp;  $User.ProfileId  &lt;&gt; &quot;00e30000001UsAz&quot;  &amp;&amp;   OR(ISPICKVAL(Type,&quot;&quot;),ISPICKVAL(Type,&quot;Client&quot;),ISPICKVAL(Type,&quot;Prospect&quot;))</errorConditionFormula>
+        <errorConditionFormula>NOT(ISNEW())    &amp;&amp;  RecordTypeId =&quot;012a0000001NOe1&quot; &amp;&amp;  $User.ProfileId  &lt;&gt; &quot;00e30000001UsAz&quot;  &amp;&amp;   OR(ISPICKVAL(Type,&quot;&quot;),ISPICKVAL(Type,&quot;Client&quot;))</errorConditionFormula>
         <errorDisplayField>Type</errorDisplayField>
-        <errorMessage>Account type cannot be empty or Client or Prospect for channel partner accounts</errorMessage>
+        <errorMessage>Account type cannot be empty or Client for channel partner accounts</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Partner_cannot_be_Client_Type</fullName>
@@ -19336,30 +18988,6 @@ else {
 alert(&apos;Please populate the LDR Assign To Team&apos;); 
 } 
 }</url>
-    </webLinks>
-    <webLinks>
-        <fullName>SBQQ__Amend_Assets</fullName>
-        <availability>online</availability>
-        <displayType>button</displayType>
-        <encodingKey>UTF-8</encodingKey>
-        <height>600</height>
-        <linkType>url</linkType>
-        <masterLabel>Amend Assets</masterLabel>
-        <openType>sidebar</openType>
-        <protected>false</protected>
-        <url>/apex/SBQQ__AssetSelector?scontrolCaching=1&amp;id={!Account.Id}&amp;isAmend=true</url>
-    </webLinks>
-    <webLinks>
-        <fullName>SBQQ__Renew_Assets</fullName>
-        <availability>online</availability>
-        <description>It is used to renew assets from an account when Global Settings - Renewal Model is set to Asset Based.</description>
-        <displayType>button</displayType>
-        <height>600</height>
-        <linkType>page</linkType>
-        <masterLabel>Renew Assets</masterLabel>
-        <openType>sidebar</openType>
-        <page>SBQQ__AssetSelector</page>
-        <protected>false</protected>
     </webLinks>
     <webLinks>
         <fullName>Send_Survey</fullName>

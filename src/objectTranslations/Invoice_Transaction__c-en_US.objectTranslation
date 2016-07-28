@@ -152,6 +152,11 @@
         </picklistValues>
     </fields>
     <fields>
+        <help><!-- The related store&apos;s provisioning system --></help>
+        <label><!-- Provisioning System --></label>
+        <name>Provisioning_System__c</name>
+    </fields>
+    <fields>
         <help><!-- The store that this transaction was related to --></help>
         <label><!-- Store Opportunity --></label>
         <name>Store_Opportunity__c</name>

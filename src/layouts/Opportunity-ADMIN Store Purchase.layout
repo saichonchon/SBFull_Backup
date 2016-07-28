@@ -49,6 +49,14 @@
                 <behavior>Edit</behavior>
                 <field>TrailingGMVCount__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Sample_100__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Demo_Requested_Date__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -74,6 +82,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Amount</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Account_Mismatch__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
@@ -785,15 +797,7 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>LandingPage__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>TrialFormPage__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Marketing_Price_Testing_Group__c</field>
+                <field>MarketingSource__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -803,18 +807,35 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>MarketingSource__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>CampaignId</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>LeadSource</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Channel__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
+    </layoutSections>
+    <layoutSections>
+        <customLabel>true</customLabel>
+        <detailHeading>false</detailHeading>
+        <editHeading>false</editHeading>
+        <label>Marketing URLs</label>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>LandingPage__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>TrialFormPage__c</field>
+            </layoutItems>
+        </layoutColumns>
+        <style>OneColumn</style>
     </layoutSections>
     <layoutSections>
         <customLabel>true</customLabel>
@@ -1085,26 +1106,30 @@
         <sortOrder>Desc</sortOrder>
     </relatedLists>
     <relatedLists>
-        <fields>QUOTE.QUOTENUMBER</fields>
-        <fields>QUOTE.NAME</fields>
-        <fields>QUOTE.STATUS</fields>
-        <fields>QUOTE.EXPIRATIONDATE</fields>
-        <fields>QUOTE.TAX</fields>
-        <fields>QUOTE.TOTALPRICE</fields>
-        <fields>CreatedBy</fields>
-        <relatedList>RelatedQuoteList</relatedList>
+        <fields>NAME</fields>
+        <fields>Amount_Due__c</fields>
+        <fields>Date_Due__c</fields>
+        <fields>Amount_Paid__c</fields>
+        <fields>Date_Paid__c</fields>
+        <fields>Amount_Refunded__c</fields>
+        <fields>Date_Refunded__c</fields>
+        <fields>Amount_Paid_net__c</fields>
+        <fields>CMRR__c</fields>
+        <fields>Invoice_Status__c</fields>
+        <relatedList>Invoice_Transaction__c.Store_Opportunity__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
-        <fields>dsfs__Envelope_Status__c</fields>
-        <fields>dsfs__Hrs_Sent_to_Sign__c</fields>
-        <fields>dsfs__Subject__c</fields>
-        <fields>dsfs__Sender__c</fields>
-        <fields>dsfs__Sent_Date_Time__c</fields>
-        <fields>dsfs__Completed_Date_Time__c</fields>
-        <fields>Quote__c</fields>
-        <fields>dsfs__Company__c</fields>
-        <relatedList>dsfs__DocuSign_Status__c.dsfs__Opportunity__c</relatedList>
+        <fields>tinderbox__Category__c</fields>
+        <fields>CREATED_DATE</fields>
+        <fields>LAST_UPDATE</fields>
+        <fields>tinderbox__Last_Viewed__c</fields>
+        <fields>tinderbox__Status__c</fields>
+        <fields>tinderbox__Value__c</fields>
+        <fields>tinderbox__Views__c</fields>
+        <relatedList>tinderbox__Document__c.tinderbox__Opportunity__c</relatedList>
+        <sortField>CREATED_DATE</sortField>
+        <sortOrder>Desc</sortOrder>
     </relatedLists>
     <relatedLists>
         <fields>CASES.CASE_NUMBER</fields>

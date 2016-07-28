@@ -743,78 +743,6 @@ IF(Tenured_Months__c &gt;=4, 1,0)
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>SBQQ__DefaultProductLookupTab__c</fullName>
-        <deprecated>false</deprecated>
-        <description>Default tab for this user in Product Lookup page.</description>
-        <externalId>false</externalId>
-        <inlineHelpText>Customize default tab in Product Lookup page.</inlineHelpText>
-        <label>Default Product Lookup Tab</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Guided Selling</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Search Filters</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Picklist</type>
-    </fields>
-    <fields>
-        <fullName>SBQQ__OutputFormatChangeAllowed__c</fullName>
-        <defaultValue>false</defaultValue>
-        <deprecated>false</deprecated>
-        <description>Flag that indicates whether this user is allowed to change output format of quote documents.</description>
-        <externalId>false</externalId>
-        <inlineHelpText>Check to allow this user to change output format of quote documents.</inlineHelpText>
-        <label>Allow Output Format Change</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>SBQQ__ProductSortPreference__c</fullName>
-        <deprecated>false</deprecated>
-        <description>Product sort preference for this user. Currently only Chatter Follows are supported.</description>
-        <externalId>false</externalId>
-        <inlineHelpText>Select &quot;Followed&quot; to display products you follow in Chatter before others when adding to quote.</inlineHelpText>
-        <label>Product Sort Preference</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Followed</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Picklist</type>
-    </fields>
-    <fields>
-        <fullName>SBQQ__ResetProductLookup__c</fullName>
-        <defaultValue>false</defaultValue>
-        <deprecated>false</deprecated>
-        <description>Flag that determines whether Product Lookup data (guided selling questions, search filters and search results) are cleared after user selects desired products.</description>
-        <externalId>false</externalId>
-        <inlineHelpText>Check to clear search filters and results every time you add products to your quotes. Otherwise, your previous selections are kept.</inlineHelpText>
-        <label>Reset Product Lookup</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>SBQQ__Theme__c</fullName>
-        <deprecated>false</deprecated>
-        <description>Field that will be set by Select Theme custom link, once one is selected.</description>
-        <externalId>false</externalId>
-        <label>Theme</label>
-        <length>18</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>Skype_Name__c</fullName>
         <description>Used in international email templates</description>
         <externalId>false</externalId>
@@ -894,6 +822,16 @@ IF(Tenured_Months__c &gt;=4, 1,0)
         <externalId>false</externalId>
         <inlineHelpText>Link to the user&apos;s photo to be used in email templates</inlineHelpText>
         <label>User Image</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Website__c</fullName>
+        <description>Store URL -- populated by community users manually -- visible to authenticated internal Salesforce users as well as authenticated community users</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Your store URL</inlineHelpText>
+        <label>Website</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Url</type>
@@ -1186,16 +1124,6 @@ IF(Tenured_Months__c &gt;=4, 1,0)
         <type>Text</type>
         <unique>false</unique>
     </fields>
-    <fields>
-        <fullName>website__c</fullName>
-        <description>Your store URL</description>
-        <externalId>false</externalId>
-        <inlineHelpText>Your store URL</inlineHelpText>
-        <label>Website</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Url</type>
-    </fields>
     <listViews>
         <fullName>ActiveLiveAgentUsers</fullName>
         <booleanFilter>1 AND (2 OR 3)</booleanFilter>
@@ -1238,6 +1166,7 @@ IF(Tenured_Months__c &gt;=4, 1,0)
         <columns>CORE.USER_ROLE.NAME</columns>
         <columns>CORE.PROFILE.NAME</columns>
         <columns>CORE.USERS.ACTIVE</columns>
+        <columns>LAST_UPDATE</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>CORE.PROFILE.NAME</field>
@@ -1366,7 +1295,6 @@ IF(Tenured_Months__c &gt;=4, 1,0)
         <columns>CORE.USERS.ALIAS</columns>
         <columns>CORE.USERS.USERNAME</columns>
         <columns>CORE.USERS.LAST_LOGIN</columns>
-        <columns>CORE.USERS.EMAIL</columns>
         <columns>CORE.USER_ROLE.NAME</columns>
         <columns>CORE.USERS.ACTIVE</columns>
         <columns>CORE.PROFILE.NAME</columns>
@@ -1377,19 +1305,9 @@ IF(Tenured_Months__c &gt;=4, 1,0)
         <columns>CORE.PROFILE.USERTYPE</columns>
         <filterScope>Everything</filterScope>
         <filters>
-            <field>CORE.USERS.USERNAME</field>
-            <operation>contains</operation>
-            <value>stegmann</value>
-        </filters>
-        <filters>
             <field>CORE.PROFILE.NAME</field>
-            <operation>notEqual</operation>
-            <value>Community Client User</value>
-        </filters>
-        <filters>
-            <field>CORE.USERS.ACTIVE</field>
-            <operation>equals</operation>
-            <value>1</value>
+            <operation>contains</operation>
+            <value>standard platform</value>
         </filters>
         <label>ADMIN: Look for user</label>
         <sharedTo>
@@ -1663,24 +1581,6 @@ IF(Tenured_Months__c &gt;=4, 1,0)
         <errorDisplayField>Department</errorDisplayField>
         <errorMessage>The Department field cannot be edited.  Please contact your Salesforce Admin if you need the value changed</errorMessage>
     </validationRules>
-    <webLinks>
-        <fullName>SBQQ__Select_Theme</fullName>
-        <availability>online</availability>
-        <displayType>link</displayType>
-        <hasMenubar>false</hasMenubar>
-        <hasScrollbars>true</hasScrollbars>
-        <hasToolbar>false</hasToolbar>
-        <height>600</height>
-        <isResizable>true</isResizable>
-        <linkType>page</linkType>
-        <masterLabel>Select Theme</masterLabel>
-        <openType>newWindow</openType>
-        <page>SBQQ__ThemeLookup</page>
-        <position>none</position>
-        <protected>false</protected>
-        <showsLocation>false</showsLocation>
-        <showsStatus>false</showsStatus>
-    </webLinks>
     <webLinks>
         <fullName>ctu__Clone</fullName>
         <availability>online</availability>

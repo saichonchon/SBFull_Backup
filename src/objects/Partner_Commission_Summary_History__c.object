@@ -388,7 +388,7 @@ For BAP-3698 - Partner Commissions v2</description>
     <label>Partner Commission Summary History</label>
     <nameField>
         <displayFormat>PCM-{YYYY}{MM}{DD}-{0}</displayFormat>
-        <label>Partner Commission Summary History Number</label>
+        <label>Partner Commission Summary History Numbe</label>
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Partner Commission Summary Histories</pluralLabel>

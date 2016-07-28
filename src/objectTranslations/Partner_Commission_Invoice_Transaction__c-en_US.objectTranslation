@@ -52,6 +52,21 @@
         <relationshipLabel><!-- Partner Commission / Invoice Transaction --></relationshipLabel>
     </fields>
     <fields>
+        <help><!-- Indicates if the partner has supplied us with their PayPal id --></help>
+        <label><!-- Partner Has PayPal ID --></label>
+        <name>Partner_Has_PayPal_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates if the partner has provided a PayPal id and has become engaged by accepting the terms and conditions. --></help>
+        <label><!-- Partner Is Eligible for Payment --></label>
+        <name>Partner_Is_Eligible_for_Payment__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates if the partner is engaged and has accepted the terms and conditions.  If not, they are not eligible for payment. --></help>
+        <label><!-- Partner is Engaged --></label>
+        <name>Partner_is_Engaged__c</name>
+    </fields>
+    <fields>
         <help><!-- The date that the customer paid their invoice --></help>
         <label><!-- Payment Date --></label>
         <name>Payment_Date__c</name>

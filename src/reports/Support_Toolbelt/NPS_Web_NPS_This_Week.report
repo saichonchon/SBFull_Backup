@@ -91,19 +91,23 @@
         <field>Case.Feedback__c</field>
     </columns>
     <filter>
-        <booleanFilter>1 AND 2 AND 3</booleanFilter>
         <criteriaItems>
             <column>RECORDTYPE</column>
             <operator>equals</operator>
             <value>Case.Client_Success</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Case.Survey_Name__c</column>
-            <operator>contains</operator>
-            <value>Support NPS Next - Web</value>
+            <column>BucketField_49826452</column>
+            <operator>notEqual</operator>
+            <value></value>
         </criteriaItems>
         <criteriaItems>
-            <column>BucketField_49826452</column>
+            <column>Case.Survey_Name__c</column>
+            <operator>equals</operator>
+            <value>Resolution Email Survey</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>BucketField_19077171</column>
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>

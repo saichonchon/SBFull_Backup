@@ -482,12 +482,13 @@ FIND(&quot;Does this resolve your case?&quot;,HtmlBody)-(FIND(&quot;&gt;Proposed
             <operation>notEqual</operation>
             <value>Closed,Auto-Closed</value>
         </criteriaItems>
+        <criteriaItems>
+            <field>EmailMessage.Incoming</field>
+            <operation>notEqual</operation>
+            <value>True</value>
+        </criteriaItems>
         <triggerType>onCreateOnly</triggerType>
         <workflowTimeTriggers>
-            <actions>
-                <name>Case_Email_Log_Second_OCR_Response</name>
-                <type>FieldUpdate</type>
-            </actions>
             <timeLength>1</timeLength>
             <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
         </workflowTimeTriggers>
@@ -579,6 +580,7 @@ FIND(&quot;Does this resolve your case?&quot;,HtmlBody)-(FIND(&quot;&gt;Proposed
             <type>FieldUpdate</type>
         </actions>
         <active>true</active>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND (6 OR 7)</booleanFilter>
         <criteriaItems>
             <field>EmailMessage.FromAddress</field>
             <operation>notContain</operation>
@@ -603,6 +605,16 @@ FIND(&quot;Does this resolve your case?&quot;,HtmlBody)-(FIND(&quot;&gt;Proposed
             <field>Case.RecordTypeId</field>
             <operation>equals</operation>
             <value>Partner Support,Premium Account Services</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Origin</field>
+            <operation>notEqual</operation>
+            <value>Partner Deal Registration</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Subject</field>
+            <operation>notEqual</operation>
+            <value>New Deal Registration Received</value>
         </criteriaItems>
         <description>Reopens Premium Account Services/Partner Support Case when an email has been sent regarding a case that is already closed. Related to BAP-2964/BAP-3175.</description>
         <triggerType>onCreateOnly</triggerType>

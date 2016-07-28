@@ -14,7 +14,6 @@
     <customButtons>Add_SE</customButtons>
     <customButtons>Add_LDR</customButtons>
     <customButtons>Add_PAR</customButtons>
-    <customButtons>BuyerDeck_button</customButtons>
     <layoutSections>
         <customLabel>false</customLabel>
         <detailHeading>true</detailHeading>
@@ -473,6 +472,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>rvpe__DateAssignedToPartner__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Deal_Registration_Notes__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>

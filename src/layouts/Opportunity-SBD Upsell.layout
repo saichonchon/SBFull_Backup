@@ -94,19 +94,11 @@
                 <behavior>Edit</behavior>
                 <field>TrailingGMVCount__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Temperature__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>LeadSource</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Lead_Source_Detail__c</field>
+                <field>Temperature__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -140,15 +132,11 @@
         <customLabel>true</customLabel>
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
-        <label>MBA</label>
+        <label>Store Information</label>
         <layoutColumns>
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>MBA_Account_ID__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>MBASubscriptionID__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -287,7 +275,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h54000000EkkQ</masterLabel>
+        <masterLabel>00h1300000EM3Md</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

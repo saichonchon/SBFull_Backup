@@ -3,10 +3,11 @@
     <assignments>
         <profiles>
             <profile>Lead Development Rep</profile>
-            <profile>Sales Rep - Midmarket</profile>
+            <profile>Sales Rep</profile>
         </profiles>
         <users>
             <user>baldemar.zamora@bigcommerce.com</user>
+            <user>brian.miller@bigcommerce.com</user>
             <user>farah.tary@bigcommerce.com</user>
             <user>joe.maragoni@bigcommerce.com</user>
             <user>leonard.dingle@bigcommerce.com</user>

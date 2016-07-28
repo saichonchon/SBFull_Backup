@@ -251,9 +251,6 @@
             <quickActionName>zqu__NewTask</quickActionName>
         </quickActionListItems>
         <quickActionListItems>
-            <quickActionName>Case.Email</quickActionName>
-        </quickActionListItems>
-        <quickActionListItems>
             <quickActionName>FeedItem.ContentPost</quickActionName>
         </quickActionListItems>
         <quickActionListItems>

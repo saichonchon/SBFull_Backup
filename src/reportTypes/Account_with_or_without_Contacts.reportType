@@ -12,7 +12,7 @@
         <outerJoin>true</outerJoin>
         <relationship>Contacts</relationship>
     </join>
-    <label>Account with or without Contacts custom</label>
+    <label>zAccount with or without Contacts custom</label>
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>

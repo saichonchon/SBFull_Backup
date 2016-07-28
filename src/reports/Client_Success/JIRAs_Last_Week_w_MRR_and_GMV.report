@@ -5,6 +5,10 @@
         <field>FK_$Subscription__c.Lifetime_GMV__c</field>
     </columns>
     <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Active_MRR_Value_Opp__c</field>
+    </columns>
+    <columns>
         <field>OWNER</field>
     </columns>
     <columns>
@@ -27,10 +31,6 @@
     </columns>
     <columns>
         <field>CASE_NUMBER</field>
-    </columns>
-    <columns>
-        <aggregateTypes>Sum</aggregateTypes>
-        <field>Account.Active_MRR_Value__c</field>
     </columns>
     <filter>
         <criteriaItems>

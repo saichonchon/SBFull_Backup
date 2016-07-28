@@ -563,6 +563,15 @@
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>Big_Brand__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Big Brand?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Budget_Description__c</fullName>
         <externalId>false</externalId>
         <label>Budget Description</label>
@@ -663,43 +672,11 @@
         <label>Unqualified Reason</label>
         <picklist>
             <picklistValues>
-                <fullName>1 Lost to Competitor</fullName>
+                <fullName>Unable to Contact</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>2 Not Qualified</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Orion</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Poor In-Trial Client Success Experience</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Price</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>3 Product Feature/Functionality</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Risk of Migration Issues</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>4 Test Account</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Duplicate</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Could Not Contact</fullName>
+                <fullName>Not Interested</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -712,10 +689,6 @@
             </picklistValues>
             <picklistValues>
                 <fullName>Not Mature Enough/No Products/Too Small</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Unable to Contact</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -804,6 +777,10 @@
             </picklistValues>
             <picklistValues>
                 <fullName>Data Cleanup</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Unable to Contact Through Flow</fullName>
                 <default>false</default>
             </picklistValues>
             <sorted>false</sorted>
@@ -1430,7 +1407,7 @@ SUBSTITUTE(SUBSTITUTE(FirstName, &quot; &quot;, &quot;+&quot;), &quot;&amp;&quot
     </fields>
     <fields>
         <fullName>Deal_Registration_Notes__c</fullName>
-        <description>Used for the PRM Integration -- PRM writes to this field</description>
+        <description>BAP-3181 - Used for the PRM Integration -- PRM writes to this field</description>
         <externalId>false</externalId>
         <inlineHelpText>Used for the PRM Integration -- PRM writes to this field</inlineHelpText>
         <label>Deal Registration Notes</label>
@@ -1881,143 +1858,114 @@ SUBSTITUTE(SUBSTITUTE(FirstName, &quot; &quot;, &quot;+&quot;), &quot;&amp;&quot
             <picklistValues>
                 <fullName>1,3,4 Other</fullName>
                 <default>false</default>
-                <controllingFieldValues>1 Lost to Competitor</controllingFieldValues>
-                <controllingFieldValues>3 Product Feature/Functionality</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>1 GoDaddy</fullName>
                 <default>false</default>
-                <controllingFieldValues>1 Lost to Competitor</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>1 Magento</fullName>
                 <default>false</default>
-                <controllingFieldValues>1 Lost to Competitor</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>1 Shopify</fullName>
                 <default>false</default>
-                <controllingFieldValues>1 Lost to Competitor</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>1 Volusion</fullName>
                 <default>false</default>
-                <controllingFieldValues>1 Lost to Competitor</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>2 Accidental trial</fullName>
                 <default>false</default>
-                <controllingFieldValues>2 Not Qualified</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>2 No Pitch-Not Interested</fullName>
                 <default>false</default>
-                <controllingFieldValues>2 Not Qualified</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>2 No products</fullName>
                 <default>false</default>
-                <controllingFieldValues>2 Not Qualified</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>2 No time</fullName>
                 <default>false</default>
-                <controllingFieldValues>2 Not Qualified</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>3 100% Uptime Servers</fullName>
                 <default>false</default>
-                <controllingFieldValues>3 Product Feature/Functionality</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>3 Affiliate Marketing</fullName>
                 <default>false</default>
-                <controllingFieldValues>3 Product Feature/Functionality</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>3 Ease of Use/Simplification</fullName>
                 <default>false</default>
-                <controllingFieldValues>3 Product Feature/Functionality</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>3 Difficulty with Product Options</fullName>
                 <default>false</default>
-                <controllingFieldValues>3 Product Feature/Functionality</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>3 Importing review</fullName>
                 <default>false</default>
-                <controllingFieldValues>3 Product Feature/Functionality</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>3 Integration with Third Party tool</fullName>
                 <default>false</default>
-                <controllingFieldValues>3 Product Feature/Functionality</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>3 Inventory/Billing Management</fullName>
                 <default>false</default>
-                <controllingFieldValues>3 Product Feature/Functionality</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>3 Lack of Themes</fullName>
                 <default>false</default>
-                <controllingFieldValues>3 Product Feature/Functionality</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>3 Multi-Language Support</fullName>
                 <default>false</default>
-                <controllingFieldValues>3 Product Feature/Functionality</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>3 Multiple Store Back-End</fullName>
                 <default>false</default>
-                <controllingFieldValues>3 Product Feature/Functionality</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>3 Provisioning Error</fullName>
                 <default>false</default>
-                <controllingFieldValues>3 Product Feature/Functionality</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>3 Shipping</fullName>
                 <default>false</default>
-                <controllingFieldValues>3 Product Feature/Functionality</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>3 Unsupported Cart-Migration</fullName>
                 <default>false</default>
-                <controllingFieldValues>3 Product Feature/Functionality</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>4 Minor/Child Sign Up</fullName>
                 <default>false</default>
-                <controllingFieldValues>4 Test Account</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>4 Orion</fullName>
                 <default>false</default>
-                <controllingFieldValues>4 Test Account</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>4 Pre-Employment</fullName>
                 <default>false</default>
-                <controllingFieldValues>4 Test Account</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>4 School Project</fullName>
                 <default>false</default>
-                <controllingFieldValues>4 Test Account</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>4 Spam Lead</fullName>
                 <default>false</default>
-                <controllingFieldValues>4 Test Account</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>4 Test Account</fullName>
                 <default>false</default>
-                <controllingFieldValues>4 Test Account</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Lack of Sandbox</fullName>
@@ -2813,111 +2761,11 @@ Have a developer check implications before removing</description>
         <inlineHelpText>Native Salesforce field. No default set.</inlineHelpText>
         <picklist>
             <picklistValues>
-                <fullName>Phone / Queue</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Email / Ticket</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Chat</fullName>
+                <fullName>G2Crowd</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
                 <fullName>Campaign Import</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Partner</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Web Trial</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Web Form</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Webinar</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Hubspot</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>WebToLead</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>AYRM</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>EBQ DM</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>EBQ DM2</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>EBQ DM3</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Orion</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>IR Special Report 2014</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>GPN Campaign Import</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Event</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Enterprise Partner Lead</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Netline</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ACQ Hubspot Content</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ACQ Hubspot Demo Request</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>ACQ Demand Gen</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>PRE Hubspot Content</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>PRE Hubspot Demo Request</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>PRE Demand Gen</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>G2Crowd</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -2938,6 +2786,10 @@ Have a developer check implications before removing</description>
             </picklistValues>
             <picklistValues>
                 <fullName>Social Ads</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Blogs</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
@@ -3109,6 +2961,7 @@ Have a developer check implications before removing</description>
                 <fullName>Adam Seabrooke</fullName>
                 <default>false</default>
                 <controllingFieldValues>ACQ List Upload</controllingFieldValues>
+                <controllingFieldValues>Campaign Import</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Admarketplace</fullName>
@@ -3164,6 +3017,7 @@ Have a developer check implications before removing</description>
                 <fullName>Datanyze</fullName>
                 <default>false</default>
                 <controllingFieldValues>ACQ List Upload</controllingFieldValues>
+                <controllingFieldValues>Campaign Import</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Demandbase</fullName>
@@ -3189,6 +3043,7 @@ Have a developer check implications before removing</description>
                 <fullName>Event</fullName>
                 <default>false</default>
                 <controllingFieldValues>ACQ List Upload</controllingFieldValues>
+                <controllingFieldValues>Campaign Import</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Facebook</fullName>
@@ -3237,6 +3092,7 @@ Have a developer check implications before removing</description>
                 <fullName>Internet Retailer</fullName>
                 <default>false</default>
                 <controllingFieldValues>ACQ List Upload</controllingFieldValues>
+                <controllingFieldValues>Campaign Import</controllingFieldValues>
                 <controllingFieldValues>Display</controllingFieldValues>
                 <controllingFieldValues>Email Advertising</controllingFieldValues>
                 <controllingFieldValues>Print Ads</controllingFieldValues>
@@ -3272,6 +3128,7 @@ Have a developer check implications before removing</description>
                 <fullName>Netline</fullName>
                 <default>false</default>
                 <controllingFieldValues>ACQ List Upload</controllingFieldValues>
+                <controllingFieldValues>Campaign Import</controllingFieldValues>
             </picklistValues>
             <picklistValues>
                 <fullName>Partner</fullName>
@@ -3516,6 +3373,15 @@ IF(FIND(MID(Id,11,1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;)&gt;0,1,0)
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Manager_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Manager Notes</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
     </fields>
     <fields>
         <fullName>Marketing_Opt_In__c</fullName>
@@ -4494,7 +4360,7 @@ IF(FIND(MID(Id,11,1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;)&gt;0,1,0)
     <fields>
         <fullName>Sales_Rep_Notes__c</fullName>
         <externalId>false</externalId>
-        <label>Manager Notes</label>
+        <label>Sales Notes</label>
         <length>255</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -4636,6 +4502,16 @@ No = they were routed to the new pricing test page and will require a PDF doc fo
                 <fullName>Qualified</fullName>
                 <default>false</default>
                 <converted>true</converted>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Flow</fullName>
+                <default>false</default>
+                <converted>false</converted>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Demo Requested</fullName>
+                <default>false</default>
+                <converted>false</converted>
             </picklistValues>
             <sorted>false</sorted>
         </picklist>
@@ -6658,6 +6534,16 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
         <type>Picklist</type>
     </fields>
     <fields>
+        <fullName>n2de__Is_archived__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Is archived</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>n2de__Is_distributed__c</fullName>
         <defaultValue>false</defaultValue>
         <deprecated>false</deprecated>
@@ -6698,6 +6584,16 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>n2de__Last_archive_date__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Last archive date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
         <fullName>n2de__Last_distributed__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
@@ -6716,6 +6612,18 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>n2de__Source_queue__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Source queue</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>n2de__Time_to_action_mins__c</fullName>
@@ -7227,69 +7135,18 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
         </sharedTo>
     </listViews>
     <listViews>
-        <fullName>Acq_Ownership_Change_Requests</fullName>
-        <columns>Request_Ownership__c</columns>
-        <columns>Ownership_Change_Requestor__c</columns>
-        <columns>Ownership_Change_Request_Date__c</columns>
-        <columns>Ownership_Change_Reason__c</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>Stage__c</columns>
-        <columns>LEAD.STATE</columns>
-        <columns>Active_Trials__c</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>Request_Ownership__c</field>
-            <operation>equals</operation>
-            <value>1</value>
-        </filters>
-        <filters>
-            <field>CORE.USERS.FIRST_NAME</field>
-            <operation>equals</operation>
-            <value>Hassan,Jason,Patrick,James</value>
-        </filters>
-        <label>Acq Ownership Change Requests</label>
-        <sharedTo/>
-    </listViews>
-    <listViews>
-        <fullName>Acquisition_Central_Time_Zone</fullName>
-        <columns>LEAD.STATE</columns>
-        <columns>US_Time_Zone__c</columns>
-        <columns>Acquisition_Campaign__c</columns>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>Stage__c</columns>
-        <columns>LEAD.LAST_ACTIVITY</columns>
-        <columns>Expected_Plan__c</columns>
-        <columns>Projected_Value__c</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <filterScope>Mine</filterScope>
-        <filters>
-            <field>Stage__c</field>
-            <operation>notEqual</operation>
-            <value>Closed Lost</value>
-        </filters>
-        <filters>
-            <field>US_Time_Zone__c</field>
-            <operation>equals</operation>
-            <value>Central</value>
-        </filters>
-        <label>Acquisition : Central Time Zone</label>
-        <sharedTo/>
-    </listViews>
-    <listViews>
         <fullName>Acquisition_Miderprise</fullName>
         <columns>FULL_NAME</columns>
         <columns>LEAD.COMPANY</columns>
         <columns>LEAD.EMAIL</columns>
+        <columns>LEAD.URL</columns>
         <columns>LEAD.CREATED_DATE</columns>
         <columns>LEAD.STATUS</columns>
         <columns>Projected_Annual_Revenue__c</columns>
         <columns>CLEAN_STATUS</columns>
+        <columns>LEAD.LEAD_SOURCE</columns>
+        <columns>mkto2__Lead_Score__c</columns>
+        <columns>LEAD.ANNUAL_REVENUE</columns>
         <filterScope>Queue</filterScope>
         <label>Enterprise Lead Queue</label>
         <queue>Acquisition_Miderprise</queue>
@@ -7320,48 +7177,6 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
         </sharedTo>
     </listViews>
     <listViews>
-        <fullName>All_Leads_without_Trials</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>Stage__c</columns>
-        <columns>LEAD.STATE</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>LEAD.UNREAD</columns>
-        <columns>Time_Zone__c</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>Trial_Count__c</field>
-            <operation>lessThan</operation>
-            <value>1</value>
-        </filters>
-        <label>All Leads without Trials</label>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>All_Open_Leads</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.STATE</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.STATUS</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>LEAD.UNREAD</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>LEAD.EMAIL</field>
-            <operation>contains</operation>
-            <value>bigcommerce</value>
-        </filters>
-        <label>All Open BC Test Leads</label>
-        <sharedTo/>
-    </listViews>
-    <listViews>
         <fullName>Bad_Contact_Info_Lead_Queue_Lead</fullName>
         <filterScope>Queue</filterScope>
         <label>Bad Contact Info Lead Queue</label>
@@ -7369,198 +7184,6 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>CD_Closed_Lost_US_CA_Competitor</fullName>
-        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 and 6 and 7 and 8 and 9</booleanFilter>
-        <columns>Hubspot_Score__c</columns>
-        <columns>Experience__c</columns>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.COUNTRY</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.STATUS</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>LEAD.UNREAD</columns>
-        <columns>Trial_Count__c</columns>
-        <columns>Owner_Team__c</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>MBAAccountID__c</field>
-            <operation>notEqual</operation>
-        </filters>
-        <filters>
-            <field>Owner_Team__c</field>
-            <operation>contains</operation>
-            <value>direct sales</value>
-        </filters>
-        <filters>
-            <field>Bad_Phone_Number__c</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <filters>
-            <field>LEAD.COUNTRY</field>
-            <operation>equals</operation>
-            <value>US,CA</value>
-        </filters>
-        <filters>
-            <field>Experience__c</field>
-            <operation>equals</operation>
-            <value>Switching from a Competitor</value>
-        </filters>
-        <filters>
-            <field>LEAD.CREATED_DATE</field>
-            <operation>greaterOrEqual</operation>
-            <value>10/1/2013 12:00 AM</value>
-        </filters>
-        <filters>
-            <field>LEAD.CREATED_DATE</field>
-            <operation>lessOrEqual</operation>
-            <value>1/22/2014 12:00 AM</value>
-        </filters>
-        <filters>
-            <field>Stage__c</field>
-            <operation>equals</operation>
-            <value>Un-Engaged,Engaged</value>
-        </filters>
-        <filters>
-            <field>LEAD.LAST_ACTIVITY</field>
-            <operation>greaterOrEqual</operation>
-            <value>1/1/2014</value>
-        </filters>
-        <label>CD: Closed/Lost US,CA Competitor</label>
-        <sharedTo/>
-    </listViews>
-    <listViews>
-        <fullName>CD_Closed_Lost_US_CA_New</fullName>
-        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 and 6 and 7 and 8 and 9</booleanFilter>
-        <columns>Hubspot_Score__c</columns>
-        <columns>Experience__c</columns>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.COUNTRY</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.STATUS</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>LEAD.UNREAD</columns>
-        <columns>Trial_Count__c</columns>
-        <columns>Owner_Team__c</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>MBAAccountID__c</field>
-            <operation>notEqual</operation>
-        </filters>
-        <filters>
-            <field>Owner_Team__c</field>
-            <operation>contains</operation>
-            <value>direct sales</value>
-        </filters>
-        <filters>
-            <field>Bad_Phone_Number__c</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <filters>
-            <field>LEAD.COUNTRY</field>
-            <operation>equals</operation>
-            <value>US,CA</value>
-        </filters>
-        <filters>
-            <field>Experience__c</field>
-            <operation>equals</operation>
-            <value>New to eCommerce</value>
-        </filters>
-        <filters>
-            <field>LEAD.CREATED_DATE</field>
-            <operation>greaterOrEqual</operation>
-            <value>10/1/2013 12:00 AM</value>
-        </filters>
-        <filters>
-            <field>LEAD.CREATED_DATE</field>
-            <operation>lessOrEqual</operation>
-            <value>1/22/2014 12:00 AM</value>
-        </filters>
-        <filters>
-            <field>Stage__c</field>
-            <operation>equals</operation>
-            <value>Un-Engaged,Engaged</value>
-        </filters>
-        <filters>
-            <field>LEAD.LAST_ACTIVITY</field>
-            <operation>greaterOrEqual</operation>
-            <value>1/1/2014</value>
-        </filters>
-        <label>CD: Closed/Lost US,CA New</label>
-        <sharedTo/>
-    </listViews>
-    <listViews>
-        <fullName>CD_Closed_Lost_US_CA_eCommerce</fullName>
-        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 and 6 and 7 and 8 and 9</booleanFilter>
-        <columns>Hubspot_Score__c</columns>
-        <columns>Experience__c</columns>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.COUNTRY</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.STATUS</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>LEAD.UNREAD</columns>
-        <columns>Trial_Count__c</columns>
-        <columns>Owner_Team__c</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>MBAAccountID__c</field>
-            <operation>notEqual</operation>
-        </filters>
-        <filters>
-            <field>Owner_Team__c</field>
-            <operation>contains</operation>
-            <value>direct sales</value>
-        </filters>
-        <filters>
-            <field>Bad_Phone_Number__c</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <filters>
-            <field>LEAD.COUNTRY</field>
-            <operation>equals</operation>
-            <value>US,CA</value>
-        </filters>
-        <filters>
-            <field>Experience__c</field>
-            <operation>equals</operation>
-            <value>Experienced with eCommerce</value>
-        </filters>
-        <filters>
-            <field>LEAD.CREATED_DATE</field>
-            <operation>greaterOrEqual</operation>
-            <value>10/1/2013 12:00 AM</value>
-        </filters>
-        <filters>
-            <field>LEAD.CREATED_DATE</field>
-            <operation>lessOrEqual</operation>
-            <value>1/22/2014 12:00 AM</value>
-        </filters>
-        <filters>
-            <field>Stage__c</field>
-            <operation>equals</operation>
-            <value>Un-Engaged,Engaged</value>
-        </filters>
-        <filters>
-            <field>LEAD.LAST_ACTIVITY</field>
-            <operation>greaterOrEqual</operation>
-            <value>1/1/2014</value>
-        </filters>
-        <label>CD: Closed/Lost US,CA eCommerce</label>
-        <sharedTo/>
     </listViews>
     <listViews>
         <fullName>Chat_Queue_Sales</fullName>
@@ -7575,13 +7198,12 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
         <fullName>Contact_form_leads</fullName>
         <columns>FULL_NAME</columns>
         <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.STATE</columns>
         <columns>LEAD.EMAIL</columns>
         <columns>LEAD.STATUS</columns>
         <columns>LEAD.CREATED_DATE</columns>
         <columns>CORE.USERS.ALIAS</columns>
-        <columns>LEAD.UNREAD</columns>
         <columns>LEAD.LEAD_SOURCE</columns>
+        <columns>CLEAN_STATUS</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>LEAD.LEAD_SOURCE</field>
@@ -7596,777 +7218,6 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
         </sharedTo>
     </listViews>
     <listViews>
-        <fullName>Designer_Queue</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>LEAD.LEAD_SOURCE</columns>
-        <columns>LEAD.COUNTRY</columns>
-        <columns>PARTNER.NAME</columns>
-        <columns>CORE.USERS.FIRST_NAME</columns>
-        <columns>CORE.USERS.LAST_NAME</columns>
-        <filterScope>Queue</filterScope>
-        <label>Designer Queue</label>
-        <queue>Designer_Queue</queue>
-        <sharedTo/>
-    </listViews>
-    <listViews>
-        <fullName>Direct_Bad_number_with_Domain_email</fullName>
-        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 and 6</booleanFilter>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>LEAD.STATE</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.URL</columns>
-        <columns>LEAD.STATUS</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>LEAD.UNREAD</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>LEAD.EMAIL</field>
-            <operation>notContain</operation>
-            <value>@bigcommerce,@gmail,@yahoo,@msn,@mac,@mail,@aol,@live,@rocketmail,@ymail,@icloud</value>
-        </filters>
-        <filters>
-            <field>Day_of_Trial__c</field>
-            <operation>greaterThan</operation>
-            <value>3</value>
-        </filters>
-        <filters>
-            <field>LEAD.COUNTRY</field>
-            <operation>equals</operation>
-            <value>US,CA,UK,IE,ZA,GB</value>
-        </filters>
-        <filters>
-            <field>Stage__c</field>
-            <operation>equals</operation>
-            <value>New</value>
-        </filters>
-        <filters>
-            <field>CORE.USERS.ALIAS</field>
-            <operation>equals</operation>
-            <value>markmeg</value>
-        </filters>
-        <filters>
-            <field>Day_of_Trial__c</field>
-            <operation>lessThan</operation>
-            <value>30</value>
-        </filters>
-        <label>Direct: Bad number with Domain email</label>
-        <sharedTo>
-            <role>Outbound_II_Leader</role>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>Direct_Day_15_Trial_Leads</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>Stage__c</columns>
-        <columns>Day_of_Trial__c</columns>
-        <columns>LEAD.COUNTRY</columns>
-        <columns>Bad_Email__c</columns>
-        <columns>Bad_Phone_Number__c</columns>
-        <columns>Closed_Lost_Reason__c</columns>
-        <columns>Trial_Count__c</columns>
-        <columns>Lead_Age__c</columns>
-        <columns>Trial_Start_Date__c</columns>
-        <columns>Trial_Expiration_Date__c</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <filterScope>Mine</filterScope>
-        <filters>
-            <field>LEAD.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Lead.Client_Prospect</value>
-        </filters>
-        <filters>
-            <field>Day_of_Trial__c</field>
-            <operation>equals</operation>
-            <value>15</value>
-        </filters>
-        <filters>
-            <field>Bad_Email__c</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <filters>
-            <field>Non_English_Speaking__c</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <label>Direct: Day 15 Trial Leads</label>
-        <sharedTo/>
-    </listViews>
-    <listViews>
-        <fullName>Direct_Day_17_Trial_Leads</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>Stage__c</columns>
-        <columns>Day_of_Trial__c</columns>
-        <columns>Trial_Count__c</columns>
-        <columns>Lead_Age__c</columns>
-        <columns>Trial_Start_Date__c</columns>
-        <columns>Trial_Expiration_Date__c</columns>
-        <columns>LEAD.COUNTRY</columns>
-        <columns>Bad_Email__c</columns>
-        <columns>Bad_Phone_Number__c</columns>
-        <columns>Closed_Lost_Reason__c</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <filterScope>Mine</filterScope>
-        <filters>
-            <field>LEAD.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Lead.Client_Prospect</value>
-        </filters>
-        <filters>
-            <field>Day_of_Trial__c</field>
-            <operation>equals</operation>
-            <value>7</value>
-        </filters>
-        <filters>
-            <field>Bad_Email__c</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <filters>
-            <field>Non_English_Speaking__c</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <label>Direct: Day 7 Trial Leads</label>
-        <sharedTo/>
-    </listViews>
-    <listViews>
-        <fullName>Direct_Day_1_3_Trial_Leads</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>Stage__c</columns>
-        <columns>Day_of_Trial__c</columns>
-        <columns>LEAD.COUNTRY</columns>
-        <columns>Bad_Email__c</columns>
-        <columns>Bad_Phone_Number__c</columns>
-        <columns>Closed_Lost_Reason__c</columns>
-        <columns>Trial_Count__c</columns>
-        <columns>Lead_Age__c</columns>
-        <columns>Trial_Start_Date__c</columns>
-        <columns>Trial_Expiration_Date__c</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <filterScope>Mine</filterScope>
-        <filters>
-            <field>LEAD.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Lead.Client_Prospect</value>
-        </filters>
-        <filters>
-            <field>Day_of_Trial__c</field>
-            <operation>equals</operation>
-            <value>0,1,2,3</value>
-        </filters>
-        <filters>
-            <field>Bad_Email__c</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <filters>
-            <field>Non_English_Speaking__c</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <label>Direct: Day 1-3 Trial Leads</label>
-        <sharedTo/>
-    </listViews>
-    <listViews>
-        <fullName>Direct_Day_Trial_Leads</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>Stage__c</columns>
-        <columns>Day_of_Trial__c</columns>
-        <columns>LEAD.COUNTRY</columns>
-        <columns>Bad_Email__c</columns>
-        <columns>Bad_Phone_Number__c</columns>
-        <columns>Closed_Lost_Reason__c</columns>
-        <columns>Trial_Count__c</columns>
-        <columns>Lead_Age__c</columns>
-        <columns>Trial_Start_Date__c</columns>
-        <columns>Trial_Expiration_Date__c</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>LEAD.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Lead.Client_Prospect</value>
-        </filters>
-        <filters>
-            <field>Day_of_Trial__c</field>
-            <operation>equals</operation>
-            <value>0,1,2,3</value>
-        </filters>
-        <filters>
-            <field>Bad_Email__c</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <filters>
-            <field>Non_English_Speaking__c</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <label>mf Direct: Day 1-3 Trial Leads</label>
-        <sharedTo/>
-    </listViews>
-    <listViews>
-        <fullName>Direct_Hubspot_Score_Increase</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>Stage__c</columns>
-        <columns>Day_of_Trial__c</columns>
-        <columns>Hubspot_Score_Difference__c</columns>
-        <columns>Hubspot_Score__c</columns>
-        <columns>Initial_Hubspot_Score__c</columns>
-        <columns>LEAD.COUNTRY</columns>
-        <columns>Lead_Age__c</columns>
-        <columns>Trial_Start_Date__c</columns>
-        <columns>Trial_Expiration_Date__c</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>Trial_Count__c</columns>
-        <filterScope>Mine</filterScope>
-        <filters>
-            <field>LEAD.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Lead.Client_Prospect</value>
-        </filters>
-        <filters>
-            <field>Trial_Expiration_Date__c</field>
-            <operation>greaterOrEqual</operation>
-            <value>TODAY</value>
-        </filters>
-        <filters>
-            <field>Hubspot_Score_Difference__c</field>
-            <operation>greaterOrEqual</operation>
-            <value>1</value>
-        </filters>
-        <label>Direct: Hubspot Score Increase</label>
-        <sharedTo/>
-    </listViews>
-    <listViews>
-        <fullName>Direct_New_Existing_New_Trial_Leads</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>Trial_Start_Date__c</columns>
-        <columns>Trial_Count__c</columns>
-        <columns>Active_Trials__c</columns>
-        <columns>Lead_Age__c</columns>
-        <columns>LEAD.COUNTRY</columns>
-        <columns>Hubspot_Score__c</columns>
-        <columns>Stage__c</columns>
-        <columns>Type__c</columns>
-        <columns>Experience__c</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <filterScope>Mine</filterScope>
-        <filters>
-            <field>Stage__c</field>
-            <operation>equals</operation>
-            <value>New,Existing: New Trial</value>
-        </filters>
-        <filters>
-            <field>LEAD.CREATED_DATE</field>
-            <operation>greaterThan</operation>
-            <value>9/1/2012 12:00 AM</value>
-        </filters>
-        <filters>
-            <field>LEAD.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Lead.Client_Prospect</value>
-        </filters>
-        <label>Direct: New/Existing: New Trial Leads</label>
-        <sharedTo/>
-    </listViews>
-    <listViews>
-        <fullName>Direct_Pricing_Test</fullName>
-        <booleanFilter>1 AND (2 OR 3) AND 4 AND 5</booleanFilter>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>Stage__c</columns>
-        <columns>Day_of_Trial__c</columns>
-        <columns>LEAD.COUNTRY</columns>
-        <columns>Seen_Pricing__c</columns>
-        <columns>Opened_Pricing_PDF__c</columns>
-        <columns>Bad_Email__c</columns>
-        <columns>Bad_Phone_Number__c</columns>
-        <columns>Trial_Count__c</columns>
-        <columns>Trial_Start_Date__c</columns>
-        <columns>Trial_Expiration_Date__c</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <filterScope>Mine</filterScope>
-        <filters>
-            <field>LEAD.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Lead.Client_Prospect</value>
-        </filters>
-        <filters>
-            <field>Seen_Pricing__c</field>
-            <operation>equals</operation>
-            <value>No</value>
-        </filters>
-        <filters>
-            <field>Opened_Pricing_PDF__c</field>
-            <operation>equals</operation>
-            <value>1</value>
-        </filters>
-        <filters>
-            <field>Trial_Expiration_Date__c</field>
-            <operation>greaterOrEqual</operation>
-            <value>TODAY</value>
-        </filters>
-        <filters>
-            <field>Trial_Start_Date__c</field>
-            <operation>greaterOrEqual</operation>
-            <value>9/23/2013</value>
-        </filters>
-        <label>Direct: Pricing Test</label>
-        <sharedTo/>
-    </listViews>
-    <listViews>
-        <fullName>Direct_Up_New_ExistingLeads</fullName>
-        <columns>Owner_Team__c</columns>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>Trial_Start_Date__c</columns>
-        <columns>Trial_Count__c</columns>
-        <columns>Active_Trials__c</columns>
-        <columns>Lead_Age__c</columns>
-        <columns>LEAD.COUNTRY</columns>
-        <columns>Hubspot_Score__c</columns>
-        <columns>Stage__c</columns>
-        <columns>Type__c</columns>
-        <columns>Experience__c</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <filterScope>Mine</filterScope>
-        <filters>
-            <field>Stage__c</field>
-            <operation>equals</operation>
-            <value>New,Existing: New Trial</value>
-        </filters>
-        <filters>
-            <field>LEAD.CREATED_DATE</field>
-            <operation>greaterThan</operation>
-            <value>9/1/2012 12:00 AM</value>
-        </filters>
-        <filters>
-            <field>LEAD.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Lead.Client_Prospect</value>
-        </filters>
-        <filters>
-            <field>Owner_Team__c</field>
-            <operation>contains</operation>
-            <value>direct</value>
-        </filters>
-        <label>Direct Upsell: New/ExistingLeads</label>
-        <sharedTo/>
-    </listViews>
-    <listViews>
-        <fullName>EBQ_Leads</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.STATE</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.STATUS</columns>
-        <filterScope>Mine</filterScope>
-        <filters>
-            <field>LEAD.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Lead.Client_Prospect</value>
-        </filters>
-        <label>EBQ Leads</label>
-        <sharedTo/>
-    </listViews>
-    <listViews>
-        <fullName>Elisabeth_s_Leads1</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.STATE</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.STATUS</columns>
-        <columns>LEAD.LAST_ACTIVITY</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>LEAD.URL</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>CORE.USERS.ALIAS</field>
-            <operation>contains</operation>
-            <value>elisabet</value>
-        </filters>
-        <filters>
-            <field>LEAD.STATUS</field>
-            <operation>notEqual</operation>
-            <value>Unqualified,Qualified</value>
-        </filters>
-        <label>Elisabeth&apos;s Leads</label>
-    </listViews>
-    <listViews>
-        <fullName>Existing_Trials</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.STATE</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.STATUS</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>Trial_Count__c</columns>
-        <columns>Trial_Start_Date__c</columns>
-        <columns>Trial_Store_URL__c</columns>
-        <columns>Active_Trials__c</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>LEAD.UNREAD</columns>
-        <filterScope>Mine</filterScope>
-        <filters>
-            <field>Active_Trials__c</field>
-            <operation>greaterThan</operation>
-            <value>0</value>
-        </filters>
-        <filters>
-            <field>Stage__c</field>
-            <operation>notEqual</operation>
-            <value>Closed Lost</value>
-        </filters>
-        <filters>
-            <field>LEAD.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Lead.Client_Prospect</value>
-        </filters>
-        <filters>
-            <field>Trial_Expiration_Date__c</field>
-            <operation>greaterThan</operation>
-            <value>TODAY</value>
-        </filters>
-        <label>Existing Trials</label>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>Hubspot_Owner</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>Type__c</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>Trial_Count__c</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>CREATEDBY_USER.ALIAS</columns>
-        <columns>Lead_Unique_ID__c</columns>
-        <columns>MBAAccountID__c</columns>
-        <columns>Testing_Lead__c</columns>
-        <columns>LEAD.COUNTRY</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>CORE.USERS.LAST_NAME</field>
-            <operation>equals</operation>
-            <value>Hubspot</value>
-        </filters>
-        <filters>
-            <field>LEAD.EMAIL</field>
-            <operation>notContain</operation>
-            <value>bigcommerce</value>
-        </filters>
-        <label>Hubspot Owner</label>
-        <sharedTo/>
-    </listViews>
-    <listViews>
-        <fullName>International_New</fullName>
-        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 and 6 and 7 and 8</booleanFilter>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>LEAD.COUNTRY</columns>
-        <columns>Stage__c</columns>
-        <columns>Day_of_Trial__c</columns>
-        <columns>Experience__c</columns>
-        <columns>LEAD.STATE</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.STATUS</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>LEAD.UNREAD</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>Stage__c</field>
-            <operation>equals</operation>
-            <value>New,Existing: New Trial</value>
-        </filters>
-        <filters>
-            <field>Day_of_Trial__c</field>
-            <operation>lessThan</operation>
-            <value>15</value>
-        </filters>
-        <filters>
-            <field>CORE.USERS.ALIAS</field>
-            <operation>equals</operation>
-            <value>markmeg</value>
-        </filters>
-        <filters>
-            <field>LEAD.COUNTRY</field>
-            <operation>notEqual</operation>
-            <value>N,US,CA,AU,NZ,United States,Canada,Australia,New Zealand</value>
-        </filters>
-        <filters>
-            <field>Bad_Phone_Number__c</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <filters>
-            <field>LEAD.DO_NOT_CALL</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <filters>
-            <field>Non_English_Speaking__c</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <filters>
-            <field>Experience__c</field>
-            <operation>notEqual</operation>
-            <value>A Web Designer/Developer,I&apos;m setting up a store for a client</value>
-        </filters>
-        <label>International New</label>
-        <sharedTo/>
-    </listViews>
-    <listViews>
-        <fullName>International_SG_PH_MY_New</fullName>
-        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 and 6 and 7 and 8</booleanFilter>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.COUNTRY</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>Stage__c</columns>
-        <columns>Day_of_Trial__c</columns>
-        <columns>Experience__c</columns>
-        <columns>LEAD.STATE</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.STATUS</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>LEAD.UNREAD</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>Stage__c</field>
-            <operation>equals</operation>
-            <value>New,Existing: New Trial</value>
-        </filters>
-        <filters>
-            <field>Day_of_Trial__c</field>
-            <operation>lessThan</operation>
-            <value>15</value>
-        </filters>
-        <filters>
-            <field>CORE.USERS.ALIAS</field>
-            <operation>equals</operation>
-            <value>markmeg</value>
-        </filters>
-        <filters>
-            <field>LEAD.COUNTRY</field>
-            <operation>equals</operation>
-            <value>SG,PH,MY</value>
-        </filters>
-        <filters>
-            <field>Bad_Phone_Number__c</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <filters>
-            <field>LEAD.DO_NOT_CALL</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <filters>
-            <field>Non_English_Speaking__c</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <filters>
-            <field>Experience__c</field>
-            <operation>notEqual</operation>
-            <value>A Web Designer/Developer,I&apos;m setting up a store for a client</value>
-        </filters>
-        <label>International SG/PH/MY New</label>
-        <sharedTo/>
-    </listViews>
-    <listViews>
-        <fullName>International_UK_IE_NG_New</fullName>
-        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 and 6 and 7 and 8</booleanFilter>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>LEAD.COUNTRY</columns>
-        <columns>Stage__c</columns>
-        <columns>Day_of_Trial__c</columns>
-        <columns>Experience__c</columns>
-        <columns>LEAD.STATE</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.STATUS</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>LEAD.UNREAD</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>Stage__c</field>
-            <operation>equals</operation>
-            <value>New,Existing: New Trial</value>
-        </filters>
-        <filters>
-            <field>Day_of_Trial__c</field>
-            <operation>lessThan</operation>
-            <value>15</value>
-        </filters>
-        <filters>
-            <field>CORE.USERS.ALIAS</field>
-            <operation>equals</operation>
-            <value>markmeg</value>
-        </filters>
-        <filters>
-            <field>LEAD.COUNTRY</field>
-            <operation>equals</operation>
-            <value>NG,UK,GB,IE,United Kingdom,Ireland</value>
-        </filters>
-        <filters>
-            <field>Bad_Phone_Number__c</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <filters>
-            <field>LEAD.DO_NOT_CALL</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <filters>
-            <field>Non_English_Speaking__c</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <filters>
-            <field>Experience__c</field>
-            <operation>notEqual</operation>
-            <value>A Web Designer/Developer,I&apos;m setting up a store for a client</value>
-        </filters>
-        <label>International UK/IE/NG New</label>
-        <sharedTo/>
-    </listViews>
-    <listViews>
-        <fullName>International_ZA_New</fullName>
-        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 and 6 and 7 and 8</booleanFilter>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>LEAD.COUNTRY</columns>
-        <columns>Stage__c</columns>
-        <columns>Day_of_Trial__c</columns>
-        <columns>Experience__c</columns>
-        <columns>LEAD.STATE</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.STATUS</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>LEAD.UNREAD</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>Stage__c</field>
-            <operation>equals</operation>
-            <value>New,Existing: New Trial</value>
-        </filters>
-        <filters>
-            <field>Day_of_Trial__c</field>
-            <operation>lessThan</operation>
-            <value>15</value>
-        </filters>
-        <filters>
-            <field>CORE.USERS.ALIAS</field>
-            <operation>equals</operation>
-            <value>markmeg</value>
-        </filters>
-        <filters>
-            <field>LEAD.COUNTRY</field>
-            <operation>equals</operation>
-            <value>ZA</value>
-        </filters>
-        <filters>
-            <field>Bad_Phone_Number__c</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <filters>
-            <field>LEAD.DO_NOT_CALL</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <filters>
-            <field>Non_English_Speaking__c</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <filters>
-            <field>Experience__c</field>
-            <operation>notEqual</operation>
-            <value>A Web Designer/Developer,I&apos;m setting up a store for a client</value>
-        </filters>
-        <label>International ZA New</label>
-        <sharedTo/>
-    </listViews>
-    <listViews>
-        <fullName>Jason_Svatek_leads</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.STATE</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.STATUS</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>LEAD.UNREAD</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>CORE.USERS.LAST_NAME</field>
-            <operation>contains</operation>
-            <value>taber</value>
-        </filters>
-        <label>Jason Svatek leads</label>
-        <sharedTo>
-            <role>SystemAdministrator</role>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>Lead_dedupling</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.STATE</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.STATUS</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>LEAD.UNREAD</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>LEAD.COMPANY</field>
-            <operation>contains</operation>
-            <value>blu dot</value>
-        </filters>
-        <label>Lead deduping</label>
-        <sharedTo>
-            <group>Managers</group>
-        </sharedTo>
-    </listViews>
-    <listViews>
         <fullName>Leads_No_Contact_Made_Lead</fullName>
         <filterScope>Queue</filterScope>
         <label>Leads - No Contact Made Queue</label>
@@ -8374,75 +7225,6 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>Magento_Enterprise_10_23</fullName>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.FIRST_NAME</columns>
-        <columns>LEAD.LAST_NAME</columns>
-        <columns>LEAD.TITLE</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>LEAD.URL</columns>
-        <columns>Datanyze_Industry__c</columns>
-        <columns>Datanyze_Revenue__c</columns>
-        <columns>Datanyze_Alexa_rank__c</columns>
-        <columns>Datanyze_Platform__c</columns>
-        <columns>LEAD.STATUS</columns>
-        <filterScope>Mine</filterScope>
-        <filters>
-            <field>LEAD.STATUS</field>
-            <operation>notEqual</operation>
-            <value>Contacted,Unqualified,Qualified</value>
-        </filters>
-        <label>Magento Enterprise 10-23 D5</label>
-        <sharedTo>
-            <roleAndSubordinatesInternal>Head_of_Sales</roleAndSubordinatesInternal>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>Magento_Enterprise_10_23_D4</fullName>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.FIRST_NAME</columns>
-        <columns>LEAD.LAST_NAME</columns>
-        <columns>LEAD.TITLE</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>LEAD.URL</columns>
-        <columns>Datanyze_Industry__c</columns>
-        <columns>Datanyze_Revenue__c</columns>
-        <columns>Datanyze_Alexa_rank__c</columns>
-        <columns>Datanyze_Platform__c</columns>
-        <columns>LEAD.STATUS</columns>
-        <filterScope>Mine</filterScope>
-        <filters>
-            <field>LEAD.STATUS</field>
-            <operation>notEqual</operation>
-            <value>Contacted,Unqualified,Qualified</value>
-        </filters>
-        <label>Magento Enterprise 10-23 D4</label>
-        <sharedTo>
-            <roleAndSubordinatesInternal>Head_of_Sales</roleAndSubordinatesInternal>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>Marketing_GSB</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>Active_Trials__c</columns>
-        <columns>Hubspot_Score__c</columns>
-        <columns>Marketing_Promotion__c</columns>
-        <columns>Stage__c</columns>
-        <filterScope>Queue</filterScope>
-        <filters>
-            <field>Testing_Lead__c</field>
-            <operation>equals</operation>
-            <value>0</value>
-        </filters>
-        <label>Marketing - GSB Queue</label>
-        <queue>Marketing_GSB</queue>
-        <sharedTo/>
     </listViews>
     <listViews>
         <fullName>My_Leads</fullName>
@@ -8456,102 +7238,6 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
         <columns>LEAD.UNREAD</columns>
         <filterScope>Mine</filterScope>
         <label>My Leads</label>
-    </listViews>
-    <listViews>
-        <fullName>My_Leads_Expiring_in_the_Next_3_Days</fullName>
-        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>Stage__c</columns>
-        <columns>Trial_Count__c</columns>
-        <columns>Active_Trials__c</columns>
-        <columns>Trial_Start_Date__c</columns>
-        <columns>Trial_Expiration_Date__c</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>LEAD.LAST_ACTIVITY</columns>
-        <filterScope>Mine</filterScope>
-        <filters>
-            <field>LEAD.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Lead.Client_Prospect</value>
-        </filters>
-        <filters>
-            <field>Trial_Expiration_Date__c</field>
-            <operation>equals</operation>
-            <value>NEXT_N_DAYS:3</value>
-        </filters>
-        <filters>
-            <field>Trial_Expiration_Date__c</field>
-            <operation>equals</operation>
-            <value>TODAY</value>
-        </filters>
-        <label>My Leads Expiring in the Next 3 Days</label>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>My_Leads_without_Trials</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>Stage__c</columns>
-        <columns>LEAD.STATE</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>LEAD.UNREAD</columns>
-        <filterScope>Mine</filterScope>
-        <filters>
-            <field>LEAD.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>012a0000001NVUC</value>
-        </filters>
-        <filters>
-            <field>Trial_Count__c</field>
-            <operation>lessThan</operation>
-            <value>1</value>
-        </filters>
-        <label>My Leads without Trials</label>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>My_Open_Trial_Leads</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>Active_Trials__c</columns>
-        <columns>Stage__c</columns>
-        <columns>LEAD.STATE</columns>
-        <columns>Trial_Start_Date__c</columns>
-        <columns>Trial_Expiration_Date__c</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>LEAD.UNREAD</columns>
-        <filterScope>Mine</filterScope>
-        <filters>
-            <field>LEAD.RECORDTYPE</field>
-            <operation>equals</operation>
-            <value>Lead.Client_Prospect</value>
-        </filters>
-        <filters>
-            <field>Trial_Expiration_Date__c</field>
-            <operation>greaterThan</operation>
-            <value>TODAY</value>
-        </filters>
-        <filters>
-            <field>Stage__c</field>
-            <operation>notEqual</operation>
-            <value>Closed Lost</value>
-        </filters>
-        <label>My Open Trial Leads</label>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
     </listViews>
     <listViews>
         <fullName>Partner_Record_Leads</fullName>
@@ -8628,78 +7314,6 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
         </sharedTo>
     </listViews>
     <listViews>
-        <fullName>SG_HK_ZA_ES_NZ_AUS_Leads_Sales</fullName>
-        <booleanFilter>1 AND 2 AND 3 AND 4 AND ( 5 OR 6 OR 7 OR 8 OR 9 OR 10)</booleanFilter>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.EMAIL</columns>
-        <columns>LEAD.STATUS</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>Stage__c</columns>
-        <columns>LEAD.COUNTRY</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>LEAD.UNREAD</columns>
-        <columns>CORE.USERS.FIRST_NAME</columns>
-        <columns>CORE.USERS.LAST_NAME</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>CORE.USERS.ALIAS</field>
-            <operation>equals</operation>
-            <value>markmeg</value>
-        </filters>
-        <filters>
-            <field>Experience__c</field>
-            <operation>notEqual</operation>
-            <value>A Web Designer/Developer,I&apos;m setting up a store for a client</value>
-        </filters>
-        <filters>
-            <field>LEAD.EMAIL</field>
-            <operation>notContain</operation>
-            <value>bigcommerce</value>
-        </filters>
-        <filters>
-            <field>LEAD.CREATED_DATE</field>
-            <operation>equals</operation>
-            <value>LAST_N_DAYS:120</value>
-        </filters>
-        <filters>
-            <field>LEAD.COUNTRY</field>
-            <operation>contains</operation>
-            <value>Australia,New Zealand,Singapore,Hong Kong,HK,South Africa,Spain</value>
-        </filters>
-        <filters>
-            <field>LEAD.COUNTRY</field>
-            <operation>equals</operation>
-            <value>AU</value>
-        </filters>
-        <filters>
-            <field>LEAD.COUNTRY</field>
-            <operation>equals</operation>
-            <value>NZ</value>
-        </filters>
-        <filters>
-            <field>LEAD.COUNTRY</field>
-            <operation>equals</operation>
-            <value>SG</value>
-        </filters>
-        <filters>
-            <field>LEAD.COUNTRY</field>
-            <operation>equals</operation>
-            <value>ES</value>
-        </filters>
-        <filters>
-            <field>LEAD.COUNTRY</field>
-            <operation>equals</operation>
-            <value>ZA</value>
-        </filters>
-        <label>SG, HK, ZA, ES, NZ, AUS Leads Sales</label>
-        <sharedTo>
-            <role>Outbound_Sales_II</role>
-            <role>SystemAdministrator</role>
-        </sharedTo>
-    </listViews>
-    <listViews>
         <fullName>SG_HK_ZA_ES_NZ_AU_Leads_Partner</fullName>
         <columns>FULL_NAME</columns>
         <columns>LEAD.COMPANY</columns>
@@ -8739,26 +7353,6 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
             <role>Partner_Sales</role>
             <role>SystemAdministrator</role>
         </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>Switching_From_Competitor</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>LEAD.STATUS</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>Experience__c</field>
-            <operation>equals</operation>
-            <value>Switching from a Competitor</value>
-        </filters>
-        <filters>
-            <field>LEAD.CREATED_DATE</field>
-            <operation>equals</operation>
-            <value>TODAY</value>
-        </filters>
-        <label>Switching From Competitor</label>
-        <sharedTo/>
     </listViews>
     <listViews>
         <fullName>US_Canada_New_MarkMeg</fullName>
@@ -9180,51 +7774,6 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
             <allInternalUsers></allInternalUsers>
         </sharedTo>
     </listViews>
-    <listViews>
-        <fullName>totango__Leads_By_Activity</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.STATUS</columns>
-        <columns>LEAD.CREATED_DATE</columns>
-        <columns>totango__TotangoOnlineStatusImage__c</columns>
-        <columns>totango__TotangoEngagement__c</columns>
-        <columns>totango__TotangoEngagementChange__c</columns>
-        <columns>totango__TotangoInsights__c</columns>
-        <columns>totango__Totango_Last_Update__c</columns>
-        <columns>totango__Totango_URL__c</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>totango__Totango_URL__c</field>
-            <operation>notEqual</operation>
-        </filters>
-        <label>Leads By Activity</label>
-    </listViews>
-    <listViews>
-        <fullName>updated_by_mfred</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>LEAD.ANNUAL_REVENUE</columns>
-        <columns>LEAD.EMPLOYEES</columns>
-        <columns>LEAD.PHONE</columns>
-        <columns>Datanyze_Phone__c</columns>
-        <columns>Datanyze_Revenue__c</columns>
-        <columns>Datanyze_Employee_No__c</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>LEAD.LAST_UPDATE</field>
-            <operation>equals</operation>
-            <value>TODAY</value>
-        </filters>
-        <filters>
-            <field>UPDATEDBY_USER.ALIAS</field>
-            <operation>equals</operation>
-            <value>mfred</value>
-        </filters>
-        <label>updated by mfred</label>
-        <sharedTo>
-            <role>SystemAdministrator</role>
-        </sharedTo>
-    </listViews>
     <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
     <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <recordTypes>
@@ -9442,6 +7991,10 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
             </values>
             <values>
                 <fullName>No longer in business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Interested</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -10353,6 +8906,14 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
             </values>
             <values>
                 <fullName>Affiliate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Blogs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Campaign Import</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -11790,6 +10351,10 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
                 <default>false</default>
             </values>
             <values>
+                <fullName>Not Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>Not Mature Enough%2FNo Products%2FToo Small</fullName>
                 <default>false</default>
             </values>
@@ -12494,6 +11059,14 @@ HYPERLINK(&quot;/apex/mkto_si__Lead_Full_List?view=IM&amp;id=&quot; &amp; Id, mk
             </values>
             <values>
                 <fullName>Affiliate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Blogs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Campaign Import</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -13808,6 +12381,7 @@ ISPICKVAL(Closed_Lost_Reason__c, &quot;No Longer in Business&quot;) ||
 ISPICKVAL(Closed_Lost_Reason__c, &quot;Duplicate Record&quot;) || 
 ISPICKVAL(Closed_Lost_Reason__c, &quot;Trial Expired&quot;) || 
 ISPICKVAL(Closed_Lost_Reason__c, &quot;Auto Closed Lost&quot;) || 
+ISPICKVAL(Closed_Lost_Reason__c, &quot;Not Interested&quot;) || 
 ISPICKVAL(Closed_Lost_Reason__c, &quot;Data Cleanup&quot;)
 ),  
 ISBLANK(TEXT( Functionality_Detail__c ))=TRUE, 

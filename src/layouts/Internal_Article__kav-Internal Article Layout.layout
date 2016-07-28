@@ -22,9 +22,6 @@
                 <field>Author__c</field>
             </layoutItems>
             <layoutItems>
-                <field>OwnerId</field>
-            </layoutItems>
-            <layoutItems>
                 <field>Third_Party__c</field>
             </layoutItems>
             <layoutItems>

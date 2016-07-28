@@ -103,13 +103,8 @@
         </criteriaItems>
         <criteriaItems>
             <column>Case.Survey_Name__c</column>
-            <operator>contains</operator>
-            <value>Support NPS Next - Web</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Case.Satisfaction__c</column>
-            <operator>notEqual</operator>
-            <value></value>
+            <operator>equals</operator>
+            <value>Resolution Email Survey</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

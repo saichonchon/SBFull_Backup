@@ -35,6 +35,14 @@
         <titleColor>#000000</titleColor>
         <titleSize>18</titleSize>
     </chart>
+    <colorRanges>
+        <columnName>FORMULA1</columnName>
+        <highBreakpoint>75.0</highBreakpoint>
+        <highColor>#54C254</highColor>
+        <lowBreakpoint>50.0</lowBreakpoint>
+        <lowColor>#C25454</lowColor>
+        <midColor>#C2C254</midColor>
+    </colorRanges>
     <columns>
         <field>PKB_Article_Feedback_Deflection__c.ArticleCreatedBy__c</field>
     </columns>
@@ -78,7 +86,7 @@
     </params>
     <reportType>CustomEntity$PKB_Article_Feedback_Deflection__c</reportType>
     <scope>organization</scope>
-    <showDetails>true</showDetails>
+    <showDetails>false</showDetails>
     <timeFrameFilter>
         <dateColumn>CUST_CREATED_DATE</dateColumn>
         <interval>INTERVAL_LAST30</interval>

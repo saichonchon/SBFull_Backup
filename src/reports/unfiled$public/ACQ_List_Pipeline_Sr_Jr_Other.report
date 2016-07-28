@@ -155,7 +155,7 @@
     </crossFilters>
     <description>Captures all current ACQ List open pipeline</description>
     <filter>
-        <booleanFilter>((1 AND 2  AND 3) AND 4) AND 5</booleanFilter>
+        <booleanFilter>(((1 AND 2  AND 3) AND 4) AND 5) AND 6</booleanFilter>
         <criteriaItems>
             <column>PRIMARY</column>
             <operator>equals</operator>
@@ -180,6 +180,11 @@
             <column>CAMPAIGN.PARENT.NAME</column>
             <operator>notContain</operator>
             <value>gobig,seabrook,dialer</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CAMPAIGN.PARENT.NAME</column>
+            <operator>notContain</operator>
+            <value>event</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>

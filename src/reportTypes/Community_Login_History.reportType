@@ -12,7 +12,7 @@
         <outerJoin>false</outerJoin>
         <relationship>NetworkMembers</relationship>
     </join>
-    <label>Community Login History CUSTOM</label>
+    <label>zCommunity Login History CUSTOM</label>
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>

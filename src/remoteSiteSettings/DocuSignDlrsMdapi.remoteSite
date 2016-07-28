@@ -3,5 +3,5 @@
     <description>Metadata API Remote Site Setting for Declarative Rollup Tool (DLRS). Create by DocuSign for Salesforce package.</description>
     <disableProtocolSecurity>false</disableProtocolSecurity>
     <isActive>true</isActive>
-    <url>https://dsfs.cs24.visual.force.com</url>
+    <url>https://dsfs.na19.visual.force.com</url>
 </RemoteSiteSetting>

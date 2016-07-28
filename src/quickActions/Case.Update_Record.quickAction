@@ -21,7 +21,7 @@
             </quickActionLayoutItems>
             <quickActionLayoutItems>
                 <emptySpace>false</emptySpace>
-                <field>Comments</field>
+                <field>Description</field>
                 <uiBehavior>Edit</uiBehavior>
             </quickActionLayoutItems>
             <quickActionLayoutItems>
@@ -49,11 +49,6 @@
                 <field>Change_Owner__c</field>
                 <uiBehavior>Edit</uiBehavior>
             </quickActionLayoutItems>
-            <quickActionLayoutItems>
-                <emptySpace>false</emptySpace>
-                <field>Description</field>
-                <uiBehavior>Edit</uiBehavior>
-            </quickActionLayoutItems>
         </quickActionLayoutColumns>
         <quickActionLayoutColumns>
             <quickActionLayoutItems>
@@ -65,11 +60,6 @@
                 <emptySpace>false</emptySpace>
                 <field>Status</field>
                 <uiBehavior>Required</uiBehavior>
-            </quickActionLayoutItems>
-            <quickActionLayoutItems>
-                <emptySpace>false</emptySpace>
-                <field>Origin</field>
-                <uiBehavior>Edit</uiBehavior>
             </quickActionLayoutItems>
         </quickActionLayoutColumns>
     </quickActionLayout>

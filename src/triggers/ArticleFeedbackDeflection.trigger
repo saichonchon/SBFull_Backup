@@ -6,15 +6,15 @@ Name:  ArticleFeedbackDeflection
  
 History:   
                                                       
-VERSION AUTHOR   		DATE       	DETAIL     
+VERSION AUTHOR   DATE       DETAIL     
  
-1.0 Maggie Frederick 	6/5/2015  	Initial development
-1.1 Steve O'Neal		6/24/2016	Adding "Author" from Article Type of Public
+1.0 Maggie Frederick 6/5/2015  Initial development
  
 ***********************************************************************/
 trigger ArticleFeedbackDeflection on PKB_Article_Feedback_Deflection__c (before insert, before update) 
 {
        
+    Map<String, PKB_Article_Feedback_Deflection__c> mpartNumids = new Map<String, PKB_Article_Feedback_Deflection__c>();
     Set<id> artids = new Set<Id>();
     Set<String> artNums = new Set<String>();
     
@@ -27,6 +27,7 @@ trigger ArticleFeedbackDeflection on PKB_Article_Feedback_Deflection__c (before 
 	 	{
 		 	artIds.add(af.Article_ID__c);
 		 	artNums.add(af.Article_Number__c);
+		 	mpartNumids.put(af.Article_Number__c, af);
 	 	}
 	 }
 	 
@@ -47,27 +48,8 @@ trigger ArticleFeedbackDeflection on PKB_Article_Feedback_Deflection__c (before 
 	 for (KnowledgeArticle ka :kas)	
 	 {
 	 	mpArtKa.put(ka.ArticleNumber, ka);
-	 }
-
-
-	/**
-	 * Collect the public article type data to get the Author at the time of the deflection
-	 * @author Steve O'Neal
-	 * @date   2016-06-24
-	 * @ticket link       https://jira.bigcommerce.com/browse/BAP-3870
-	 */
-	 Map<String, Public__kav> publicArticleTypeMap = new Map<String, Public__kav>();
-	 List<Public__kav> publicArticleTypes = 	[Select ID, ArticleNumber, Author__c, Author__r.FirstName, Author__r.LastName 
-	 											 from   Public__kav 
-	 											 where  PublishStatus = 'Online' 
-	 											   and  Language = 'en_US'
-	 											   and  ArticleNumber in :artNums];
+	 }	
 	 
-	 for (Public__kav publicArticleType : publicArticleTypes)
-	 {
-	 	publicArticleTypeMap.put(publicArticleType.ArticleNumber, publicArticleType);
-	 }
-
 	 
 	 for(PKB_Article_Feedback_Deflection__c af:Trigger.new)
 	 {
@@ -84,25 +66,6 @@ trigger ArticleFeedbackDeflection on PKB_Article_Feedback_Deflection__c (before 
 				KnowledgeArticle ka = mpArtKa.get(af.article_Number__c);
 		 		af.Case_Association_Count__c = ka.CaseAssociationCount;
 		 	}
-
-			/**
-			 * Add the Public "author" field to the Article Feedback Deflection object
-			 * @author Steve O'Neal
-			 * @date   2016-06-24
-			 * @ticket link       https://jira.bigcommerce.com/browse/BAP-3870
-			 */
-			if (publicArticleTypeMap.ContainsKey(af.article_Number__c))
-			{
-				if (publicArticleTypeMap.get(af.article_Number__c).Author__c != null)
-				{
-					af.Author__c = publicArticleTypeMap.get(af.article_Number__c).Author__r.FirstName + ' ' + publicArticleTypeMap.get(af.article_Number__c).Author__r.LastName;
-				}
-				else
-				{
-					af.Author__c = 'No Author';
-				}
-			}
-
 	 	}
 	 }								
 }

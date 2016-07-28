@@ -5,7 +5,7 @@
     <label>BC Data Engineering</label>
     <oauthConfig>
         <callbackUrl>https://login.salesforce.com/services/oauth2/callback</callbackUrl>
-        <consumerKey>3MVG9Nc1qcZ7BbZ0Ep18pfQsltXfBYZDt0rggmGCcgB8O6syZzUr5IIC2K_SONNo8mQkfJ01mI3_QIljkOKLJ</consumerKey>
+        <consumerKey>3MVG973QtA4.tpvmGIsm1S6VuSa2mFLZqumXDa_NU6BrDKkS7JsmSzO_hSLuBroYAOvyPAdGqhR5sZbcgL3u9</consumerKey>
         <scopes>Basic</scopes>
         <scopes>Api</scopes>
         <scopes>Web</scopes>

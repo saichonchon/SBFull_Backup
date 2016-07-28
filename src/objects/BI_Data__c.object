@@ -193,19 +193,6 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>CMRR__c</fullName>
-        <externalId>false</externalId>
-        <formula>BI_Payment_Amount__c / BLANKVALUE(Payment_Term__c, 1)</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>CMRR</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Currency</type>
-    </fields>
-    <fields>
         <fullName>Daily_GMV__c</fullName>
         <externalId>false</externalId>
         <label>Average Daily GMV</label>
@@ -449,19 +436,6 @@
         <type>Date</type>
     </fields>
     <fields>
-        <fullName>Last_Payment_Effective_End_Date__c</fullName>
-        <description>For BAP-3698 - Partner Commissions v2</description>
-        <externalId>false</externalId>
-        <formula>DATE( YEAR(Last_Payment_Date__c), MONTH(Last_Payment_Date__c) + IF(Payment_Term__c = 0, 1, Payment_Term__c), DAY(Last_Payment_Date__c)) - 1</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <inlineHelpText>The effective end date for this payment based on Last Payment Date and Payment Term.  In the case of a Payment Term of 1, the end date would be one day less than 1 month after the Last Payment Date.</inlineHelpText>
-        <label>Last Payment Effective End Date</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
-    </fields>
-    <fields>
         <fullName>Latest_Partner_Name__c</fullName>
         <externalId>false</externalId>
         <label>Latest Partner Name</label>
@@ -624,18 +598,6 @@
         <type>Lookup</type>
     </fields>
     <fields>
-        <fullName>Partner_Account_Date_Inactivated__c</fullName>
-        <description>For BAP-3698 - Partner Commissions v2</description>
-        <externalId>false</externalId>
-        <formula>Opportunity__r.rvpe__RVAccount__r.Inactivated_Date__c</formula>
-        <inlineHelpText>The date that the partner account was taken out of the program.  After this date, incoming commissions will no longer accrue.</inlineHelpText>
-        <label>Partner Account - Date Inactivated</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
-    </fields>
-    <fields>
         <fullName>Partner_Account__c</fullName>
         <externalId>false</externalId>
         <formula>Opportunity__r.rvpe__RVAccount__c</formula>
@@ -646,21 +608,6 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Partner_Commission_Percent__c</fullName>
-        <description>For BAP-3698 - Partner Commissions v2</description>
-        <externalId>false</externalId>
-        <formula>Opportunity__r.rvpe__RVAccount__r.Commission__c</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <inlineHelpText>The partner account&apos;s current bounty rate</inlineHelpText>
-        <label>Partner Commission %</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Percent</type>
     </fields>
     <fields>
         <fullName>Payment_Term__c</fullName>

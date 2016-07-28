@@ -2,9 +2,9 @@
 <ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
     <baseObject>Admin_Request__c</baseObject>
     <category>other</category>
-    <deployed>true</deployed>
+    <deployed>false</deployed>
     <description>Biz Apps Reports - custo</description>
-    <label>Biz Apps Requests Custom Report Type</label>
+    <label>zBiz Apps Requests Custom Report Type</label>
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>

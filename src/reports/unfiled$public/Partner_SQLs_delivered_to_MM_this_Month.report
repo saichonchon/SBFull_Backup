@@ -28,6 +28,9 @@
         <field>OPPORTUNITY_NAME</field>
     </columns>
     <columns>
+        <field>Opportunity.rvpe__RVAccount__c</field>
+    </columns>
+    <columns>
         <field>CREATED</field>
     </columns>
     <columns>

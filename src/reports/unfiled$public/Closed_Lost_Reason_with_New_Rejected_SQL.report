@@ -13,6 +13,9 @@
         <field>Opportunity$Closed_Lost_Reason_Detail__c</field>
     </columns>
     <columns>
+        <field>Opportunity$RecordType</field>
+    </columns>
+    <columns>
         <field>Opportunity.OpportunityTeamMembers*OpportunityTeamMember$Team_Member_Created_Date__c</field>
     </columns>
     <columns>
@@ -67,6 +70,8 @@
     <showDetails>true</showDetails>
     <timeFrameFilter>
         <dateColumn>Opportunity$LastStageChangeDate</dateColumn>
-        <interval>INTERVAL_LAST60</interval>
+        <endDate>2016-05-21</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2016-03-25</startDate>
     </timeFrameFilter>
 </Report>

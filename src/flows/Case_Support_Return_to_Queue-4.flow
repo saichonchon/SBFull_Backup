@@ -1,250 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
-    <actionCalls>
-        <processMetadataValues>
-            <name>filterType</name>
-            <value>
-                <stringValue>objectType</stringValue>
-            </value>
-        </processMetadataValues>
-        <processMetadataValues>
-            <name>objectType</name>
-            <value>
-                <stringValue>Case</stringValue>
-            </value>
-        </processMetadataValues>
-        <processMetadataValues>
-            <name>quickActionSelection</name>
-            <value>
-                <stringValue>Support Case Reassigned to Queue</stringValue>
-            </value>
-        </processMetadataValues>
-        <processMetadataValues>
-            <name>quickActionSelectionType</name>
-            <value>
-                <stringValue>Task</stringValue>
-            </value>
-        </processMetadataValues>
-        <name>myWaitEvent_myWait_myRule_9_event_0_SA2</name>
-        <label>Create Task</label>
-        <locationX>900</locationX>
-        <locationY>300</locationY>
-        <actionName>Case.Case_Reassigned_to_Queue</actionName>
-        <actionType>quickAction</actionType>
-        <connector>
-            <targetReference>myWaitEvent_myWait_myRule_9_event_0_postWaitExecutionAssignment</targetReference>
-        </connector>
-        <inputParameters>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>ID</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>true</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Related Record ID</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>maxOccurs</name>
-                <value>
-                    <numberValue>1.0</numberValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>objectType</name>
-                <value>
-                    <stringValue></stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Reference</stringValue>
-                </value>
-            </processMetadataValues>
-            <name>contextId</name>
-            <value>
-                <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>ID</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>true</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Assigned To ID</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>maxOccurs</name>
-                <value>
-                    <numberValue>1.0</numberValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>objectType</name>
-                <value>
-                    <stringValue></stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Formula</stringValue>
-                </value>
-            </processMetadataValues>
-            <name>OwnerId</name>
-            <value>
-                <elementReference>formula_10_myWaitEvent_myWait_myRule_9_event_0_SA2_OwnerId</elementReference>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>String</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Subject</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>maxOccurs</name>
-                <value>
-                    <numberValue>1.0</numberValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>objectType</name>
-                <value>
-                    <stringValue></stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Formula</stringValue>
-                </value>
-            </processMetadataValues>
-            <name>Subject</name>
-            <value>
-                <elementReference>formula_11_myWaitEvent_myWait_myRule_9_event_0_SA2_Subject</elementReference>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Status</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>maxOccurs</name>
-                <value>
-                    <numberValue>1.0</numberValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>objectType</name>
-                <value>
-                    <stringValue></stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <name>Status</name>
-            <value>
-                <stringValue>Completed</stringValue>
-            </value>
-        </inputParameters>
-        <inputParameters>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Priority</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>maxOccurs</name>
-                <value>
-                    <numberValue>1.0</numberValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>objectType</name>
-                <value>
-                    <stringValue></stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <name>Priority</name>
-            <value>
-                <stringValue>Low</stringValue>
-            </value>
-        </inputParameters>
-    </actionCalls>
     <assignments>
         <name>myVariable_waitStartTimeAssignment</name>
         <label>myVariable_waitStartTimeAssignment</label>
@@ -611,29 +366,7 @@
             <label>Previously Met - Prev</label>
         </rules>
     </decisions>
-    <description>Added escalation criteria -- this version has test scheduled times</description>
-    <formulas>
-        <processMetadataValues>
-            <name>originalFormula</name>
-            <value>
-                <stringValue>IF(LEFT(PRIORVALUE([Case].OwnerId),3) = &apos;005&apos;, PRIORVALUE([Case].OwnerId),IF(LEFT([Case].OwnerId,3) = &apos;005&apos;,[Case].OwnerId,&apos;005a0000008UZ47&apos;))</stringValue>
-            </value>
-        </processMetadataValues>
-        <name>formula_10_myWaitEvent_myWait_myRule_9_event_0_SA2_OwnerId</name>
-        <dataType>String</dataType>
-        <expression>IF(LEFT(PRIORVALUE({!myVariable_current.OwnerId}),3) = &apos;005&apos;, PRIORVALUE({!myVariable_current.OwnerId}),IF(LEFT({!myVariable_current.OwnerId},3) = &apos;005&apos;,{!myVariable_current.OwnerId},&apos;005a0000008UZ47&apos;))</expression>
-    </formulas>
-    <formulas>
-        <processMetadataValues>
-            <name>originalFormula</name>
-            <value>
-                <stringValue>&apos;Case has been automatically reassigned to Support Case Return Queue (BAP 2556)&apos;</stringValue>
-            </value>
-        </processMetadataValues>
-        <name>formula_11_myWaitEvent_myWait_myRule_9_event_0_SA2_Subject</name>
-        <dataType>String</dataType>
-        <expression>&apos;Case has been automatically reassigned to Support Case Return Queue (BAP 2556)&apos;</expression>
-    </formulas>
+    <description>Adding Billing Criteria -- this version has production scheduled times</description>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
@@ -641,7 +374,7 @@
                 <stringValue>[Case].Support_Case_Return_Queue__c </stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_12_myWaitEvent_myWait_myRule_9_event_0_SA1_OwnerId</name>
+        <name>formula_10_myWaitEvent_myWait_myRule_9_event_0_SA1_OwnerId</name>
         <dataType>String</dataType>
         <expression>{!myVariable_current.Support_Case_Return_Queue__c}</expression>
     </formulas>
@@ -652,7 +385,7 @@
                 <stringValue>&apos;&apos;</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_13_myRule_9_A1_Change_Owner_c</name>
+        <name>formula_11_myRule_9_A1_Change_Owner_c</name>
         <dataType>String</dataType>
         <expression>&apos;&apos;</expression>
     </formulas>
@@ -660,14 +393,16 @@
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>If(
-(Left(Priorvalue([Case].OwnerId),3) = &apos;00G&apos;),Priorvalue([Case].OwnerId),&apos;00Ga0000003ATBVEA4&apos;)</stringValue>
+                <stringValue>If([Case].RecordType.Name = &apos;Client Success&apos;, 
+if(
+(Left(Priorvalue([Case].OwnerId),3) = &apos;00G&apos;),Priorvalue([Case].OwnerId),&apos;00Ga0000003ATBVEA4&apos;),&apos;00Ga0000003AQyw&apos;)</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_14_myRule_9_A1_Support_Case_Return_Queue_c</name>
+        <name>formula_12_myRule_9_A1_Support_Case_Return_Queue_c</name>
         <dataType>String</dataType>
-        <expression>If(
-(Left(Priorvalue({!myVariable_current.OwnerId}),3) = &apos;00G&apos;),Priorvalue({!myVariable_current.OwnerId}),&apos;00Ga0000003ATBVEA4&apos;)</expression>
+        <expression>If({!myVariable_current.RecordType.Name} = &apos;Client Success&apos;, 
+if(
+(Left(Priorvalue({!myVariable_current.OwnerId}),3) = &apos;00G&apos;),Priorvalue({!myVariable_current.OwnerId}),&apos;00Ga0000003ATBVEA4&apos;),&apos;00Ga0000003AQyw&apos;)</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
@@ -719,7 +454,9 @@
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>[Case].RecordType.Name = &apos;Client Success&apos; &amp;&amp;
+                <stringValue>([Case].RecordType.Name = (&apos;Client Success&apos;) ||
+[Case].RecordType.Name = (&apos;Billing&apos;))
+ &amp;&amp;
 LEFT([Case].OwnerId, 3) = &apos;00G&apos; &amp;&amp;
 (ISNEW() || (PRIORVALUE([Case].OwnerId) &lt;&gt; [Case].OwnerId))
 
@@ -729,7 +466,9 @@ LEFT([Case].OwnerId, 3) = &apos;00G&apos; &amp;&amp;
         </processMetadataValues>
         <name>formula_myRule_1</name>
         <dataType>Boolean</dataType>
-        <expression>{!myVariable_current.RecordType.Name} = &apos;Client Success&apos; &amp;&amp;
+        <expression>({!myVariable_current.RecordType.Name} = (&apos;Client Success&apos;) ||
+{!myVariable_current.RecordType.Name} = (&apos;Billing&apos;))
+ &amp;&amp;
 LEFT({!myVariable_current.OwnerId}, 3) = &apos;00G&apos; &amp;&amp;
 (ISNEW() || (PRIORVALUE({!myVariable_current.OwnerId}) &lt;&gt; {!myVariable_current.OwnerId}))</expression>
     </formulas>
@@ -737,7 +476,9 @@ LEFT({!myVariable_current.OwnerId}, 3) = &apos;00G&apos; &amp;&amp;
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>[Case].RecordType.Name = &apos;Client Success&apos; &amp;&amp;
+                <stringValue>([Case].RecordType.Name = &apos;Client Success&apos; ||
+[Case].RecordType.Name = &apos;Billing&apos;)
+ &amp;&amp;
 NOT(LEFT([Case].OwnerId, 3) = &apos;00G&apos;)
 
 
@@ -746,14 +487,18 @@ NOT(LEFT([Case].OwnerId, 3) = &apos;00G&apos;)
         </processMetadataValues>
         <name>formula_myRule_9</name>
         <dataType>Boolean</dataType>
-        <expression>{!myVariable_current.RecordType.Name} = &apos;Client Success&apos; &amp;&amp;
+        <expression>({!myVariable_current.RecordType.Name} = &apos;Client Success&apos; ||
+{!myVariable_current.RecordType.Name} = &apos;Billing&apos;)
+ &amp;&amp;
 NOT(LEFT({!myVariable_current.OwnerId}, 3) = &apos;00G&apos;)</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>[Case].RecordType.Name = &apos;Client Success&apos; &amp;&amp;
+                <stringValue>([Case].RecordType.Name = &apos;Client Success&apos; ||
+[Case].RecordType.Name = &apos;Billing&apos;)
+ &amp;&amp;
 NOT(LEFT([Case].OwnerId, 3) = &apos;00G&apos;)
 
 
@@ -762,11 +507,13 @@ NOT(LEFT([Case].OwnerId, 3) = &apos;00G&apos;)
         </processMetadataValues>
         <name>formula_myRule_9_pmetrule</name>
         <dataType>Boolean</dataType>
-        <expression>{!myVariable_old.RecordType.Name} = &apos;Client Success&apos; &amp;&amp;
+        <expression>({!myVariable_old.RecordType.Name} = &apos;Client Success&apos; ||
+{!myVariable_old.RecordType.Name} = &apos;Billing&apos;)
+ &amp;&amp;
 NOT(LEFT({!myVariable_old.OwnerId}, 3) = &apos;00G&apos;)</expression>
     </formulas>
-    <interviewLabel>Case_Support_Return_to_Queue-6_Case</interviewLabel>
-    <label>Case - Support Return to Queue</label>
+    <interviewLabel>Case_Support_Return_to_Queue-4_Case</interviewLabel>
+    <label>Case - Billing and Support Return to Queue</label>
     <processMetadataValues>
         <name>ObjectType</name>
         <value>
@@ -1027,7 +774,7 @@ NOT(LEFT({!myVariable_old.OwnerId}, 3) = &apos;00G&apos;)</expression>
             </processMetadataValues>
             <field>Change_Owner__c</field>
             <value>
-                <elementReference>formula_13_myRule_9_A1_Change_Owner_c</elementReference>
+                <elementReference>formula_11_myRule_9_A1_Change_Owner_c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -1057,7 +804,7 @@ NOT(LEFT({!myVariable_old.OwnerId}, 3) = &apos;00G&apos;)</expression>
             </processMetadataValues>
             <field>Support_Case_Return_Queue__c</field>
             <value>
-                <elementReference>formula_14_myRule_9_A1_Support_Case_Return_Queue_c</elementReference>
+                <elementReference>formula_12_myRule_9_A1_Support_Case_Return_Queue_c</elementReference>
             </value>
         </inputAssignments>
         <object>Case</object>
@@ -1157,7 +904,7 @@ NOT(LEFT({!myVariable_old.OwnerId}, 3) = &apos;00G&apos;)</expression>
         <locationX>900</locationX>
         <locationY>200</locationY>
         <connector>
-            <targetReference>myWaitEvent_myWait_myRule_9_event_0_SA2</targetReference>
+            <targetReference>myWaitEvent_myWait_myRule_9_event_0_postWaitExecutionAssignment</targetReference>
         </connector>
         <filters>
             <processMetadataValues>
@@ -1242,7 +989,7 @@ NOT(LEFT({!myVariable_old.OwnerId}, 3) = &apos;00G&apos;)</expression>
             </processMetadataValues>
             <field>OwnerId</field>
             <value>
-                <elementReference>formula_12_myWaitEvent_myWait_myRule_9_event_0_SA1_OwnerId</elementReference>
+                <elementReference>formula_10_myWaitEvent_myWait_myRule_9_event_0_SA1_OwnerId</elementReference>
             </value>
         </inputAssignments>
         <object>Case</object>
@@ -1342,7 +1089,7 @@ NOT(LEFT({!myVariable_old.OwnerId}, 3) = &apos;00G&apos;)</expression>
             <inputParameters>
                 <name>TimeOffset</name>
                 <value>
-                    <numberValue>2.0</numberValue>
+                    <numberValue>8.0</numberValue>
                 </value>
             </inputParameters>
             <label>myWaitEvent_myWait_myRule_4_event_0</label>
@@ -1389,7 +1136,7 @@ NOT(LEFT({!myVariable_old.OwnerId}, 3) = &apos;00G&apos;)</expression>
             <inputParameters>
                 <name>TimeOffset</name>
                 <value>
-                    <numberValue>1.0</numberValue>
+                    <numberValue>4.0</numberValue>
                 </value>
             </inputParameters>
             <label>myWaitEvent_myWait_myRule_9_event_0</label>

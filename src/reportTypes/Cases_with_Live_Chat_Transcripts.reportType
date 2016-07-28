@@ -2,13 +2,13 @@
 <ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
     <baseObject>Case</baseObject>
     <category>cases</category>
-    <deployed>true</deployed>
+    <deployed>false</deployed>
     <description>Cases with Live Chat Transcripts</description>
     <join>
         <outerJoin>false</outerJoin>
         <relationship>LiveChatTranscripts</relationship>
     </join>
-    <label>Cases with Live Chat Transcripts</label>
+    <label>zCases with Live Chat Transcripts</label>
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>

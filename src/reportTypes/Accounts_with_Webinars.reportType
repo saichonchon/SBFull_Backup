@@ -8,7 +8,7 @@
         <outerJoin>false</outerJoin>
         <relationship>Webinars__r</relationship>
     </join>
-    <label>Accounts with Webinars</label>
+    <label>zAccounts with Webinars</label>
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>

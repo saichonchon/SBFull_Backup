@@ -5,6 +5,7 @@
     <customButtons>View_in_iDev</customButtons>
     <customButtons>View_BMP_Account</customButtons>
     <excludeButtons>DataDotComClean</excludeButtons>
+    <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
     <excludeButtons>DisableCustomerPortalAccount</excludeButtons>
     <excludeButtons>IncludeOffline</excludeButtons>
     <excludeButtons>Submit</excludeButtons>
@@ -51,6 +52,10 @@
             <layoutItems>
                 <behavior>Required</behavior>
                 <field>Status__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>CleanStatus</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
@@ -264,10 +269,9 @@
         <fields>CONTACT.TITLE</fields>
         <fields>CONTACT.EMAIL</fields>
         <fields>CONTACT.PHONE1</fields>
-        <fields>Primary_MBA_Contact__c</fields>
         <fields>No_longer_with_the_company__c</fields>
+        <fields>Primary_MBA_Contact__c</fields>
         <fields>CONTACT.CREATED_DATE</fields>
-        <fields>CORE.USERS.LAST_NAME</fields>
         <relatedList>RelatedContactList</relatedList>
     </relatedLists>
     <relatedLists>

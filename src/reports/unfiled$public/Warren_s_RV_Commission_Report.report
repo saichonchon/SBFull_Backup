@@ -61,6 +61,12 @@
         <field>rvpe__RVAccount__c.Commission_Amount__c</field>
     </columns>
     <columns>
+        <field>rvpe__RVAccount__c.Current_Month_Payments__c</field>
+    </columns>
+    <columns>
+        <field>rvpe__RVAccount__c.Expected_Current_Month_Commission__c</field>
+    </columns>
+    <columns>
         <field>rvpe__RVAccount__c.RollupCommission__c</field>
     </columns>
     <columns>

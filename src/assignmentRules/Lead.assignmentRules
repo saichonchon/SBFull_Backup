@@ -21,7 +21,7 @@
             <criteriaItems>
                 <field>Lead.LeadSource</field>
                 <operation>equals</operation>
-                <value>Datanyze</value>
+                <value>Datanyze Import</value>
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
@@ -55,26 +55,6 @@
                 <field>Lead.OwnerId</field>
                 <operation>equals</operation>
                 <value>API User</value>
-            </criteriaItems>
-        </ruleEntry>
-        <ruleEntry>
-            <assignedTo>Acquisition_Miderprise</assignedTo>
-            <assignedToType>Queue</assignedToType>
-            <booleanFilter>(1 AND 2) OR 3</booleanFilter>
-            <criteriaItems>
-                <field>Lead.OwnerId</field>
-                <operation>equals</operation>
-                <value>Marketo API User</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Lead.Marketing_Source__c</field>
-                <operation>contains</operation>
-                <value>learn more about bigcommerce enterprise</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Lead.LeadSource</field>
-                <operation>equals</operation>
-                <value>Netline,Other,MKT: Q3 2014 Enterprise Campaign,PRE: Q3 2014 Enterprise Campaign - House,Internet Retailer 20140815,PRE Hubspot Content,PRE Hubspot Demo Request,PRE Demand Gen</value>
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>

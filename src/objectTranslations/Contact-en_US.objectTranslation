@@ -54,10 +54,6 @@
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- Client and Account IDs Match --></label>
-        <name>Client_and_Account_IDs_Match__c</name>
-    </fields>
-    <fields>
         <help><!-- Stores a value of 1 so we can report on number of contacts. --></help>
         <label><!-- REPORT Contact Count --></label>
         <name>Contact_Count__c</name>
@@ -196,36 +192,20 @@
     <fields>
         <name>LeadSource</name>
         <picklistValues>
-            <masterLabel>ACQ Demand Gen</masterLabel>
-            <translation><!-- ACQ Demand Gen --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>ACQ Hubspot Content</masterLabel>
-            <translation><!-- ACQ Hubspot Content --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>ACQ Hubspot Demo Request</masterLabel>
-            <translation><!-- ACQ Hubspot Demo Request --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>ACQ List Upload</masterLabel>
             <translation><!-- ACQ List Upload --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>AYRM</masterLabel>
-            <translation><!-- AYRM --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Affiliate</masterLabel>
             <translation><!-- Affiliate --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Campaign Import</masterLabel>
-            <translation><!-- Campaign Import --></translation>
+            <masterLabel>Blogs</masterLabel>
+            <translation><!-- Blogs --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Chat</masterLabel>
-            <translation><!-- Chat --></translation>
+            <masterLabel>Campaign Import</masterLabel>
+            <translation><!-- Campaign Import --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Datanyze Import</masterLabel>
@@ -240,32 +220,8 @@
             <translation><!-- Display --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>EBQ DM</masterLabel>
-            <translation><!-- EBQ DM --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>EBQ DM2</masterLabel>
-            <translation><!-- EBQ DM2 --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>EBQ DM3</masterLabel>
-            <translation><!-- EBQ DM3 --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Email / Ticket</masterLabel>
-            <translation><!-- Email / Ticket --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Email Advertising</masterLabel>
             <translation><!-- Email Advertising --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Enterprise Partner Lead</masterLabel>
-            <translation><!-- Enterprise Partner Lead --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Event</masterLabel>
-            <translation><!-- Event --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Events</masterLabel>
@@ -276,28 +232,12 @@
             <translation><!-- G2Crowd --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>GPN Campaign Import</masterLabel>
-            <translation><!-- GPN Campaign Import --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Hubspot</masterLabel>
-            <translation><!-- Hubspot --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>IR Special Report 2014</masterLabel>
-            <translation><!-- IR Special Report 2014 --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Inbound</masterLabel>
             <translation><!-- Inbound --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Internet Retailer</masterLabel>
             <translation><!-- Internet Retailer --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Netline</masterLabel>
-            <translation><!-- Netline --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Organic Search</masterLabel>
@@ -308,32 +248,8 @@
             <translation><!-- Organic Social --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Orion</masterLabel>
-            <translation><!-- Orion --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Other</masterLabel>
             <translation><!-- Other --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>PRE Demand Gen</masterLabel>
-            <translation><!-- PRE Demand Gen --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>PRE Hubspot Content</masterLabel>
-            <translation><!-- PRE Hubspot Content --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>PRE Hubspot Demo Request</masterLabel>
-            <translation><!-- PRE Hubspot Demo Request --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Partner</masterLabel>
-            <translation><!-- Partner --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Phone / Queue</masterLabel>
-            <translation><!-- Phone / Queue --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Print Ads</masterLabel>
@@ -354,22 +270,6 @@
         <picklistValues>
             <masterLabel>Social Ads</masterLabel>
             <translation><!-- Social Ads --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Web Form</masterLabel>
-            <translation><!-- Web Form --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Web Trial</masterLabel>
-            <translation><!-- Web Trial --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>WebToLead</masterLabel>
-            <translation><!-- WebToLead --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Webinar</masterLabel>
-            <translation><!-- Webinar --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Webinar List</masterLabel>
@@ -826,6 +726,22 @@
         <name>mkto_si__View_in_Marketo__c</name>
     </fields>
     <fields>
+        <label><!-- Is distributed --></label>
+        <name>n2de__Is_distributed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is reassigned --></label>
+        <name>n2de__Is_reassigned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date last distributed to user --></label>
+        <name>n2de__Last_distributed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date last auto reassigned --></label>
+        <name>n2de__Last_reassigned__c</name>
+    </fields>
+    <fields>
         <label><!-- NeuralView: Close Score Last Updated --></label>
         <name>qbdialer__CloseDate__c</name>
     </fields>
@@ -962,6 +878,21 @@
     </layouts>
     <layouts>
         <layout>I3 Client Success Layout</layout>
+        <sections>
+            <label><!-- Marketing --></label>
+            <section>Marketing</section>
+        </sections>
+        <sections>
+            <label><!-- Partner Information --></label>
+            <section>Partner Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sys Admin</layout>
+        <sections>
+            <label><!-- Google Analytics --></label>
+            <section>Google Analytics</section>
+        </sections>
         <sections>
             <label><!-- Marketing --></label>
             <section>Marketing</section>
@@ -1217,10 +1148,6 @@
     <workflowTasks>
         <name>App_Approved_Contact_Email_Sent</name>
         <subject><!-- App Approved Contact Email Sent --></subject>
-    </workflowTasks>
-    <workflowTasks>
-        <name>Customer_has_requested_a_product_demo</name>
-        <subject><!-- Customer has requested a product demo --></subject>
     </workflowTasks>
     <workflowTasks>
         <description><!-- A potential customer has requested a demo. Please reach out ASAP and close the task once it has been completed. --></description>
