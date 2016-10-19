@@ -2,13 +2,13 @@
 <ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
     <baseObject>Campaign</baseObject>
     <category>campaigns</category>
-    <deployed>true</deployed>
+    <deployed>false</deployed>
     <description>Campaigns with or without Activities</description>
     <join>
         <outerJoin>true</outerJoin>
         <relationship>Activities</relationship>
     </join>
-    <label>Campaigns with or without Activities</label>
+    <label>zCampaigns with or without Activities</label>
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>

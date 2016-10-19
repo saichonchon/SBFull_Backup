@@ -128,6 +128,11 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Current_Month_Payments__c</field>
+            <table>rvpe__RVAccount__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>Customer_Support_Capabilities__c</field>
             <table>rvpe__RVAccount__c</table>
         </columns>
@@ -149,6 +154,11 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>How_Many_Ecommerce_Projects__c</field>
+            <table>rvpe__RVAccount__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Expected_Current_Month_Commission__c</field>
             <table>rvpe__RVAccount__c</table>
         </columns>
         <columns>

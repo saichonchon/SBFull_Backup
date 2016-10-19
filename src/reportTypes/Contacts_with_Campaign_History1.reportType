@@ -2,13 +2,13 @@
 <ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
     <baseObject>Contact</baseObject>
     <category>campaigns</category>
-    <deployed>true</deployed>
+    <deployed>false</deployed>
     <description>Contacts with Campaign History</description>
     <join>
         <outerJoin>false</outerJoin>
         <relationship>CampaignMembers</relationship>
     </join>
-    <label>Contacts with Campaign History</label>
+    <label>zContacts with Campaign History</label>
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>

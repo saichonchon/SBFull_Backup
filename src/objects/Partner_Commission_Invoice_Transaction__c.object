@@ -163,6 +163,36 @@ For BAP-3698 - Partner Commissions v2</description>
         <writeRequiresMasterRead>true</writeRequiresMasterRead>
     </fields>
     <fields>
+        <fullName>Partner_Has_PayPal_ID__c</fullName>
+        <description>For BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <formula>Partner_Commission_Summary__r.Partner_Account__r.Has_PayPal_Id__c</formula>
+        <inlineHelpText>Indicates if the partner has supplied us with their PayPal id</inlineHelpText>
+        <label>Partner Has PayPal ID</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Partner_Is_Eligible_for_Payment__c</fullName>
+        <description>For BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <formula>AND( Partner_is_Engaged__c,  Partner_Has_PayPal_ID__c )</formula>
+        <inlineHelpText>Indicates if the partner has provided a PayPal id and has become engaged by accepting the terms and conditions.</inlineHelpText>
+        <label>Partner Is Eligible for Payment</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Partner_is_Engaged__c</fullName>
+        <description>For BAP-3698 - Partner Commissions v2</description>
+        <externalId>false</externalId>
+        <formula>Partner_Commission_Summary__r.Partner_Account__r.Engaged__c</formula>
+        <inlineHelpText>Indicates if the partner is engaged and has accepted the terms and conditions.  If not, they are not eligible for payment.</inlineHelpText>
+        <label>Partner is Engaged</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Payment_Date__c</fullName>
         <description>BAP-3698 - Partner Commissions v2</description>
         <externalId>false</externalId>

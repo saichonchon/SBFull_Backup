@@ -2,9 +2,9 @@
 <ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
     <baseObject>Account</baseObject>
     <category>accounts</category>
-    <deployed>true</deployed>
+    <deployed>false</deployed>
     <description>Customized to contain User data</description>
-    <label>Accounts : Custom Report</label>
+    <label>zAccounts : Custom Report</label>
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>

@@ -21,11 +21,6 @@
         <sharedToType>User</sharedToType>
     </folderShares>
     <folderShares>
-        <accessLevel>Manage</accessLevel>
-        <sharedTo>maria.huemmer@bigcommerce.com</sharedTo>
-        <sharedToType>User</sharedToType>
-    </folderShares>
-    <folderShares>
         <accessLevel>EditAllContents</accessLevel>
         <sharedTo>patrick.puente@bigcommerce.com</sharedTo>
         <sharedToType>User</sharedToType>

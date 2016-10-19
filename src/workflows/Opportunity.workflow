@@ -9,7 +9,7 @@
             <type>opportunityTeam</type>
         </recipients>
         <senderType>CurrentUser</senderType>
-        <template>Internal_Workflow_Communications_Sales/Opp_New_Purchase_Made</template>
+        <template>Internal_Email_Template/Opp_New_Purchase_Made</template>
     </alerts>
     <alerts>
         <fullName>Email_Account_Owner</fullName>
@@ -21,7 +21,7 @@
         </recipients>
         <senderAddress>no-reply@bigcommerce.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
-        <template>Internal_Workflow_Communications_Sales/New_Trial_Opp_not_owned_by_Account_Owner</template>
+        <template>Internal_Email_Template/New_Trial_Opp_not_owned_by_Account_Owner</template>
     </alerts>
     <alerts>
         <fullName>Email_Alert_lead_converted</fullName>
@@ -37,7 +37,7 @@
         </recipients>
         <senderAddress>no-reply@bigcommerce.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
-        <template>Internal_Workflow_Communications_Sales/TesT123</template>
+        <template>Internal_Email_Template/TesT123</template>
     </alerts>
     <alerts>
         <fullName>Email_Migraiton_Team_of_new_prescoping_opportunity</fullName>
@@ -52,7 +52,7 @@
             <type>user</type>
         </recipients>
         <senderType>CurrentUser</senderType>
-        <template>Internal_Workflow_Communications_Sales/Migration_prescoping_details</template>
+        <template>Internal_Email_Template/Migration_prescoping_details</template>
     </alerts>
     <alerts>
         <fullName>Email_Opp_Owner_of_Closed_Won_OpportunityWFR</fullName>
@@ -62,7 +62,7 @@
             <type>owner</type>
         </recipients>
         <senderType>CurrentUser</senderType>
-        <template>Internal_Workflow_Communications_Sales/Upgrade_Opportunity_Close_Won_2</template>
+        <template>Internal_Email_Template/Upgrade_Opportunity_Close_Won_2</template>
     </alerts>
     <alerts>
         <fullName>Email_Sales_Rep_that_Prescoping_is_complete</fullName>
@@ -76,7 +76,7 @@
             <type>owner</type>
         </recipients>
         <senderType>CurrentUser</senderType>
-        <template>Internal_Workflow_Communications_Sales/Migration_prescoping_details</template>
+        <template>Internal_Email_Template/Migration_prescoping_details</template>
     </alerts>
     <alerts>
         <fullName>Email_opp_owner</fullName>
@@ -88,7 +88,7 @@
         </recipients>
         <senderAddress>no-reply@bigcommerce.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
-        <template>Internal_Workflow_Communications_Sales/Opp_Product_Change_Notice</template>
+        <template>Internal_Email_Template/Opp_Product_Change_Notice</template>
     </alerts>
     <alerts>
         <fullName>Enterprise_Partner_Request_Approved</fullName>
@@ -145,7 +145,7 @@
             <type>userLookup</type>
         </recipients>
         <senderType>CurrentUser</senderType>
-        <template>Internal_Workflow_Communications_Sales/Executive_Sponsorship_Notification</template>
+        <template>Internal_Email_Template/Executive_Sponsorship_Notification</template>
     </alerts>
     <alerts>
         <fullName>MKT_Featured_client_churned</fullName>
@@ -197,7 +197,7 @@
         </recipients>
         <senderAddress>no-reply@bigcommerce.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
-        <template>Internal_Workflow_Communications_Sales/Product_Change_Alert_Opp</template>
+        <template>Internal_Email_Template/Product_Change_Alert_Opp</template>
     </alerts>
     <alerts>
         <fullName>Notify_Opp_Owner_of_store_cancellation</fullName>
@@ -208,7 +208,7 @@
         </recipients>
         <senderAddress>no-reply@bigcommerce.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
-        <template>Internal_Workflow_Communications_Sales/Opp_Cancellation_Email_Alert</template>
+        <template>Internal_Email_Template/Opp_Cancellation_Email_Alert</template>
     </alerts>
     <alerts>
         <fullName>Product_Change_Notice_to_Owner_Opp</fullName>
@@ -270,7 +270,7 @@
         </recipients>
         <senderAddress>no-reply@bigcommerce.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
-        <template>Internal_Workflow_Communications_Sales/Opp_Cancellation_Email_Alert</template>
+        <template>Internal_Email_Template/Opp_Cancellation_Email_Alert</template>
     </alerts>
     <alerts>
         <fullName>Send_Client_Reference_Program_Decline_Email</fullName>
@@ -308,7 +308,7 @@
             <type>user</type>
         </recipients>
         <senderType>CurrentUser</senderType>
-        <template>Internal_Workflow_Communications_Sales/Migration_prescoping_details</template>
+        <template>Internal_Email_Template/Migration_prescoping_details</template>
     </alerts>
     <alerts>
         <fullName>Send_Standard_Plan_Launch_Email_to_Client_SBD_Paypal_Braintree</fullName>
@@ -359,6 +359,15 @@
         <template>App_Partner_Templates/App_Submitted</template>
     </alerts>
     <fieldUpdates>
+        <fullName>BA_Test_Opportunity_False</fullName>
+        <field>BA_Testing_Opportunity__c</field>
+        <literalValue>0</literalValue>
+        <name>BA Test Opportunity = False</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Bigcommerce_Approved</fullName>
         <field>Enterprise_Partner_Request_Status__c</field>
         <literalValue>Bigcommerce Approved</literalValue>
@@ -391,30 +400,6 @@
         <field>StageName</field>
         <literalValue>Sales Qualified Lead</literalValue>
         <name>Change Opportunity Stage to SQL</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Clear_Closed_lost_comments</fullName>
-        <field>Other_Comments__c</field>
-        <name>Clear Closed lost comments</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Null</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Clear_Closed_lost_reason_detail</fullName>
-        <field>Closed_Lost_Reason_Detail__c</field>
-        <name>Clear Closed lost reason detail</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Clear_closed_lost_reason</fullName>
-        <field>Closed_Lost_Reason__c</field>
-        <name>Clear closed lost reason</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
@@ -479,15 +464,6 @@
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Oppty_Add_Contact_Phone</fullName>
-        <field>Contact_Phone__c</field>
-        <formula>Contact__r.Phone</formula>
-        <name>Oppty: Add Contact Phone</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Set_App_Approval_Date</fullName>
         <field>App_Approved_Date__c</field>
         <formula>TODAY()</formula>
@@ -534,15 +510,6 @@
         <name>Set Revshare signed date</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Stage_Agreement</fullName>
-        <field>StageName</field>
-        <literalValue>Agreement</literalValue>
-        <name>Stage Agreement</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
@@ -726,13 +693,6 @@
         <useDeadLetterQueue>false</useDeadLetterQueue>
     </outboundMessages>
     <rules>
-        <fullName>Assign App Opps to John N</fullName>
-        <active>true</active>
-        <description>Assign App Opps to John N</description>
-        <formula>RecordTypeId  = &quot;01213000000AVUj&quot;</formula>
-        <triggerType>onCreateOnly</triggerType>
-    </rules>
-    <rules>
         <fullName>Change the opportunity owner if landing page contains WSI</fullName>
         <actions>
             <name>Update_Account_Owner</name>
@@ -788,15 +748,18 @@
             <name>Demo_Requested</name>
             <type>Task</type>
         </actions>
-        <active>false</active>
+        <active>true</active>
         <description>When a contact is added as a campaign member for a demo request, this date is set. Create a task for the contact owner. 
 For BAP-3811</description>
-        <formula>AND( 
-NOT(ISBLANK(Demo_Requested_Date__c)), 
-OR(Owner.Profile.Id = &apos;00e13000000jUNJ&apos;, /* Lead Development Rep */ 
-Owner.Profile.Id = &apos;00e130000024OSc&apos;, /* Sales Rep */ 
-Owner.Profile.Id = &apos;00e13000000jUyt&apos;, /* Sales Rep - Dial on Opps */ 
-Owner.Profile.Id = &apos;00e130000024OSX&apos;) /* Sales Leader */ )</formula>
+        <formula>AND(  
+NOT(ISBLANK(Demo_Requested_Date__c)),  
+OR(
+Owner.Profile.Id = &apos;00e13000000jUNJ&apos;, /* Lead Development Rep */  
+Owner.Profile.Id = &apos;00e130000024OSc&apos;, /* Sales Rep */  
+Owner.Profile.Id = &apos;00e13000000jUyt&apos;, /* Sales Rep - Dial on Opps */  
+Owner.Profile.Id = &apos;00e130000024OSX&apos;  /* Sales Leader */ 
+)
+)</formula>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
@@ -807,13 +770,15 @@ Owner.Profile.Id = &apos;00e130000024OSX&apos;) /* Sales Leader */ )</formula>
         </actions>
         <active>true</active>
         <description>Email Notification that updates Enterprise Sales Management when an Opportunity has closed, whether one or lost.</description>
-        <formula>OR( 
-Owner.UserRoleId = &apos;00E13000001DGhr&apos;, /* Enterprise Leader */
-Owner.UserRoleId = &apos;00E13000001DGi1&apos;  /* Enterprise Sales */
-) &amp;&amp; 
-IsClosed = True &amp;&amp;
-OR( 
-IsWon = False &amp;&amp;  Projected__c = True,IsWon = True)</formula>
+        <formula>OR(  
+Owner.UserRoleId = &apos;00E13000001DGhr&apos;, /* Enterprise Leader */ 
+Owner.UserRoleId = &apos;00E13000001DGi1&apos;  /* Enterprise Sales */ 
+) &amp;&amp;  
+IsClosed = True &amp;&amp; 
+OR(  
+IsWon = False &amp;&amp;  Projected__c = True,
+IsWon = True &amp;&amp; Amount &gt; 500
+)</formula>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
@@ -975,6 +940,27 @@ CONTAINS(Owner.Profile.Name, &quot;Sales Rep&quot;) &amp;&amp;
 NOT(CONTAINS( Owner.Full_Name__c, &quot;Team&quot;)) &amp;&amp; 
 DATEVALUE(CreatedDate) &lt;&gt; TODAY()</formula>
         <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity%3A BA Test Opportunity %3D True</fullName>
+        <actions>
+            <name>BA_Test_Opportunity_False</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.BA_Testing_Opportunity__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.MonthlyRecurringRevenue__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </criteriaItems>
+        <description>BAP-3748: Sets the BA Test Opportunity field to false (usually set to true due to being previously Closed Lost as &quot;Test Account&quot;) and it has a positive MRR associated with it.
+**NOTE**  Field may no longer be valid in revenue report filtering.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
         <fullName>Opportunity%3ASet the BA Testing Opportunity field to true</fullName>
@@ -1304,7 +1290,7 @@ ispickval( App_Revshare__c , &quot;Signed&quot;)</formula>
     </tasks>
     <tasks>
         <fullName>WFR_Fired</fullName>
-        <assignedTo>maria.huemmer@bigcommerce.com</assignedTo>
+        <assignedTo>miles.leymeister@bigcommerce.com</assignedTo>
         <assignedToType>user</assignedToType>
         <description>Grow bundle email fired</description>
         <dueDateOffset>0</dueDateOffset>

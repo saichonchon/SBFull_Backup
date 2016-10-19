@@ -7,7 +7,7 @@
     <logoUrl>https://login.salesforce.com/logos/Salesforce/Clouds/logo.png</logoUrl>
     <oauthConfig>
         <callbackUrl>https://login.salesforce.com/services/oauth2/callback</callbackUrl>
-        <consumerKey>3MVG9Nc1qcZ7BbZ0Ep18pfQsltXfBYZDt0rggpPg3jAKw3Or6Ybtkj0oh4P9APxaVE1HlEFzljG0.M7L1zbbr</consumerKey>
+        <consumerKey>3MVG973QtA4.tpvmGIsm1S6VuSa2mFLZqumXDxhQhTTA06jX9hdzaMK.eeTHZHQ2P0gDyn4EvTSy71A8ntQDq</consumerKey>
         <scopes>Api</scopes>
         <scopes>Web</scopes>
     </oauthConfig>

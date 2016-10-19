@@ -10,6 +10,9 @@
         <field>ACCOUNT_NAME</field>
     </columns>
     <columns>
+        <field>ACCOUNT_ID</field>
+    </columns>
+    <columns>
         <field>Account.SSC__c</field>
     </columns>
     <columns>
@@ -73,7 +76,7 @@
         <field>Opportunity.Contact_Phone__c</field>
     </columns>
     <filter>
-        <booleanFilter>(((((((1 AND 2)) AND 3)) AND 4) AND 5) AND ( 6 OR 7))</booleanFilter>
+        <booleanFilter>(((((((((1 AND 2)) AND 3)) AND 4) AND 5) AND ( 6 OR 7))) AND 8)</booleanFilter>
         <criteriaItems>
             <column>RECORDTYPE</column>
             <operator>equals</operator>
@@ -108,6 +111,11 @@
             <column>Opportunity.Product__c</column>
             <operator>equals</operator>
             <value>Enterprise Tier 2 Plan</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.SSC__c</column>
+            <operator>notEqual</operator>
+            <value></value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>

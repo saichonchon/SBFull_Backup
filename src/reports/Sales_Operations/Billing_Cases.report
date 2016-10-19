@@ -1,45 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
-        <field>SUBJECT</field>
-    </columns>
-    <columns>
         <field>OWNER</field>
     </columns>
     <columns>
-        <field>RECORDTYPE</field>
+        <field>CREATED</field>
     </columns>
     <columns>
         <field>CREATED_DATE</field>
-    </columns>
-    <columns>
-        <field>AGE</field>
-    </columns>
-    <columns>
-        <field>OPEN</field>
-    </columns>
-    <columns>
-        <field>CLOSED</field>
-    </columns>
-    <columns>
-        <field>ACCOUNT.NAME</field>
     </columns>
     <filter>
         <criteriaItems>
             <column>RECORDTYPE</column>
             <operator>equals</operator>
-            <value>Case.Billing</value>
+            <value>Case.Billing,Case.Cancellations</value>
         </criteriaItems>
         <criteriaItems>
             <column>ORIGIN</column>
             <operator>contains</operator>
-            <value>@</value>
+            <value>billing@bigcommerce.com,cancellations@bigcommerce.com</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CASE_NUMBER</column>
+            <operator>greaterOrEqual</operator>
+            <value>02557345</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>
     <groupingsAcross>
         <dateGranularity>Day</dateGranularity>
-        <field>CREATED</field>
+        <field>RECORDTYPE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>CLOSED</field>
         <sortOrder>Asc</sortOrder>
     </groupingsAcross>
     <groupingsDown>
@@ -47,7 +42,12 @@
         <field>ORIGIN</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Billing Cases</name>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CASE_NUMBER</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <name>BAP 3787 Billing and Cancel Cases</name>
     <params>
         <name>units</name>
         <value>h</value>
@@ -61,6 +61,8 @@
     <showDetails>false</showDetails>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
-        <interval>INTERVAL_CURY</interval>
+        <endDate>2016-12-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2016-07-11</startDate>
     </timeFrameFilter>
 </Report>

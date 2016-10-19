@@ -4,7 +4,7 @@
     <category>accounts</category>
     <deployed>false</deployed>
     <description>Contacts with Hubspot Intelligence and Activities</description>
-    <label>Contacts with Hubspot Intelligence and Activities</label>
+    <label>zContacts with Hubspot Intelligence and Activities</label>
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>

@@ -3,7 +3,8 @@
     <articleTypeChannelDisplay>
         <articleTypeTemplates>
             <channel>App</channel>
-            <template>Toc</template>
+            <page>kb_Internal_Article_kav</page>
+            <template>Page</template>
         </articleTypeTemplates>
         <articleTypeTemplates>
             <channel>Prm</channel>

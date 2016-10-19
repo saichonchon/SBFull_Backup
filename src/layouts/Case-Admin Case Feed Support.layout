@@ -17,38 +17,6 @@
     <customButtons>Migration_Specialist</customButtons>
     <customButtons>CS_Link_to_JIRA_Button</customButtons>
     <customButtons>CS_Sync_with_JIRA</customButtons>
-    <customConsoleComponents>
-        <subtabComponents>
-            <containers>
-                <isContainerAutoSizeEnabled>true</isContainerAutoSizeEnabled>
-                <region>Right</region>
-                <sidebarComponents>
-                    <componentType>KnowledgeOne</componentType>
-                    <unit>Percentage</unit>
-                </sidebarComponents>
-                <style>Stack</style>
-                <unit>Pixel</unit>
-                <width>15</width>
-            </containers>
-            <containers>
-                <isContainerAutoSizeEnabled>true</isContainerAutoSizeEnabled>
-                <region>Left</region>
-                <sidebarComponents>
-                    <componentType>Lookup</componentType>
-                    <label>Case Details</label>
-                    <lookup>self_lookup_component</lookup>
-                </sidebarComponents>
-                <sidebarComponents>
-                    <componentType>Lookup</componentType>
-                    <label>Account</label>
-                    <lookup>Account</lookup>
-                </sidebarComponents>
-                <style>Tabs</style>
-                <unit>Pixel</unit>
-                <width>30</width>
-            </containers>
-        </subtabComponents>
-    </customConsoleComponents>
     <excludeButtons>CloseCase</excludeButtons>
     <excludeButtons>Share</excludeButtons>
     <excludeButtons>Submit</excludeButtons>
@@ -116,18 +84,6 @@
                 <field>Premium_Case__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Required</behavior>
-                <field>Subject</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Support_Case_Return_Queue__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Owner_Profile__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Opportunity__c</field>
             </layoutItems>
@@ -135,19 +91,15 @@
                 <behavior>Readonly</behavior>
                 <field>AccountId</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Resolution_Count__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Last_Case_Routed_Date__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>OwnerId</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Owner_Profile__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -181,6 +133,10 @@
         <editHeading>true</editHeading>
         <label>Case Detail</label>
         <layoutColumns>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>Subject</field>
+            </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>On_Hold_Reason__c</field>
@@ -559,6 +515,10 @@
                 <behavior>Edit</behavior>
                 <field>Documentation_Only__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>LastModifiedById</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
@@ -647,10 +607,6 @@
         <fields>LAST_UPDATE</fields>
         <fields>CA_CREATEDBY_USER</fields>
         <relatedList>RelatedArticleList</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <relatedList>Case_Time_Worked__c.Case__c</relatedList>
     </relatedLists>
     <relatedLists>
         <relatedList>RelatedAttachmentList</relatedList>

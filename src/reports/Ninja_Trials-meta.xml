@@ -6,11 +6,6 @@
         <sharedToType>User</sharedToType>
     </folderShares>
     <folderShares>
-        <accessLevel>Manage</accessLevel>
-        <sharedTo>nicole.smith@bigcommerce.com</sharedTo>
-        <sharedToType>User</sharedToType>
-    </folderShares>
-    <folderShares>
         <accessLevel>EditAllContents</accessLevel>
         <sharedTo>patrick.puente@bigcommerce.com</sharedTo>
         <sharedToType>User</sharedToType>
@@ -39,6 +34,11 @@
         <accessLevel>Manage</accessLevel>
         <sharedTo>VP_of_Client_Success</sharedTo>
         <sharedToType>Role</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>Escalations</sharedTo>
+        <sharedToType>Group</sharedToType>
     </folderShares>
     <name>Ninja Trials</name>
 </ReportFolder>

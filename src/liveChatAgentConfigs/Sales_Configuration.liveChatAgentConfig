@@ -2,7 +2,7 @@
 <LiveChatAgentConfig xmlns="http://soap.sforce.com/2006/04/metadata">
     <assignments>
         <profiles>
-            <profile>Sales Rep - Midmarket</profile>
+            <profile>Sales Rep</profile>
         </profiles>
         <users>
             <user>baldemar.zamora@bigcommerce.com</user>

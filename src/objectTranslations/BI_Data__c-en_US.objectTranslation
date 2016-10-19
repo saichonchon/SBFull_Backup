@@ -76,10 +76,6 @@
         <name>BlueprintTemplate__c</name>
     </fields>
     <fields>
-        <label><!-- CMRR --></label>
-        <name>CMRR__c</name>
-    </fields>
-    <fields>
         <label><!-- Average Daily GMV --></label>
         <name>Daily_GMV__c</name>
     </fields>
@@ -187,11 +183,6 @@
         <name>Last_Payment_Date__c</name>
     </fields>
     <fields>
-        <help><!-- The effective end date for this payment based on Last Payment Date and Payment Term.  In the case of a Payment Term of 1, the end date would be one day less than 1 month after the Last Payment Date. --></help>
-        <label><!-- Last Payment Effective End Date --></label>
-        <name>Last_Payment_Effective_End_Date__c</name>
-    </fields>
-    <fields>
         <label><!-- Latest Partner Name --></label>
         <name>Latest_Partner_Name__c</name>
     </fields>
@@ -250,18 +241,8 @@
         <relationshipLabel><!-- BI Data --></relationshipLabel>
     </fields>
     <fields>
-        <help><!-- The date that the partner account was taken out of the program.  After this date, incoming commissions will no longer accrue. --></help>
-        <label><!-- Partner Account - Date Inactivated --></label>
-        <name>Partner_Account_Date_Inactivated__c</name>
-    </fields>
-    <fields>
         <label><!-- Partner Account --></label>
         <name>Partner_Account__c</name>
-    </fields>
-    <fields>
-        <help><!-- The partner account&apos;s current bounty rate --></help>
-        <label><!-- Partner Commission % --></label>
-        <name>Partner_Commission_Percent__c</name>
     </fields>
     <fields>
         <label><!-- Payment Term --></label>

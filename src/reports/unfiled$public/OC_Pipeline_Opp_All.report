@@ -104,6 +104,16 @@
             <operator>notEqual</operator>
             <value>Launched</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <operator>notEqual</operator>
+            <value>Closed Lost,Rejected,Terminated,Removed,Cancelled</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <operator>equals</operator>
+            <value>Opportunity.Store_Purchase</value>
+        </criteriaItems>
     </filter>
     <format>Matrix</format>
     <groupingsAcross>

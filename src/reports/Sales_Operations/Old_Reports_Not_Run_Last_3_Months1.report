@@ -10,10 +10,10 @@
         <field>User.Report$CreatedById$Name</field>
     </columns>
     <columns>
-        <field>User.Report$CreatedById$LastRunDate</field>
+        <field>User$Name</field>
     </columns>
     <columns>
-        <field>User.Report$CreatedById$CreatedDate</field>
+        <field>User.Report$CreatedById$LastRunDate</field>
     </columns>
     <columns>
         <field>User$Id</field>
@@ -33,7 +33,7 @@
         <criteriaItems>
             <column>User.Report$CreatedById$LastRunDate</column>
             <operator>lessThan</operator>
-            <value>N_MONTHS_AGO:3</value>
+            <value>N_MONTHS_AGO:6</value>
         </criteriaItems>
         <criteriaItems>
             <column>User$IsActive</column>
@@ -48,8 +48,8 @@
     </filter>
     <format>Summary</format>
     <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>User$Name</field>
+        <dateGranularity>Month</dateGranularity>
+        <field>User.Report$CreatedById$CreatedDate</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Old Reports Not Run Last 3 Months</name>

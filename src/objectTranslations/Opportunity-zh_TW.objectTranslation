@@ -438,7 +438,7 @@
         <relationshipLabel><!-- Client Opportunities --></relationshipLabel>
     </fields>
     <fields>
-        <label><!-- Channel --></label>
+        <label><!-- Marketing Channel --></label>
         <name>Channel__c</name>
     </fields>
     <fields>
@@ -543,6 +543,14 @@
         <picklistValues>
             <masterLabel>Backups</masterLabel>
             <translation><!-- Backups --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bad Email</masterLabel>
+            <translation><!-- Bad Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bad Phone</masterLabel>
+            <translation><!-- Bad Phone --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Budget Not Approved</masterLabel>
@@ -715,6 +723,10 @@
         <picklistValues>
             <masterLabel>Need more time and will upgrade later</masterLabel>
             <translation><!-- Need more time and will upgrade later --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Response</masterLabel>
+            <translation><!-- No Response --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>No products</masterLabel>
@@ -2851,6 +2863,7 @@
         <name>Integrations_needed__c</name>
     </fields>
     <fields>
+        <help><!-- MH - This field indicates whether the store associated with this opportunity was ever a trial --></help>
         <label><!-- IsTrial --></label>
         <name>IsTrial__c</name>
     </fields>
@@ -2901,36 +2914,20 @@
     <fields>
         <name>LeadSource</name>
         <picklistValues>
-            <masterLabel>ACQ Demand Gen</masterLabel>
-            <translation><!-- ACQ Demand Gen --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>ACQ Hubspot Content</masterLabel>
-            <translation><!-- ACQ Hubspot Content --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>ACQ Hubspot Demo Request</masterLabel>
-            <translation><!-- ACQ Hubspot Demo Request --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>ACQ List Upload</masterLabel>
             <translation><!-- ACQ List Upload --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>AYRM</masterLabel>
-            <translation><!-- AYRM --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Affiliate</masterLabel>
             <translation><!-- Affiliate --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Campaign Import</masterLabel>
-            <translation><!-- Campaign Import --></translation>
+            <masterLabel>Blogs</masterLabel>
+            <translation><!-- Blogs --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Chat</masterLabel>
-            <translation><!-- Chat --></translation>
+            <masterLabel>Campaign Import</masterLabel>
+            <translation><!-- Campaign Import --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Datanyze Import</masterLabel>
@@ -2945,32 +2942,8 @@
             <translation><!-- Display --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>EBQ DM</masterLabel>
-            <translation><!-- EBQ DM --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>EBQ DM2</masterLabel>
-            <translation><!-- EBQ DM2 --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>EBQ DM3</masterLabel>
-            <translation><!-- EBQ DM3 --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Email / Ticket</masterLabel>
-            <translation><!-- Email / Ticket --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Email Advertising</masterLabel>
             <translation><!-- Email Advertising --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Enterprise Partner Lead</masterLabel>
-            <translation><!-- Enterprise Partner Lead --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Event</masterLabel>
-            <translation><!-- Event --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Events</masterLabel>
@@ -2981,28 +2954,12 @@
             <translation><!-- G2Crowd --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>GPN Campaign Import</masterLabel>
-            <translation><!-- GPN Campaign Import --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Hubspot</masterLabel>
-            <translation><!-- Hubspot --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>IR Special Report 2014</masterLabel>
-            <translation><!-- IR Special Report 2014 --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Inbound</masterLabel>
             <translation><!-- Inbound --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Internet Retailer</masterLabel>
             <translation><!-- Internet Retailer --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Netline</masterLabel>
-            <translation><!-- Netline --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Organic Search</masterLabel>
@@ -3013,32 +2970,8 @@
             <translation><!-- Organic Social --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Orion</masterLabel>
-            <translation><!-- Orion --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Other</masterLabel>
             <translation><!-- Other --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>PRE Demand Gen</masterLabel>
-            <translation><!-- PRE Demand Gen --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>PRE Hubspot Content</masterLabel>
-            <translation><!-- PRE Hubspot Content --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>PRE Hubspot Demo Request</masterLabel>
-            <translation><!-- PRE Hubspot Demo Request --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Partner</masterLabel>
-            <translation><!-- Partner --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Phone / Queue</masterLabel>
-            <translation><!-- Phone / Queue --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Print Ads</masterLabel>
@@ -3059,22 +2992,6 @@
         <picklistValues>
             <masterLabel>Social Ads</masterLabel>
             <translation><!-- Social Ads --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Web Form</masterLabel>
-            <translation><!-- Web Form --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Web Trial</masterLabel>
-            <translation><!-- Web Trial --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>WebToLead</masterLabel>
-            <translation><!-- WebToLead --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Webinar</masterLabel>
-            <translation><!-- Webinar --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Webinar List</masterLabel>
@@ -3362,6 +3279,10 @@
         <name>MRR_Change__c</name>
     </fields>
     <fields>
+        <label><!-- Manager Notes --></label>
+        <name>Manager_Notes__c</name>
+    </fields>
+    <fields>
         <label><!-- Marketing Campaign --></label>
         <name>MarketingCampaign__c</name>
     </fields>
@@ -3376,10 +3297,6 @@
     <fields>
         <label><!-- Marketing Keyword --></label>
         <name>Marketing_Keyword__c</name>
-    </fields>
-    <fields>
-        <label><!-- Marketing Medium --></label>
-        <name>Marketing_Medium__c</name>
     </fields>
     <fields>
         <help><!-- Marketing Price Testing Group from Lead --></help>
@@ -3458,8 +3375,16 @@
         <label><!-- Migration Platform --></label>
         <name>Migration_Platform__c</name>
         <picklistValues>
+            <masterLabel>1Shopping</masterLabel>
+            <translation><!-- 1Shopping --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>3dCart</masterLabel>
             <translation><!-- 3dCart --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amazon Marketplace</masterLabel>
+            <translation><!-- Amazon Marketplace --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Amazon Webstore</masterLabel>
@@ -3476,6 +3401,10 @@
         <picklistValues>
             <masterLabel>Bigcommerce</masterLabel>
             <translation><!-- Bigcommerce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CRE Loaded</masterLabel>
+            <translation><!-- CRE Loaded --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>CSCart</masterLabel>
@@ -3498,6 +3427,10 @@
             <translation><!-- GoDaddy --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>GoDaddy QuickCart</masterLabel>
+            <translation><!-- GoDaddy QuickCart --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Interspire (standard SOW)</masterLabel>
             <translation><!-- Interspire (standard SOW) --></translation>
         </picklistValues>
@@ -3510,6 +3443,10 @@
             <translation><!-- Loaded Commerce (CRELoaded/OSCommerce) --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Magento CE/EE</masterLabel>
+            <translation><!-- Magento CE/EE --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Magento Go</masterLabel>
             <translation><!-- Magento Go --></translation>
         </picklistValues>
@@ -3520,6 +3457,10 @@
         <picklistValues>
             <masterLabel>Mal&apos;s eCommerce</masterLabel>
             <translation><!-- Mal&apos;s eCommerce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Miva Merchant</masterLabel>
+            <translation><!-- Miva Merchant --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Miva Merchant V4</masterLabel>
@@ -3576,6 +3517,10 @@
         <picklistValues>
             <masterLabel>ShoppePro</masterLabel>
             <translation><!-- ShoppePro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VirtueMart</masterLabel>
+            <translation><!-- VirtueMart --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Volusion</masterLabel>
@@ -4220,52 +4165,36 @@
         <label><!-- Projected Annual Revenue --></label>
         <name>Projected_Annual_Revenue__c</name>
         <picklistValues>
-            <masterLabel>$1,000,000 - $2,500,000</masterLabel>
-            <translation><!-- $1,000,000 - $2,500,000 --></translation>
+            <masterLabel>$1,000,000 - $2,000,000</masterLabel>
+            <translation><!-- $1,000,000 - $2,000,000 --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>$10,000,001 +</masterLabel>
-            <translation><!-- $10,000,001 + --></translation>
+            <masterLabel>$2,000,000 - $5,000,000</masterLabel>
+            <translation><!-- $2,000,000 - $5,000,000 --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>$100,000 - $500,000</masterLabel>
-            <translation><!-- $100,000 - $500,000 --></translation>
+            <masterLabel>$250,000 - $500,000</masterLabel>
+            <translation><!-- $250,000 - $500,000 --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>$100,000,001 - $500,000,000</masterLabel>
-            <translation><!-- $100,000,001 - $500,000,000 --></translation>
+            <masterLabel>$5,000,000 - $50,000,000</masterLabel>
+            <translation><!-- $5,000,000 - $50,000,000 --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>$2,500,000 - $5,000,000</masterLabel>
-            <translation><!-- $2,500,000 - $5,000,000 --></translation>
+            <masterLabel>$50,000 - $250,000</masterLabel>
+            <translation><!-- $50,000 - $250,000 --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>$200,000 - $1,000,000</masterLabel>
-            <translation><!-- $200,000 - $1,000,000 --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>$5,000,000+</masterLabel>
-            <translation><!-- $5,000,000+ --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>$5,000,001 - $10,000,000</masterLabel>
-            <translation><!-- $5,000,001 - $10,000,000 --></translation>
+            <masterLabel>$50,000,000 +</masterLabel>
+            <translation><!-- $50,000,000 + --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>$500,000 - $1,000,000</masterLabel>
             <translation><!-- $500,000 - $1,000,000 --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Less than $100,000</masterLabel>
-            <translation><!-- Less than $100,000 --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Less than $200,000</masterLabel>
-            <translation><!-- Less than $200,000 --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Less than $500,000</masterLabel>
-            <translation><!-- Less than $500,000 --></translation>
+            <masterLabel>&lt; $50,000</masterLabel>
+            <translation><!-- &lt; $50,000 --></translation>
         </picklistValues>
     </fields>
     <fields>
@@ -4281,7 +4210,35 @@
         <name>Promo_Given_Date__c</name>
     </fields>
     <fields>
-        <help><!-- Marketing : promotion given to a prospect to encourage them to upgrade from a free trial to a paid store --></help>
+        <label><!-- Promo Months Free --></label>
+        <name>Promo_Months_Free__c</name>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Promotion --></label>
+        <name>Promo__c</name>
+        <picklistValues>
+            <masterLabel>Comp Cart Free Mos Aug 2016</masterLabel>
+            <translation><!-- Comp Cart Free Mos Aug 2016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Netsuite Free Mos July 2016</masterLabel>
+            <translation><!-- Netsuite Free Mos July 2016 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Promotion applied to a purchase. --></help>
         <label><!-- Promotion --></label>
         <name>Promotion__c</name>
     </fields>
@@ -4425,49 +4382,16 @@
         </picklistValues>
     </fields>
     <fields>
-        <help><!-- Lookup to your Amended Contract. --></help>
-        <label><!-- Amended Contract --></label>
-        <name>SBQQ__AmendedContract__c</name>
-        <relationshipLabel><!-- Amendment Opportunities --></relationshipLabel>
-    </fields>
-    <fields>
-        <help><!-- SteelBrick CPQ uses this field to automatically convert assets and subscriptions. --></help>
-        <label><!-- Contracted --></label>
-        <name>SBQQ__Contracted__c</name>
-    </fields>
-    <fields>
-        <help><!-- Select this checkbox to create Contracted Prices without creating a Contract. --></help>
-        <label><!-- Create Contracted Prices --></label>
-        <name>SBQQ__CreateContractedPrices__c</name>
-    </fields>
-    <fields>
-        <help><!-- SteelBrick CPQ uses this to point to the primary quote on this opportunity. --></help>
-        <label><!-- Primary Quote --></label>
-        <name>SBQQ__PrimaryQuote__c</name>
-        <relationshipLabel><!-- Opportunities --></relationshipLabel>
-    </fields>
-    <fields>
-        <label><!-- Quote Pricebook Id --></label>
-        <name>SBQQ__QuotePricebookId__c</name>
-    </fields>
-    <fields>
-        <help><!-- Indicates this opportunity is a renewal opportunity. --></help>
-        <label><!-- Renewal --></label>
-        <name>SBQQ__Renewal__c</name>
-    </fields>
-    <fields>
-        <help><!-- Contract being renewed by this renewal opportunity. If the several contracts roll up to this opportunity, this points at the master contract. --></help>
-        <label><!-- Renewed Contract --></label>
-        <name>SBQQ__RenewedContract__c</name>
-        <relationshipLabel><!-- Renewal Opportunities --></relationshipLabel>
-    </fields>
-    <fields>
         <label><!-- zSales Do Not Call --></label>
         <name>Sales_Do_Not_Call__c</name>
     </fields>
     <fields>
-        <label><!-- Manager Notes --></label>
+        <label><!-- Sales Notes --></label>
         <name>Sales_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample_100 --></label>
+        <name>Sample_100__c</name>
     </fields>
     <fields>
         <label><!-- Scope --></label>
@@ -4595,12 +4519,12 @@
             <translation><!-- Purchased --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Qualification</masterLabel>
-            <translation><!-- Qualification --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Qualify</masterLabel>
             <translation><!-- Qualify --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referred</masterLabel>
+            <translation><!-- Referred --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Rejected</masterLabel>
@@ -4639,8 +4563,16 @@
             <translation><!-- Trial Expired --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Underwriting</masterLabel>
+            <translation><!-- Underwriting --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Validate</masterLabel>
             <translation><!-- Validate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting on Statements</masterLabel>
+            <translation><!-- Waiting on Statements --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Waiting on payment</masterLabel>
@@ -5312,6 +5244,10 @@ Hot: came in from a good source and/or is progressing towards close --></help>
             <section>Marketing</section>
         </sections>
         <sections>
+            <label><!-- Marketing URLs --></label>
+            <section>Marketing URLs</section>
+        </sections>
+        <sections>
             <label><!-- Misc --></label>
             <section>Misc</section>
         </sections>
@@ -5455,12 +5391,12 @@ Hot: came in from a good source and/or is progressing towards close --></help>
             <section>Contact Information</section>
         </sections>
         <sections>
-            <label><!-- MBA --></label>
-            <section>MBA</section>
-        </sections>
-        <sections>
             <label><!-- Sales Notes --></label>
             <section>Sales Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Store Information --></label>
+            <section>Store Information</section>
         </sections>
     </layouts>
     <layouts>
@@ -5502,6 +5438,10 @@ Hot: came in from a good source and/or is progressing towards close --></help>
             <section>Marketing</section>
         </sections>
         <sections>
+            <label><!-- Marketing URLs --></label>
+            <section>Marketing URLs</section>
+        </sections>
+        <sections>
             <label><!-- Misc --></label>
             <section>Misc</section>
         </sections>
@@ -5532,10 +5472,6 @@ Hot: came in from a good source and/or is progressing towards close --></help>
         <sections>
             <label><!-- Totango --></label>
             <section>Totango</section>
-        </sections>
-        <sections>
-            <label><!-- Zuora Details --></label>
-            <section>Zuora Details</section>
         </sections>
     </layouts>
     <layouts>
@@ -5584,6 +5520,10 @@ Hot: came in from a good source and/or is progressing towards close --></help>
             <section>Marketing</section>
         </sections>
         <sections>
+            <label><!-- Marketing URLs --></label>
+            <section>Marketing URLs</section>
+        </sections>
+        <sections>
             <label><!-- Misc --></label>
             <section>Misc</section>
         </sections>
@@ -5614,10 +5554,6 @@ Hot: came in from a good source and/or is progressing towards close --></help>
         <sections>
             <label><!-- Totango --></label>
             <section>Totango</section>
-        </sections>
-        <sections>
-            <label><!-- Zuora Details --></label>
-            <section>Zuora Details</section>
         </sections>
     </layouts>
     <layouts>
@@ -5716,6 +5652,10 @@ Hot: came in from a good source and/or is progressing towards close --></help>
         <sections>
             <label><!-- Marketing --></label>
             <section>Marketing</section>
+        </sections>
+        <sections>
+            <label><!-- Marketing Links --></label>
+            <section>Marketing Links</section>
         </sections>
         <sections>
             <label><!-- Misc --></label>
@@ -6031,14 +5971,6 @@ Hot: came in from a good source and/or is progressing towards close --></help>
     <webLinks>
         <label><!-- Professional_Services --></label>
         <name>Professional_Services</name>
-    </webLinks>
-    <webLinks>
-        <label><!-- Amend_Contract --></label>
-        <name>SBQQ__Amend_Contract</name>
-    </webLinks>
-    <webLinks>
-        <label><!-- Include_Document --></label>
-        <name>SBQQ__Include_Document</name>
     </webLinks>
     <webLinks>
         <label><!-- Set_Callback --></label>

@@ -426,31 +426,22 @@ public void afterUpdate(List<Opportunity> lstnew,List<Opportunity> lstold){
             system.debug('*** source '+lstnew[i].Source__c);
             if (lstnew[i].Source__c == 'BMP' )
             {
-                System.debug(lstnew[i]);
-                System.debug(lstold[i]);
            		if (lstnew[i].Zuora_Version__c <> null && StaticVariables.ZuoraUpdate == true
            			&& ( (lstnew[i].Zuora_Version__c ==1 && lstold[i].Zuora_Version__c == null)
            				|| (lstnew[i].Zuora_Version__c <> lstold[i].Zuora_Version__c)
            			     
            				) )
  				{
-                    System.debug('Adding record to mpBMPOpp: ' + lstnew[i]);
             		mpBMPOpp.put(lstnew[i].Id,lstnew[i]);
  				}
  				else if (lstnew[i].Status__c!= lstold[i].Status__c)
            		{
-                    System.debug('Adding record to mpBMPOppStat: ' + lstnew[i]);
            			mpBMPOppStat.put(lstnew[i].Id,lstnew[i]);
            		}
            		else if (lstnew[i].ProductID__c!= lstold[i].ProductID__c)
            		{
-                    System.debug('Adding record to mpBMPOppProd: ' + lstnew[i]);
            			mpBMPOppProd.put(lstnew[i].Id,lstnew[i]);
            		}
-                else
-                {
-                    System.debug('Not adding record to a list: ' + lstnew[i]);
-                }
             }
             else if (lstnew[i].MonthlyRecurringRevenue__c!= lstold[i].MonthlyRecurringRevenue__c
                		|| lstnew[i].ProductID__c!= lstold[i].ProductID__c
@@ -458,7 +449,6 @@ public void afterUpdate(List<Opportunity> lstnew,List<Opportunity> lstold){
                 	)
            
 			{
-                System.debug('Adding record to mpOppIdToOpportunity, mpOppIdToProId: ' + lstnew[i]);
                	mpOppIdToOpportunity.put(lstnew[i].Id,lstnew[i]); 
   				mpOppIdToProId.put(lstnew[i].Id,lstnew[i].ProductID__c);   
             } 

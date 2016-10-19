@@ -162,7 +162,8 @@
             <field>ContactId</field>
             <type>contactLookup</type>
         </recipients>
-        <senderType>CurrentUser</senderType>
+        <senderAddress>support@bigcommerce.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
         <template>Case_Templates/Case_OCR_Final_Response_and_Closure</template>
     </alerts>
     <alerts>
@@ -173,7 +174,8 @@
             <field>ContactId</field>
             <type>contactLookup</type>
         </recipients>
-        <senderType>CurrentUser</senderType>
+        <senderAddress>support@bigcommerce.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
         <template>Case_Templates/Case_OCR_Second_Response</template>
     </alerts>
     <alerts>
@@ -259,7 +261,7 @@
             <field>ContactEmail</field>
             <type>email</type>
         </recipients>
-        <senderAddress>bigcommercemigration@bigcommerce.com</senderAddress>
+        <senderAddress>catalogtransfer@bigcommerce.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Migration_Emails/Migration_Data_Spot_Check_24_hour_reminder</template>
     </alerts>
@@ -272,7 +274,7 @@
             <field>ContactEmail</field>
             <type>email</type>
         </recipients>
-        <senderAddress>bigcommercemigration@bigcommerce.com</senderAddress>
+        <senderAddress>catalogtransfer@bigcommerce.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Migration_Emails/Migration_Data_Spot_Check_1st_Email</template>
     </alerts>
@@ -285,7 +287,7 @@
             <field>ContactEmail</field>
             <type>email</type>
         </recipients>
-        <senderAddress>bigcommercemigration@bigcommerce.com</senderAddress>
+        <senderAddress>catalogtransfer@bigcommerce.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Migration_Emails/Migration_Delayed_CSAT_Survey</template>
     </alerts>
@@ -298,7 +300,7 @@
             <field>ContactEmail</field>
             <type>email</type>
         </recipients>
-        <senderAddress>bigcommercemigration@bigcommerce.com</senderAddress>
+        <senderAddress>catalogtransfer@bigcommerce.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Migration_Emails/Migration_Invalid_Credentials_Email</template>
     </alerts>
@@ -311,7 +313,7 @@
             <field>ContactEmail</field>
             <type>email</type>
         </recipients>
-        <senderAddress>bigcommercemigration@bigcommerce.com</senderAddress>
+        <senderAddress>catalogtransfer@bigcommerce.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Migration_Emails/Migration_Migration_Complete_No_CSAT</template>
     </alerts>
@@ -324,7 +326,7 @@
             <field>ContactEmail</field>
             <type>email</type>
         </recipients>
-        <senderAddress>bigcommercemigration@bigcommerce.com</senderAddress>
+        <senderAddress>catalogtransfer@bigcommerce.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Migration_Emails/Migration_Migration_Complete_with_CSAT_Survey</template>
     </alerts>
@@ -337,7 +339,7 @@
             <field>ContactEmail</field>
             <type>email</type>
         </recipients>
-        <senderAddress>bigcommercemigration@bigcommerce.com</senderAddress>
+        <senderAddress>catalogtransfer@bigcommerce.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Migration_Emails/Migration_Reviewing_your_Verification_Notes</template>
     </alerts>
@@ -350,7 +352,7 @@
             <field>ContactEmail</field>
             <type>email</type>
         </recipients>
-        <senderAddress>bigcommercemigration@bigcommerce.com</senderAddress>
+        <senderAddress>catalogtransfer@bigcommerce.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Migration_Emails/Migration_UAT_Data_Spot_Check</template>
     </alerts>
@@ -363,7 +365,7 @@
             <field>ContactEmail</field>
             <type>email</type>
         </recipients>
-        <senderAddress>bigcommercemigration@bigcommerce.com</senderAddress>
+        <senderAddress>catalogtransfer@bigcommerce.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Migration_Emails/Migration_Valid_Credentials_Received</template>
     </alerts>
@@ -475,7 +477,7 @@
             <field>ContactEmail</field>
             <type>email</type>
         </recipients>
-        <senderAddress>bigcommercemigration@bigcommerce.com</senderAddress>
+        <senderAddress>catalogtransfer@bigcommerce.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Migration_Emails/Migration_Kick_Off_Admin_Only</template>
     </alerts>
@@ -488,7 +490,7 @@
             <field>ContactEmail</field>
             <type>email</type>
         </recipients>
-        <senderAddress>bigcommercemigration@bigcommerce.com</senderAddress>
+        <senderAddress>catalogtransfer@bigcommerce.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Migration_Emails/Migration_Kick_Off_Admin_FTP</template>
     </alerts>
@@ -501,7 +503,7 @@
             <field>ContactEmail</field>
             <type>email</type>
         </recipients>
-        <senderAddress>bigcommercemigration@bigcommerce.com</senderAddress>
+        <senderAddress>catalogtransfer@bigcommerce.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Migration_Emails/Migration_Re_Request_Admin_Only</template>
     </alerts>
@@ -514,7 +516,7 @@
             <field>ContactEmail</field>
             <type>email</type>
         </recipients>
-        <senderAddress>bigcommercemigration@bigcommerce.com</senderAddress>
+        <senderAddress>catalogtransfer@bigcommerce.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Migration_Emails/Migration_Re_Request_Admin_FTP</template>
     </alerts>
@@ -527,7 +529,7 @@
             <field>ContactEmail</field>
             <type>email</type>
         </recipients>
-        <senderAddress>bigcommercemigration@bigcommerce.com</senderAddress>
+        <senderAddress>catalogtransfer@bigcommerce.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Migration_Emails/Migration_Withdrawn</template>
     </alerts>
@@ -732,6 +734,15 @@ Assign to Fritz since Abbey has left.</description>
         <field>Email_Log__c</field>
         <formula>Email_Log__c +&quot;; &quot;+&quot;Final OCR Response&quot;</formula>
         <name>Case: Email Log =+ Final OCR Response</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Case_Email_Log_Second_OCR_Response_1</fullName>
+        <field>Email_Log__c</field>
+        <formula>Email_Log__c +&quot;; &quot;+&quot;Second OCR Response&quot;</formula>
+        <name>Case: Email Log =+ Second OCR Response</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
@@ -1812,7 +1823,7 @@ Set by hierarchy : Contact &gt; Lead &gt; Web Email &gt; Subscription Email</des
             <name>Trigger_Insight_Billing_Flow</name>
             <type>FlowAction</type>
         </actions>
-        <active>false</active>
+        <active>true</active>
         <description>Associate Store to Insight Billing Case</description>
         <formula>isblank(Opportunity__c) &amp;&amp;   ISPICKVAL(Origin, &quot;Insight Billing&quot;)</formula>
         <triggerType>onAllChanges</triggerType>
@@ -1853,7 +1864,7 @@ Set by hierarchy : Contact &gt; Lead &gt; Web Email &gt; Subscription Email</des
         <criteriaItems>
             <field>Case.Origin</field>
             <operation>equals</operation>
-            <value>Web,billing@bigcommerce.com,cancellations@bigcommerce.com</value>
+            <value>Web</value>
         </criteriaItems>
         <criteriaItems>
             <field>Case.RecordTypeId</field>
@@ -1884,7 +1895,7 @@ Set by hierarchy : Contact &gt; Lead &gt; Web Email &gt; Subscription Email</des
         <criteriaItems>
             <field>Case.Origin</field>
             <operation>equals</operation>
-            <value>Web,billing@bigcommerce.com,cancellations@bigcommerce.com</value>
+            <value>Web</value>
         </criteriaItems>
         <criteriaItems>
             <field>Case.RecordTypeId</field>
@@ -2217,6 +2228,43 @@ Set by hierarchy : Contact &gt; Lead &gt; Web Email &gt; Subscription Email</des
         <triggerType>onCreateOnly</triggerType>
     </rules>
     <rules>
+        <fullName>CS Email %3A New Email Sent to support%40bigcommerce%2Ecom</fullName>
+        <actions>
+            <name>CS_New_Case_Sent_to_support_bigcommerce_com</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Case_Reason_support_bc</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Case_Status_Closed</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Do_Not_Send_Survey_True</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.Origin</field>
+            <operation>equals</operation>
+            <value>support@bigcommerce.com (closed)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.SuppliedEmail</field>
+            <operation>notContain</operation>
+            <value>mailer-daemon,postmaster</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Subject</field>
+            <operation>notContain</operation>
+            <value>loop protection,Undelivered Mail Return</value>
+        </criteriaItems>
+        <description>If client emails support@bigcommerce.com without case reference, automatically close new case and email client directing them to open case via chat, web, or phone</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
         <fullName>CS Enterprise Case Manager Notification</fullName>
         <actions>
             <name>Premium_Case_Notification</name>
@@ -2513,7 +2561,7 @@ Set by hierarchy : Contact &gt; Lead &gt; Web Email &gt; Subscription Email</des
         <criteriaItems>
             <field>Case.Origin</field>
             <operation>notEqual</operation>
-            <value>Employee Account,Web</value>
+            <value>Employee Account</value>
         </criteriaItems>
         <description>Sends Client Success Survey Email</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
@@ -2588,7 +2636,7 @@ NOT(ISPICKVAL(Status,&quot;Closed&quot;))</formula>
         <criteriaItems>
             <field>Case.Status</field>
             <operation>notEqual</operation>
-            <value>Closed,Auto-Closed</value>
+            <value>Closed,Auto-Closed,Open Unsolved</value>
         </criteriaItems>
         <criteriaItems>
             <field>Case.OCR_Resolution__c</field>
@@ -2599,6 +2647,10 @@ NOT(ISPICKVAL(Status,&quot;Closed&quot;))</formula>
             <actions>
                 <name>Case_Send_Second_OCR_Response_Email</name>
                 <type>Alert</type>
+            </actions>
+            <actions>
+                <name>Case_Email_Log_Second_OCR_Response_1</name>
+                <type>FieldUpdate</type>
             </actions>
             <timeLength>24</timeLength>
             <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
@@ -2625,7 +2677,7 @@ NOT(ISPICKVAL(Status,&quot;Closed&quot;))</formula>
         <criteriaItems>
             <field>Case.Status</field>
             <operation>notEqual</operation>
-            <value>Closed,Auto-Closed</value>
+            <value>Closed,Auto-Closed,Open Unsolved</value>
         </criteriaItems>
         <criteriaItems>
             <field>Case.OCR_Resolution__c</field>
@@ -2773,35 +2825,6 @@ NOT(ISPICKVAL(Status,&quot;Closed&quot;))</formula>
             <value>No</value>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Close Case in Billing Queue Waiting on Client after 72 hrs</fullName>
-        <active>true</active>
-        <criteriaItems>
-            <field>Case.OwnerId</field>
-            <operation>equals</operation>
-            <value>Billing Queue</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>Client Success,Billing</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Case.Status</field>
-            <operation>equals</operation>
-            <value>Waiting on Client</value>
-        </criteriaItems>
-        <description>Close Case in Billing Queue Waiting on Client after 72 hrs</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-        <workflowTimeTriggers>
-            <actions>
-                <name>Case_Status_Auto_Closed</name>
-                <type>FieldUpdate</type>
-            </actions>
-            <timeLength>1</timeLength>
-            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
-        </workflowTimeTriggers>
     </rules>
     <rules>
         <fullName>Close Insight Billing Cases</fullName>
@@ -3734,7 +3757,7 @@ ISCHANGED( Survey_Completion_Date__c )</formula>
     </rules>
     <tasks>
         <fullName>Cancellation_Survey_Sent_Testing</fullName>
-        <assignedTo>maria.huemmer@bigcommerce.com</assignedTo>
+        <assignedTo>miles.leymeister@bigcommerce.com</assignedTo>
         <assignedToType>user</assignedToType>
         <dueDateOffset>0</dueDateOffset>
         <notifyAssignee>false</notifyAssignee>

@@ -2,10 +2,10 @@
 <CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
     <customApplicationComponents>
         <alignment>right</alignment>
+        <customApplicationComponent>Console.BuiltInComponent.macroBrowser</customApplicationComponent>
         <customApplicationComponent>Console.BuiltInComponent.mostRecentlyUsed</customApplicationComponent>
         <customApplicationComponent>WorkIt2__WorkItConsoleApp</customApplicationComponent>
         <customApplicationComponent>Console.BuiltInComponent.knowledgeOne</customApplicationComponent>
-        <customApplicationComponent>Console.BuiltInComponent.macroBrowser</customApplicationComponent>
     </customApplicationComponents>
     <defaultLandingTab>standard-home</defaultLandingTab>
     <description>Client Success Case Console case Feed</description>

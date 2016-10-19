@@ -3,5 +3,5 @@
     <description>BMP api</description>
     <disableProtocolSecurity>false</disableProtocolSecurity>
     <isActive>true</isActive>
-    <url>https://manage.staging.zone</url>
+    <url>https://manage.bigcommerce.com</url>
 </RemoteSiteSetting>

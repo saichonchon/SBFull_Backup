@@ -8,7 +8,7 @@
         <outerJoin>true</outerJoin>
         <relationship>CaseComments</relationship>
     </join>
-    <label>Cases with or without comments</label>
+    <label>zCases with or without comments</label>
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>

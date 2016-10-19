@@ -436,11 +436,14 @@
     <searchLayouts>
         <customTabListAdditionalFields>IDEA.TITLE</customTabListAdditionalFields>
         <customTabListAdditionalFields>IDEA.BODY</customTabListAdditionalFields>
+        <customTabListAdditionalFields>COMMUNITY.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>IDEA.CREATED_DATE</customTabListAdditionalFields>
         <customTabListAdditionalFields>IDEA.CREATED_BY_NICKNAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>IDEA.NUM_COMMENTS</customTabListAdditionalFields>
+        <customTabListAdditionalFields>VOTE.HAS_VOTED</customTabListAdditionalFields>
         <customTabListAdditionalFields>IDEA.CATEGORIES</customTabListAdditionalFields>
         <customTabListAdditionalFields>IDEA.STATUS</customTabListAdditionalFields>
+        <customTabListAdditionalFields>IDEA.LAST_COMMENT_DATE</customTabListAdditionalFields>
         <lookupDialogsAdditionalFields>IDEA.TITLE</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>COMMUNITY.NAME</lookupDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>IDEA.TITLE</lookupPhoneDialogsAdditionalFields>

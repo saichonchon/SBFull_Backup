@@ -4,14 +4,6 @@
     <category>other</category>
     <deployed>false</deployed>
     <description>Subscriptions w Chatter Feeds CRT</description>
-    <join>
-        <join>
-            <outerJoin>true</outerJoin>
-            <relationship>Comments</relationship>
-        </join>
-        <outerJoin>false</outerJoin>
-        <relationship>FeedItems</relationship>
-    </join>
     <label>zSubscriptions w Chatter Feeds CRT</label>
     <sections>
         <columns>
@@ -1262,129 +1254,9 @@
         <masterLabel>Subscriptions</masterLabel>
     </sections>
     <sections>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Body</field>
-            <table>Subscription__c.FeedItems</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>ClientOauthLink</field>
-            <table>Subscription__c.FeedItems</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>CommentCount</field>
-            <table>Subscription__c.FeedItems</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>CreatedBy</field>
-            <table>Subscription__c.FeedItems</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>CreatedDate</field>
-            <table>Subscription__c.FeedItems</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>DerivedFeedItem</field>
-            <table>Subscription__c.FeedItems</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Type</field>
-            <table>Subscription__c.FeedItems</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Id</field>
-            <table>Subscription__c.FeedItems</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>LastModifiedDate</field>
-            <table>Subscription__c.FeedItems</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>LikeCount</field>
-            <table>Subscription__c.FeedItems</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>LinkUrl</field>
-            <table>Subscription__c.FeedItems</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Title</field>
-            <table>Subscription__c.FeedItems</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Visibility</field>
-            <table>Subscription__c.FeedItems</table>
-        </columns>
         <masterLabel>Feed: Subscription</masterLabel>
     </sections>
     <sections>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>ClientOauthLink</field>
-            <table>Subscription__c.FeedItems.Comments</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>CommentType</field>
-            <table>Subscription__c.FeedItems.Comments</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>CreatedDate</field>
-            <table>Subscription__c.FeedItems.Comments</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>InsertedBy</field>
-            <table>Subscription__c.FeedItems.Comments</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>LastEditDate</field>
-            <table>Subscription__c.FeedItems.Comments</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Revision</field>
-            <table>Subscription__c.FeedItems.Comments</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>CommentBody</field>
-            <table>Subscription__c.FeedItems.Comments</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>CreatedBy</field>
-            <table>Subscription__c.FeedItems.Comments</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Id</field>
-            <table>Subscription__c.FeedItems.Comments</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>IsBest</field>
-            <table>Subscription__c.FeedItems.Comments</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>OriginNetwork</field>
-            <table>Subscription__c.FeedItems.Comments</table>
-        </columns>
         <masterLabel>Comment: Subscription</masterLabel>
     </sections>
 </ReportType>

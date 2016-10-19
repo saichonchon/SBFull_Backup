@@ -59,6 +59,10 @@
                 <behavior>Edit</behavior>
                 <field>Partner_Commission_Earned__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Partner_Is_Eligible_for_Payment__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns/>
         <style>TwoColumnsTopToBottom</style>

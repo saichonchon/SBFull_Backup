@@ -9,7 +9,7 @@ public without sharing class pkb_Controller {
 
   // this needs to be public and not final so that it can be overridden during unit tests, since
   // kav records created in apex cannot be set to 'online', and can only stay at 'draft'
-  public static String DEFAULT_PUBLISH_STATUS = 'online' ;
+  public static String DEFAULT_PUBLISH_STATUS = 'online';
 
   // this also needs to be public to allow setting during unit tests
   public static String DEFAULT_SITE_NAME = Site.getName();
@@ -756,7 +756,14 @@ system.debug('\n\n===== sessionId :'+sessionId+'  contactId :'+contactId);
       body += '\n\nDescription: ' +theCase.Description;
       body += '\n\n';
       msg.setPlainTextBody(body);
-      Messaging.sendEmail(new List<Messaging.SingleEmailMessage>{msg});
+      try
+      {
+        Messaging.sendEmail(new List<Messaging.SingleEmailMessage>{msg});
+      }
+      catch (exception emailExc)
+      {
+        System.Debug('Failed to send email: ' + msg + ' Error: ' + emailExc);
+      }
     }
   }
 
@@ -1022,7 +1029,6 @@ system.debug('\n\n===== sessionId :'+sessionId+'  contactId :'+contactId);
     public KnowledgeArticleData(Id i, String lang) {
       String q = '';
       String pub = pkb_Controller.DEFAULT_PUBLISH_STATUS;
-  
       q += 'select ' +join(kavFields, ',')+ ' from KnowledgeArticleVersion';
       q += ' where PublishStatus = :pub and Language = :lang and KnowledgeArticleId = :i limit 1';
       KnowledgeArticleVersion kav = (KnowledgeArticleVersion)Database.query(q);

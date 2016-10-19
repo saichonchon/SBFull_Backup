@@ -316,14 +316,12 @@
         <fields>SupportPin__c</fields>
         <fields>ParentId</fields>
         <relatedLists>
-            <fields>OPPORTUNITY.NAME</fields>
-            <fields>OPPORTUNITY.STAGE_NAME</fields>
-            <fields>Product__c</fields>
             <relatedList>RelatedOpportunityList</relatedList>
         </relatedLists>
         <relatedLists>
             <fields>CASES.CASE_NUMBER</fields>
             <fields>CASES.SUBJECT</fields>
+            <fields>CASES.CREATED_DATE_DATE_ONLY</fields>
             <relatedList>RelatedCaseList</relatedList>
         </relatedLists>
     </miniLayout>
@@ -333,10 +331,9 @@
         <fields>CONTACT.TITLE</fields>
         <fields>CONTACT.EMAIL</fields>
         <fields>CONTACT.PHONE1</fields>
-        <fields>Primary_MBA_Contact__c</fields>
         <fields>No_longer_with_the_company__c</fields>
+        <fields>Primary_MBA_Contact__c</fields>
         <fields>CONTACT.CREATED_DATE</fields>
-        <fields>CORE.USERS.LAST_NAME</fields>
         <relatedList>RelatedContactList</relatedList>
     </relatedLists>
     <relatedLists>
@@ -349,8 +346,8 @@
         <fields>CORE.USERS.FULL_NAME</fields>
         <fields>PurchaseDate__c</fields>
         <fields>Purchase_Rep__c</fields>
-        <fields>Day_of_Trial__c</fields>
         <fields>StoreURL__c</fields>
+        <fields>Account_Management_Services__c</fields>
         <relatedList>RelatedOpportunityList</relatedList>
     </relatedLists>
     <relatedLists>

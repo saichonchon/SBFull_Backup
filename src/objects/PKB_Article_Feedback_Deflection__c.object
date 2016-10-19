@@ -116,19 +116,6 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Author__c</fullName>
-        <description>Article author at the time that the PKB Deflection record is created</description>
-        <externalId>false</externalId>
-        <inlineHelpText>Article author at the time that the PKB Deflection record is created</inlineHelpText>
-        <label>Author</label>
-        <length>255</length>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>Case_Association_Count__c</fullName>
         <externalId>false</externalId>
         <label>Case Association Count</label>

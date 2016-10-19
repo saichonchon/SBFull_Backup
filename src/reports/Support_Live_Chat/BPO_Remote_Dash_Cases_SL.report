@@ -41,6 +41,9 @@
         <field>ACCOUNT.NAME</field>
     </columns>
     <columns>
+        <field>Case.Bigcommerce_Plan__c</field>
+    </columns>
+    <columns>
         <field>Case.Design_Escalation_Date__c</field>
     </columns>
     <columns>

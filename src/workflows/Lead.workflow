@@ -41,7 +41,7 @@
             <type>owner</type>
         </recipients>
         <senderType>CurrentUser</senderType>
-        <template>Internal_Workflow_Communications_Sales/LeadsNewassignmentnotificationSAMPLE</template>
+        <template>Internal_Email_Template/LeadsNewassignmentnotificationSAMPLE</template>
     </alerts>
     <alerts>
         <fullName>New_Trial_Old_Lead_Email_Owner</fullName>
@@ -51,7 +51,7 @@
             <type>owner</type>
         </recipients>
         <senderType>CurrentUser</senderType>
-        <template>Internal_Workflow_Communications_Sales/Leads_New_Trial_Added_to_Old_Lead</template>
+        <template>Internal_Email_Template/Leads_New_Trial_Added_to_Old_Lead</template>
     </alerts>
     <alerts>
         <fullName>Notify_Rep_of_Lead_who_downloaded_Pinterest_eBook</fullName>
@@ -84,108 +84,6 @@
         <template>Internal_Email_Template/Owner_Referral_Lead_Notification</template>
     </alerts>
     <fieldUpdates>
-        <fullName>Assignment_Method_Channel_Partner</fullName>
-        <field>Lead_Assignment_Method__c</field>
-        <literalValue>Channel Partner</literalValue>
-        <name>Assignment Method : Channel Partner</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Assignment_Method_Chat</fullName>
-        <field>Lead_Assignment_Method__c</field>
-        <literalValue>Chat</literalValue>
-        <name>Assignment Method : Chat</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Capture_Date_of_Pinterest_eBook</fullName>
-        <field>Pinterest_eBook_Date__c</field>
-        <formula>CreatedDate</formula>
-        <name>Capture Date of Pinterest eBook</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Capture_Date_of_Recorded_Product_Tour</fullName>
-        <field>Recorded_Product_Tour_Date__c</field>
-        <formula>TODAY()</formula>
-        <name>Capture Date of Recorded Product Tour</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Change_owner_to_Alecia</fullName>
-        <description>Change owner to Alecia</description>
-        <field>OwnerId</field>
-        <lookupValue>alecia.wall@bigcommerce.com</lookupValue>
-        <lookupValueType>User</lookupValueType>
-        <name>Change owner to Alecia</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Change_owner_to_The_Bigcommerce_Team</fullName>
-        <field>OwnerId</field>
-        <lookupValue>team@bigcommerce.com</lookupValue>
-        <lookupValueType>User</lookupValueType>
-        <name>Change owner to The Bigcommerce Team</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Clear_Closed_Lost_Reason</fullName>
-        <description>Clear the Closed Lost Reason</description>
-        <field>Closed_Lost_Reason__c</field>
-        <name>Clear Closed Lost Reason</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Clear_Closed_Lost_Reason_Detail</fullName>
-        <description>Clear Closed Lost Reason</description>
-        <field>Functionality_Detail__c</field>
-        <name>Clear Closed Lost Reason Detail</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Closed_Lost_Reason_Testing</fullName>
-        <field>Closed_Lost_Reason__c</field>
-        <literalValue>Test Account</literalValue>
-        <name>Closed Lost Reason : Test Account</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Closed_Lost_Reason_Trial_Expired</fullName>
-        <field>Closed_Lost_Reason__c</field>
-        <literalValue>Trial Expired</literalValue>
-        <name>Closed Lost Reason : Trial Expired</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Closed_Lost_Reason_to_Bad_Number_Email</fullName>
-        <field>Closed_Lost_Reason__c</field>
-        <literalValue>No Valid Phone/Email</literalValue>
-        <name>Closed Lost Reason to Bad Number/Email</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Closed_Lost_Reason_to_Duplicate</fullName>
         <field>Closed_Lost_Reason__c</field>
         <literalValue>Duplicate Record</literalValue>
@@ -195,51 +93,12 @@
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Closed_Lost_Stage</fullName>
-        <field>Stage__c</field>
-        <literalValue>Closed Lost</literalValue>
-        <name>Closed Lost Stage</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Engaged_True</fullName>
-        <field>Engaged__c</field>
-        <literalValue>1</literalValue>
-        <name>Engaged = True</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Hubspot_prem_lead_to_Acq_Miderp</fullName>
-        <description>When a person completes and submits the Enterprise Form Submission, we want HubSpot to create a new Lead in SFDC and populate the lead with some Premium specific information. Additionally, we want the lead routed to Lead Owner = Acquisition Miderprise.</description>
-        <field>OwnerId</field>
-        <lookupValue>Acquisition_Miderprise</lookupValue>
-        <lookupValueType>Queue</lookupValueType>
-        <name>Hubspot prem lead to Acq Miderp</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Lead_Closed_Lost_Date_Populated</fullName>
         <field>Closed_Lost_Date__c</field>
         <formula>TODAY()</formula>
         <name>Lead Closed Lost Date Populated</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Lead_Owner_GSB</fullName>
-        <field>OwnerId</field>
-        <lookupValue>Marketing_GSB</lookupValue>
-        <lookupValueType>Queue</lookupValueType>
-        <name>Lead Owner = GSB Queue</name>
-        <notifyAssignee>true</notifyAssignee>
-        <operation>LookupValue</operation>
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
@@ -253,68 +112,10 @@
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Lead_Owner_to_Bryan_Foster</fullName>
-        <field>OwnerId</field>
-        <lookupValue>bryan.foster@bigcommerce.com</lookupValue>
-        <lookupValueType>User</lookupValueType>
-        <name>Lead Owner to Bryan Foster</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Lead_RT_to_Client_Prospect</fullName>
-        <field>RecordTypeId</field>
-        <lookupValue>Client_Prospect</lookupValue>
-        <lookupValueType>RecordType</lookupValueType>
-        <name>Lead RT to Client Prospect</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Lead_Record_Type_to_Sales</fullName>
-        <field>RecordTypeId</field>
-        <lookupValue>Client_Prospect</lookupValue>
-        <lookupValueType>RecordType</lookupValueType>
-        <name>zLead Record Type to Sales</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Lead_Source_Inbound</fullName>
-        <description>Update Lead Source to Inbound</description>
-        <field>LeadSource</field>
-        <literalValue>Inbound</literalValue>
-        <name>Lead Source = Inbound</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Lead_Source_to_Chat</fullName>
-        <field>LeadSource</field>
-        <literalValue>Chat</literalValue>
-        <name>Lead Source to Chat</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>Lead_Status_Unqualified</fullName>
         <field>Status</field>
         <literalValue>Unqualified</literalValue>
         <name>Lead Status = Unqualified</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Lead_Type_to_Prospect</fullName>
-        <field>Type__c</field>
-        <literalValue>Prospect</literalValue>
-        <name>Lead Type to Prospect</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
@@ -331,15 +132,6 @@
         <reevaluateOnChange>true</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Most_Recenet_Trial_URL_Population</fullName>
-        <field>Most_Recent_Trial_URL__c</field>
-        <formula>Most_Recent_Trial__r.StoreURL__c</formula>
-        <name>Most Recenet Trial URL Population</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
         <fullName>No_Assign_True</fullName>
         <field>No_Assign__c</field>
         <literalValue>1</literalValue>
@@ -349,111 +141,14 @@
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
-        <fullName>Opt_out_of_Email</fullName>
-        <description>Update Email Opt Out field to true.</description>
-        <field>HasOptedOutOfEmail</field>
-        <literalValue>1</literalValue>
-        <name>Opt out of Email</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Owner_API</fullName>
-        <field>OwnerId</field>
-        <lookupValue>team@bigcommerce.com</lookupValue>
-        <lookupValueType>User</lookupValueType>
-        <name>Owner = API User</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Owner_Acq_Queue</fullName>
-        <field>OwnerId</field>
-        <lookupValue>Acquisition_Queue</lookupValue>
-        <lookupValueType>Queue</lookupValueType>
-        <name>Owner = Acq Queue</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Owner_Dane_Koch</fullName>
-        <description>This was assigning owner to Dane, he is no longer here so I have updated to TBT - 6-30-14- MH</description>
-        <field>OwnerId</field>
-        <lookupValue>team@bigcommerce.com</lookupValue>
-        <lookupValueType>User</lookupValueType>
-        <name>Owner = The Bigcommerce Team</name>
-        <notifyAssignee>true</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Owner_Hassan_Johnson</fullName>
+        <fullName>Owner_Acquisition_Queue</fullName>
         <description>changed to queue</description>
         <field>OwnerId</field>
         <lookupValue>Acquisition_Queue</lookupValue>
         <lookupValueType>Queue</lookupValueType>
-        <name>Assign owner to Acq Queue</name>
+        <name>Owner = Acquisition Queue</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>LookupValue</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Owner_Jay_Perkins</fullName>
-        <field>OwnerId</field>
-        <lookupValue>bryan.foster@bigcommerce.com</lookupValue>
-        <lookupValueType>User</lookupValueType>
-        <name>Owner = Bryan Froster</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Owner_to_Chat_Queue</fullName>
-        <field>OwnerId</field>
-        <lookupValue>Chat_Queue_Sales</lookupValue>
-        <lookupValueType>Queue</lookupValueType>
-        <name>Owner to Chat Queue</name>
-        <notifyAssignee>true</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Ownership_Change_Date_Now</fullName>
-        <field>Ownership_Change_Request_Date__c</field>
-        <formula>NOW()</formula>
-        <name>Ownership Change Date = Now</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Ownership_Change_Requestor_User</fullName>
-        <field>Ownership_Change_Requestor__c</field>
-        <formula>$User.Full_Name__c</formula>
-        <name>Ownership Change Requestor = User</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Populate_Initial_Hubspot_Score</fullName>
-        <field>Initial_Hubspot_Score__c</field>
-        <formula>Hubspot_Score__c</formula>
-        <name>Populate Initial Hubspot Score</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Provisioning_Error_True</fullName>
-        <field>Provisioning_Error__c</field>
-        <literalValue>1</literalValue>
-        <name>Provisioning Error = True</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
@@ -461,97 +156,6 @@
         <field>Rating</field>
         <literalValue>Hot</literalValue>
         <name>Rating = Hot</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Referral_Date_Capture</fullName>
-        <field>Referral_Date__c</field>
-        <formula>TODAY()</formula>
-        <name>Referral Date Capture</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Referral_Email_Update</fullName>
-        <field>Referral_Email__c</field>
-        <formula>Design_Account__r.Design_Referral_Email__c</formula>
-        <name>Referral Email Update</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>true</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Referral_Form_URL_Update</fullName>
-        <field>Referral_Form_URL__c</field>
-        <formula>Design_Account__r.Referral_Form_URL__c</formula>
-        <name>Referral Form URL Update</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Formula</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Round_Robin_Assignment_Method</fullName>
-        <field>Lead_Assignment_Method__c</field>
-        <literalValue>Round Robin</literalValue>
-        <name>Round Robin Assignment Method</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Set_Do_Not_Call_to_True</fullName>
-        <field>DoNotCall</field>
-        <literalValue>1</literalValue>
-        <name>Set Do Not Call to True</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Stage_to_Existing_New_Trial</fullName>
-        <field>Stage__c</field>
-        <literalValue>Existing: New Trial</literalValue>
-        <name>Stage to Existing: New Trial</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Stage_to_New</fullName>
-        <field>Stage__c</field>
-        <literalValue>New</literalValue>
-        <name>Stage to New</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Testing_True</fullName>
-        <field>Testing_Lead__c</field>
-        <literalValue>1</literalValue>
-        <name>Testing = True</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Type_Dev_Testing</fullName>
-        <field>Type__c</field>
-        <literalValue>Designer/Dev Testing</literalValue>
-        <name>Type = Dev Testing</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>Type_Trial</fullName>
-        <field>Type__c</field>
-        <literalValue>Trial</literalValue>
-        <name>Type = Trial</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
@@ -708,27 +312,6 @@
         <operation>Literal</operation>
         <protected>false</protected>
     </fieldUpdates>
-    <fieldUpdates>
-        <fullName>set_the_BA_Testing_Lead_field_to_true</fullName>
-        <description>set the BA Testing Lead field to true</description>
-        <field>Testing_Lead__c</field>
-        <literalValue>1</literalValue>
-        <name>set the BA Testing Lead field to true</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>Literal</operation>
-        <protected>false</protected>
-        <reevaluateOnChange>true</reevaluateOnChange>
-    </fieldUpdates>
-    <fieldUpdates>
-        <fullName>usertesting_URL_to_API</fullName>
-        <field>OwnerId</field>
-        <lookupValue>api@bigcommerce.com</lookupValue>
-        <lookupValueType>User</lookupValueType>
-        <name>usertesting URL to API</name>
-        <notifyAssignee>false</notifyAssignee>
-        <operation>LookupValue</operation>
-        <protected>false</protected>
-    </fieldUpdates>
     <outboundMessages>
         <fullName>Deal_Registration_Denied_Outbound</fullName>
         <apiVersion>34.0</apiVersion>
@@ -764,82 +347,6 @@
         <useDeadLetterQueue>false</useDeadLetterQueue>
     </outboundMessages>
     <rules>
-        <fullName>Assign Hubspot leads to The Bigcommerce Team when trial comes in</fullName>
-        <actions>
-            <name>Change_owner_to_The_Bigcommerce_Team</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
-        <criteriaItems>
-            <field>Lead.OwnerId</field>
-            <operation>contains</operation>
-            <value>Hubspot</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Lead.LeadSource</field>
-            <operation>equals</operation>
-            <value>Hubspot</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Lead.Active_Trials__c</field>
-            <operation>greaterThan</operation>
-            <value>0</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Lead.MBA_Partner_ID__c</field>
-            <operation>equals</operation>
-        </criteriaItems>
-        <description>We are currently creating leads (owned by Hubspot) for all content downloads. When a trial is associated with this lead, we want to change ownership to the Bigcommerce Team to allow our sales team to call out on the lead.</description>
-        <triggerType>onAllChanges</triggerType>
-    </rules>
-    <rules>
-        <fullName>Assignment Method %3A Channel Partner</fullName>
-        <actions>
-            <name>Assignment_Method_Channel_Partner</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <description>If MBA Partner ID is populated, change assignment method to Partner</description>
-        <formula>DATEVALUE(CreatedDate) = TODAY() &amp;&amp; ISBLANK(MBA_Partner_ID__c ) = FALSE</formula>
-        <triggerType>onAllChanges</triggerType>
-    </rules>
-    <rules>
-        <fullName>Chat Lead Owner to Queue</fullName>
-        <actions>
-            <name>Owner_to_Chat_Queue</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Lead.Company</field>
-            <operation>equals</operation>
-            <value>t.b.d.</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Lead.OwnerId</field>
-            <operation>equals</operation>
-            <value>Hubspot</value>
-        </criteriaItems>
-        <description>change owner to Chat Queue</description>
-        <triggerType>onCreateOnly</triggerType>
-    </rules>
-    <rules>
-        <fullName>Company %3D Trial New Entry</fullName>
-        <actions>
-            <name>Owner_API</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Lead.Company</field>
-            <operation>equals</operation>
-            <value>Trial New Entry</value>
-        </criteriaItems>
-        <description>Transfers leads with &quot;Trial New Entry&quot; as the company name to API User since that indicates that the MBA Staging Account &amp; Contact records did not sync to SF properly.  Lead needs contact data added and can then be assigned to a rep</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
         <fullName>Demo Request Task - Lead</fullName>
         <actions>
             <name>Rating_Hot</name>
@@ -849,16 +356,18 @@
             <name>Demo_Requested</name>
             <type>Task</type>
         </actions>
-        <active>false</active>
+        <active>true</active>
         <description>When a Lead is added as a campaign member for a demo request, this date is set. Create a task for the Lead owner. 
 For BAP-3811</description>
-        <formula>AND( 
-NOT(ISBLANK(Demo_Requested_Date__c)), 
-OR( Owner:User.Profile.Id  = &apos;00e13000000jUNJ&apos;, /* Lead Development Rep */    
-Owner:User.Profile.Id = &apos;00e130000024OSc&apos;, /* Sales Rep */    
-Owner:User.Profile.Id = &apos;00e13000000jUyt&apos;, /* Sales Rep - Dial on Opps */    
-Owner:User.Profile.Id = &apos;00e130000024OSX&apos;, /* Sales Leader */ 
-Owner:User.Id = &apos;0051300000BsGMP&apos;))</formula>
+        <formula>AND(  
+NOT(ISBLANK(Demo_Requested_Date__c)),  
+OR( 
+Owner:User.Profile.Id = &apos;00e13000000jUNJ&apos;, /* Lead Development Rep */     
+Owner:User.Profile.Id = &apos;00e130000024OSc&apos;, /* Sales Rep */     
+Owner:User.Profile.Id = &apos;00e13000000jUyt&apos;, /* Sales Rep - Dial on Opps */     
+Owner:User.Profile.Id = &apos;00e130000024OSX&apos; /* Sales Leader */  
+)
+)</formula>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
@@ -866,18 +375,6 @@ Owner:User.Id = &apos;0051300000BsGMP&apos;))</formula>
         <actions>
             <name>Owner_Lead_Referral_Notification</name>
             <type>Alert</type>
-        </actions>
-        <actions>
-            <name>Referral_Date_Capture</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>Referral_Email_Update</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>Referral_Form_URL_Update</name>
-            <type>FieldUpdate</type>
         </actions>
         <active>true</active>
         <description>Updates if Design Account is populated, and Budget is greater than 1 or notes are filled out</description>
@@ -909,45 +406,6 @@ Owner:User.Id = &apos;0051300000BsGMP&apos;))</formula>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
-        <fullName>Email Contains Kaiser%2EKhan%2Cmeggnotec</fullName>
-        <actions>
-            <name>Owner_API</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>Testing_True</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>Type_Dev_Testing</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <booleanFilter>(1 AND 4) OR 2 OR 3</booleanFilter>
-        <criteriaItems>
-            <field>Lead.Email</field>
-            <operation>contains</operation>
-            <value>jordan.chen,chris.boulton,ron.howard,verification.testing</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Lead.Full_Name__c</field>
-            <operation>equals</operation>
-            <value>Hoth Chut Deng</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Lead.Email</field>
-            <operation>contains</operation>
-            <value>Kaiser.Khan,meggnotec</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Lead.Email</field>
-            <operation>contains</operation>
-            <value>@bigcommerce.com</value>
-        </criteriaItems>
-        <description>If a lead comes in from a known tester (internal or client), the owner is moved to API, Test = True and type goes to Testing</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
         <fullName>Email New Lead</fullName>
         <actions>
             <name>New_Lead_Created</name>
@@ -959,116 +417,6 @@ Owner:User.Id = &apos;0051300000BsGMP&apos;))</formula>
 CONTAINS(Owner:User.UserRole.Name,&quot;Outbound&quot;) = FALSE)
 &amp;&amp; OwnerId &lt;&gt; &quot;00530000007EJEO&quot;</formula>
         <triggerType>onCreateOnly</triggerType>
-    </rules>
-    <rules>
-        <fullName>Generate task if Pinterest eBook is True</fullName>
-        <actions>
-            <name>Notify_Rep_of_Lead_who_downloaded_Pinterest_eBook</name>
-            <type>Alert</type>
-        </actions>
-        <actions>
-            <name>Capture_Date_of_Pinterest_eBook</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>Lead_Downloaded_Pinterest_eBook</name>
-            <type>Task</type>
-        </actions>
-        <active>true</active>
-        <booleanFilter>1 AND 2</booleanFilter>
-        <criteriaItems>
-            <field>Lead.Pinterest_eBook__c</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Lead.Owner_Team__c</field>
-            <operation>contains</operation>
-            <value>Direct</value>
-        </criteriaItems>
-        <description>With create a task for the lead owner when &quot;Pinterest eBook&quot; is checked off.</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Generate task if Product Tour is Watched</fullName>
-        <actions>
-            <name>Notify_Rep_of_Lead_who_viewed_the_Product_Tour</name>
-            <type>Alert</type>
-        </actions>
-        <actions>
-            <name>Capture_Date_of_Recorded_Product_Tour</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>Lead_Watched_Recorded_Product_Tour</name>
-            <type>Task</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Lead.Openend_Product_Tour_Recording__c</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Lead.Owner_Team__c</field>
-            <operation>contains</operation>
-            <value>Direct</value>
-        </criteriaItems>
-        <description>With create a task for the lead owner when &quot;Opened Product Tour Recording&quot; is checked off.</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Hubspot Store URL %3A Lead</fullName>
-        <actions>
-            <name>Most_Recenet_Trial_URL_Population</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <description>so HS can use in emails</description>
-        <formula>ISCHANGED( Most_Recent_Trial__c )</formula>
-        <triggerType>onAllChanges</triggerType>
-    </rules>
-    <rules>
-        <fullName>Lead Type %3A Provisioning Error</fullName>
-        <actions>
-            <name>Provisioning_Error_True</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Lead.Type__c</field>
-            <operation>equals</operation>
-            <value>Provision Failure</value>
-        </criteriaItems>
-        <description>Moves type to Provisioning Failure if the Provisioning Error box is checked</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Lead Type %3A Testing</fullName>
-        <actions>
-            <name>Closed_Lost_Reason_Testing</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>Closed_Lost_Stage</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>No_Assign_True</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>Testing_True</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Lead.Type__c</field>
-            <operation>contains</operation>
-            <value>Testing</value>
-        </criteriaItems>
-        <description>If the lead Type field is Testing, update Stage to Closed Lost &amp; reason to Test</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
         <fullName>Lead Type of Duplicate</fullName>
@@ -1105,21 +453,7 @@ CONTAINS(Owner:User.UserRole.Name,&quot;Outbound&quot;) = FALSE)
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
-        <fullName>Lead%3ASet the BA Testing Lead field to true%2E</fullName>
-        <actions>
-            <name>set_the_BA_Testing_Lead_field_to_true</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <formula>and(  ISPICKVAL( Closed_Lost_Reason__c ,&apos;4 Test Account&apos;), ISCHANGED(Closed_Lost_Reason__c) )</formula>
-        <triggerType>onAllChanges</triggerType>
-    </rules>
-    <rules>
         <fullName>Move Datanyze Standard Lead Data to Lead Standard Fields</fullName>
-        <actions>
-            <name>Owner_Acq_Queue</name>
-            <type>FieldUpdate</type>
-        </actions>
         <actions>
             <name>Update_Datanyze_City_toAddress_City</name>
             <type>FieldUpdate</type>
@@ -1140,11 +474,10 @@ CONTAINS(Owner:User.UserRole.Name,&quot;Outbound&quot;) = FALSE)
             <name>Update_Datanyze_Zip_to_Address_Zip</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <description>When a lead is created with lead source &quot;Datanyze&quot;, it will copy the Datanyze fields from the Datanyze section to the native lead field:</description>
-        <formula>ISPICKVAL(LeadSource, &apos;Datanyze&apos;) &amp;&amp;
-NOT(ISCHANGED( OwnerId ))</formula>
-        <triggerType>onAllChanges</triggerType>
+        <formula>ISPICKVAL(Lead_Source_Detail__c, &apos;Datanyze&apos;)</formula>
+        <triggerType>onCreateOnly</triggerType>
     </rules>
     <rules>
         <fullName>No Assign %3D True</fullName>
@@ -1172,25 +505,6 @@ NOT(ISCHANGED( OwnerId ))</formula>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
-        <fullName>Populate Initial Hubspot Score</fullName>
-        <actions>
-            <name>Populate_Initial_Hubspot_Score</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Lead.Hubspot_Score__c</field>
-            <operation>greaterThan</operation>
-            <value>0</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Lead.Initial_Hubspot_Score__c</field>
-            <operation>equals</operation>
-        </criteriaItems>
-        <description>Captures the Hubspot score value the very first time one comes through to the lead</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
         <fullName>Populate Owner Phone on Lead</fullName>
         <actions>
             <name>Update_Owner_Phone</name>
@@ -1202,65 +516,13 @@ NOT(ISCHANGED( OwnerId ))</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
-        <fullName>Record Type from Sales to Client Prospect</fullName>
-        <actions>
-            <name>Lead_RT_to_Client_Prospect</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>Type_Trial</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Lead.MBAAccountID__c</field>
-            <operation>notEqual</operation>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Lead.RecordTypeId</field>
-            <operation>equals</operation>
-            <value>Sales Prospect</value>
-        </criteriaItems>
-        <description>Updates the lead record type when a trial is added to a lead that previously did not have any MBA trial and data</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Stage to Closed Lost if Reason field Populated</fullName>
-        <actions>
-            <name>Closed_Lost_Stage</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Lead.Closed_Lost_Reason__c</field>
-            <operation>notEqual</operation>
-        </criteriaItems>
-        <description>If a rep fills in the Closed Lost Reason, stage will move to Closed Lost for them.  Created because Acq wanted field dependency but Direct didn&apos;t.  This lets Acq reps only focus on lost reason</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Store Name Contains %22usertesting%22</fullName>
-        <actions>
-            <name>usertesting_URL_to_API</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Lead.Trial_Store_URL__c</field>
-            <operation>contains</operation>
-            <value>usertesting</value>
-        </criteriaItems>
-        <description>transfer to API User</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
         <fullName>Sync with Marketo</fullName>
         <actions>
             <name>Marketo_Sync_Update</name>
             <type>FieldUpdate</type>
         </actions>
         <active>true</active>
-        <booleanFilter>(1 OR 7) AND 2 AND 3 AND 4 AND 5 AND 6 AND 8 AND 9 AND 10 AND 11</booleanFilter>
+        <booleanFilter>((1 OR 7) AND 2 AND 3 AND 4 AND 5 AND 6 AND 8 AND 9 AND 10 AND 11) OR 12</booleanFilter>
         <criteriaItems>
             <field>Lead.LeadSource</field>
             <operation>equals</operation>
@@ -1293,7 +555,7 @@ NOT(ISCHANGED( OwnerId ))</formula>
         <criteriaItems>
             <field>Lead.LeadSource</field>
             <operation>equals</operation>
-            <value>SEM,Social Ads,Display,Print Ads,Email Advertising,Organic Search,Organic Social,Other,Deal Registration,Affiliate,SBD,ACQ List Upload,Events,Inbound,Webinar List</value>
+            <value>SEM,Social Ads,Display,Print Ads,Email Advertising,Organic Search,Organic Social,Other,Deal Registration,Affiliate,Events,Inbound,Webinar List</value>
         </criteriaItems>
         <criteriaItems>
             <field>Lead.Is_Duplicate__c</field>
@@ -1314,27 +576,12 @@ NOT(ISCHANGED( OwnerId ))</formula>
             <field>Lead.Duplicate__c</field>
             <operation>equals</operation>
         </criteriaItems>
-        <description>Based on given criteria, Marketo will pick up record to be synced with Marketo. The Marketo team has stored filter to only sync records that have the Sync with Marketo checkbox checked.</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>Transfer Lead to GSB Queue</fullName>
-        <actions>
-            <name>Lead_Owner_GSB</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
         <criteriaItems>
-            <field>Lead.CreatedDate</field>
-            <operation>equals</operation>
-            <value>TODAY</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Lead.Marketing_Promotion__c</field>
+            <field>Lead.Closed_Lost_Reason__c</field>
             <operation>contains</operation>
-            <value>GSB2013</value>
+            <value>Timing</value>
         </criteriaItems>
-        <description>Transfers lead ownership to the GSB queue for marketing to monitor for the store giveaway promotion.  Can be deleted if Megan O&apos;Brien is finished with her reporting</description>
+        <description>Based on given criteria, Marketo will pick up record to be synced with Marketo. The Marketo team has stored filter to only sync records that have the Sync with Marketo checkbox checked.</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
@@ -1476,7 +723,7 @@ NOT(ISCHANGED( OwnerId ))</formula>
             <name>rvee__AssignedToPartnerTimestamp</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>false</active>
+        <active>true</active>
         <formula>(rvpe__IsDealRegistration__c == false) &amp;&amp; (ISNEW() || ISCHANGED(rvpe__RVMember__c)) &amp;&amp; (rvpe__RVMember__c != null)</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
@@ -1503,59 +750,6 @@ NOT(ISCHANGED( OwnerId ))</formula>
         <active>true</active>
         <formula>(rvpe__NotifyRVMember__c == true)</formula>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>zAcq ownership from Meg</fullName>
-        <actions>
-            <name>Ownership_Change_Date_Now</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <actions>
-            <name>Ownership_Change_Requestor_User</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Lead.Request_Ownership__c</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Lead.OwnerId</field>
-            <operation>contains</operation>
-            <value>Meg A. Murphy</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Lead.Experience__c</field>
-            <operation>equals</operation>
-            <value>Switching from a Competitor</value>
-        </criteriaItems>
-        <description>Changes ownership from Meg to the requestor when the lead has the experience of Switching from a Competitor</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
-        <fullName>zLead Transfer to Bryan Foster%3A Hubspot</fullName>
-        <actions>
-            <name>Lead_Owner_to_Bryan_Foster</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <description>reassigns incoming leads from Hubspot to BFoss from Mitch</description>
-        <formula>Campaign.Name = &quot;Hubspot Campaign&quot;</formula>
-        <triggerType>onCreateOnly</triggerType>
-    </rules>
-    <rules>
-        <fullName>zNew Trail Added to Lead</fullName>
-        <actions>
-            <name>New_Trial_Old_Lead_Email_Owner</name>
-            <type>Alert</type>
-        </actions>
-        <active>true</active>
-        <description>Sends lead owner an email if a new trial is added to an old lead</description>
-        <formula>PRIORVALUE( Active_Trials__c ) &lt; Active_Trials__c &amp;&amp;   $User.Id  &lt;&gt; &quot;005a0000007EvtM&quot; &amp;&amp;  OwnerId &lt;&gt; &quot;00530000004W020&quot; &amp;&amp; OwnerId &lt;&gt; &quot;00530000007EJEO&quot;  &amp;&amp;  
-OwnerId &lt;&gt;  $Label.Lead_Default_Owner  &amp;&amp;
-DATEVALUE( CreatedDate ) &lt;&gt; TODAY() &amp;&amp;  Trial_Start_Date__c = TODAY()</formula>
-        <triggerType>onAllChanges</triggerType>
     </rules>
     <tasks>
         <fullName>Bad_Phone_Number_Email_Sent</fullName>

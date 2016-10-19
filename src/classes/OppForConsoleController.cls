@@ -15,9 +15,6 @@ public class OppForConsoleController
     private string selectedSubName = null;
     public boolean caseCreated {get;set;}
     public string errorMsg {get;set;}
-    public String CaseSubject {get; set;}
-    public String CallerName {get; set;}
-    public string errorMsgCaseSubject {get;set;}
     
     private list<OpportunityWrapper> Opps = new list<OpportunityWrapper>();
  //   private list<SubscriptionWrapper> Subs = new list<SubscriptionWrapper>();
@@ -32,15 +29,7 @@ public class OppForConsoleController
     {
         return objectType;
     }
-    public String getCaseSubject() 
-    { 
-        return CaseSubject; 
-    } 
-    public String getCallerName() 
-    { 
-        return CallerName; 
-    } 
-
+    
     public void setAcctId(String n)
     {
         acctId = n;
@@ -89,7 +78,7 @@ public class OppForConsoleController
             return Account.sObjectType.getDescribe().getKeyPrefix();
         }
     }
-
+ 
  /*   
      public String leadPrefix
     {
@@ -213,51 +202,35 @@ public class OppForConsoleController
         	errorMsg= 'Case already created, refresh the page to create another case';
         	return null;
         }
-        If(CaseSubject == null || CaseSubject == ''){
-            errorMsgCaseSubject = 'Please enter a Subject for the Case';
-        	newCaseId = null;
-        } else{
-            If(CaseSubject.length()>255){
-                errorMsgCaseSubject = 'Please type in 255 characters or less in the Subject';
-            } else {
-                        If (selectedOppId == null)
-                        {
-                            errorMsg= 'Please select an Opportunity!';
-                            system.debug('### no selected');
-                            newCaseId = null;
-                            
-                        }
-                        else {
-                            //string sSubject = 'Bigcommerce Support call at '+System.Now().format();
-                            //string sSubject = ApexPages.currentPage().getParameters().get('casesubject');
-							string CaseDesc = '';
-                            if(system.label.CaseDescriptionTemplate!=null && CallerName!=null){
-                                CaseDesc = system.label.CaseDescriptionTemplate.replace('CallerName',CallerName);
-                            } else if(system.label.CaseDescriptionTemplate!=null && CallerName==null){
-                                CaseDesc = system.label.CaseDescriptionTemplate;         
-                            }
-                            Case newCase = new Case(subject = CaseSubject,
-                                            origin = 'Phone',
-                                            accountid= acctId,
-                                            Documentation_Only__c = true,
-                  //                          RecordTypeId = idCSRecordType,
-                                            Opportunity__c = selectedOppId,
-                                            ContactId = contactId,
-                                            Change_Owner__c = 'Me', 
-                                            Subscription__c = selectedSubId,
-                                            Description = CaseDesc
-                                            );
-                                                                        
-                 //      &CF00N18000000GSRJ=' + selectedOppName +  selectedSubName + ;
-                             insert newCase;  
-                             newCaseId = newCase.Id;
-                             errorMsg= 'Case created ....';
-                             system.debug('### new case id  '+newCaseId);
-                             caseCreated = true;
-                            }
-            	}
-            }
-            return null;
+        If (selectedOppId == null)
+        {
+        	errorMsg= 'Please select an Opportunity!';
+			system.debug('### no selected');
+			newCaseId = null;
+			
+        }
+        else {
+        	string sSubject = 'Bigcommerce Support call at '+System.Now().format();
+
+        	Case newCase = new Case(subject = sSubject,
+                            origin = 'Phone',
+                            accountid= acctId,
+                            Documentation_Only__c = true,
+  //                          RecordTypeId = idCSRecordType,
+                            Opportunity__c = selectedOppId,
+                            ContactId = contactId,
+                            Change_Owner__c = 'Me', 
+                            Subscription__c = selectedSubId
+                            );
+                                                        
+ //      &CF00N18000000GSRJ=' + selectedOppName +  selectedSubName + ;
+	         insert newCase;  
+	         newCaseId = newCase.Id;
+	         errorMsg= 'Case created ....';
+	         system.debug('### new case id  '+newCaseId);
+	         caseCreated = true;
+        }
+        return null;
     }
     public PageReference LoadOpportunities()
     {

@@ -2,7 +2,7 @@
 <ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
     <baseObject>Campaign</baseObject>
     <category>campaigns</category>
-    <deployed>true</deployed>
+    <deployed>false</deployed>
     <description>Campaigns with Contacts and activities</description>
     <join>
         <join>
@@ -12,7 +12,7 @@
         <outerJoin>true</outerJoin>
         <relationship>ContactCampaignMembers</relationship>
     </join>
-    <label>Campaigns with Contacts and activities</label>
+    <label>zCampaigns with Contacts and activities</label>
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>

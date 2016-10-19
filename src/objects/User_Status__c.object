@@ -250,8 +250,7 @@
     <listViews>
         <fullName>All</fullName>
         <columns>NAME</columns>
-        <columns>OWNER.FIRST_NAME</columns>
-        <columns>OWNER.LAST_NAME</columns>
+        <columns>SalesRep__c</columns>
         <columns>Round_Robin_Queue__c</columns>
         <columns>Round_Robin_Number__c</columns>
         <columns>Status__c</columns>

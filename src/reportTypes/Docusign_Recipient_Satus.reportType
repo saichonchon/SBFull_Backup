@@ -4,7 +4,7 @@
     <category>admin</category>
     <deployed>false</deployed>
     <description>Docusign Recipient Satus</description>
-    <label>Docusign Recipient Satus</label>
+    <label>zDocusign Recipient Satus</label>
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>

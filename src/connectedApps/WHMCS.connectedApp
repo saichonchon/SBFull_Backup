@@ -4,7 +4,7 @@
     <label>WHMCS</label>
     <oauthConfig>
         <callbackUrl>https://login.salesforce.com/services/oauth2/callback</callbackUrl>
-        <consumerKey>3MVG9Nc1qcZ7BbZ0Ep18pfQsltXfBYZDt0rggCjG3S0yWZBlN9paK5NE.o3eHpfzQoHqcvtUUtiPIQa95YCc2</consumerKey>
+        <consumerKey>3MVG973QtA4.tpvmGIsm1S6VuSa2mFLZqumXDGUPKebn1VbJzWSO1oNwLCe1WgcCTC6JbvwuwO4gQJKu98u0H</consumerKey>
         <scopes>Full</scopes>
     </oauthConfig>
 </ConnectedApp>

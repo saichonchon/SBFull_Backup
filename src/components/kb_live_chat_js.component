@@ -2,7 +2,7 @@
     <script type='text/javascript' src='https://c.la3-c1-chi.salesforceliveagent.com/content/g/js/36.0/deployment.js'></script>
     <script type='text/javascript'>
         liveagent.setChatWindowHeight(800);
-        liveagent.init('https://d.la3-c1-chi.salesforceliveagent.com/chat', '572a0000000H7DJ', '00D19000000Et5U');
+        liveagent.init('https://d.la3-c1-chi.salesforceliveagent.com/chat', '572a0000000H7DJ', '00D220000008qbf');
     </script>
     <script type="text/javascript">
         if(!window._laq){window._laq = [];}

@@ -5,8 +5,8 @@
     <description>BMP</description>
     <label>BMP</label>
     <oauthConfig>
-        <callbackUrl>https://test.salesforce.com/services/oauth2/callback</callbackUrl>
-        <consumerKey>3MVG9Nc1qcZ7BbZ0Ep18pfQsltXfBYZDt0rggG.agrM0AhPaQ4U5rXA716p9aFk5BY1y7j_bAWGqzpG7yV1aD</consumerKey>
+        <callbackUrl>https://login.salesforce.com/services/oauth2/callback</callbackUrl>
+        <consumerKey>3MVG973QtA4.tpvmGIsm1S6VuSa2mFLZqumXDiFeDL91xPqNT7Jrn9mCpqzm3bGRYp01zLQYelHPGrW5Bpa0K</consumerKey>
         <scopes>Full</scopes>
     </oauthConfig>
 </ConnectedApp>

@@ -183,6 +183,11 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Sample_100__c</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>Master_Agreement_Date__c</field>
             <table>Opportunity</table>
         </columns>

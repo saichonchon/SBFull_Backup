@@ -6,9 +6,9 @@
     <loginUrl>https://bigcommerce.okta.com/app/salesforce/k2go0f1tDUMOBDTKAUKQ/sso/saml</loginUrl>
     <logoutUrl>https://bigcommerce.okta.com</logoutUrl>
     <name>Okta</name>
-    <oauthTokenEndpoint>https://test.salesforce.com/services/oauth2/token?so=00D19000000Et5U</oauthTokenEndpoint>
+    <oauthTokenEndpoint>https://test.salesforce.com/services/oauth2/token?so=00D220000008qbf</oauthTokenEndpoint>
     <redirectBinding>false</redirectBinding>
-    <salesforceLoginUrl>https://test.salesforce.com?so=00D19000000Et5U</salesforceLoginUrl>
+    <salesforceLoginUrl>https://test.salesforce.com?so=00D220000008qbf</salesforceLoginUrl>
     <samlEntityId>https://saml.salesforce.com</samlEntityId>
     <samlVersion>SAML2_0</samlVersion>
     <userProvisioning>false</userProvisioning>

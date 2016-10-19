@@ -2,7 +2,7 @@
 <ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
     <baseObject>Account</baseObject>
     <category>accounts</category>
-    <deployed>true</deployed>
+    <deployed>false</deployed>
     <description>Accounts W Contact W Opportunities</description>
     <join>
         <join>
@@ -12,7 +12,7 @@
         <outerJoin>false</outerJoin>
         <relationship>Contacts</relationship>
     </join>
-    <label>Accounts W Contact W Opportunities</label>
+    <label>zAccounts W Contact W Opportunities</label>
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>

@@ -51,7 +51,7 @@
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableEnhancedLookup>true</enableEnhancedLookup>
-    <enableFeeds>true</enableFeeds>
+    <enableFeeds>false</enableFeeds>
     <enableHistory>true</enableHistory>
     <enableReports>true</enableReports>
     <enableSearch>true</enableSearch>
@@ -149,7 +149,6 @@
         <relationshipLabel>Subscriptions</relationshipLabel>
         <relationshipName>Subscriptions</relationshipName>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <type>Lookup</type>
     </fields>
@@ -172,7 +171,6 @@
         <label>MKT MBA Ad Group</label>
         <length>255</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -185,7 +183,6 @@
         <label>MKT MBA Ad Keywords</label>
         <length>255</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -197,7 +194,6 @@
         <label>zAffiliate</label>
         <length>255</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -223,7 +219,6 @@
         <label>SBD Agency</label>
         <length>255</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -272,7 +267,6 @@
             </picklistValues>
             <sorted>false</sorted>
         </picklist>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
     </fields>
@@ -283,7 +277,6 @@
         <precision>14</precision>
         <required>false</required>
         <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
@@ -295,7 +288,6 @@
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
@@ -305,7 +297,6 @@
         <inlineHelpText>Date paid was received  - this information is added from our data warehourse</inlineHelpText>
         <label>zBI Date Paid</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Date</type>
     </fields>
@@ -341,7 +332,6 @@
             </picklistValues>
             <sorted>false</sorted>
         </picklist>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
     </fields>
@@ -353,7 +343,6 @@
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
@@ -419,7 +408,6 @@ NULL)
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>true</trackTrending>
         <type>Currency</type>
@@ -469,7 +457,6 @@ NULL)
             </picklistValues>
             <sorted>false</sorted>
         </picklist>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
     </fields>
@@ -522,7 +509,6 @@ NULL)
         <inlineHelpText>Populated by MBA when the sub&apos;s status value is moved to Cancelled or Terminated.  Not always sent from MBA as some manual processes cause MBA to fire differently than when the system makes the change</inlineHelpText>
         <label>MBA Cancellation Date</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>true</trackTrending>
         <type>Date</type>
@@ -612,7 +598,6 @@ NULL)
             </picklistValues>
             <sorted>false</sorted>
         </picklist>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
     </fields>
@@ -623,7 +608,6 @@ NULL)
         <inlineHelpText>Sent by MBA when the Billing team processes a cancellation request</inlineHelpText>
         <label>MBA Cancellation Request Date</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Date</type>
     </fields>
@@ -698,7 +682,6 @@ MAY BE ABLE TO DELETE - not sure if partner team uses anymore</description>
         <relationshipLabel>Client Subscriptions</relationshipLabel>
         <relationshipName>Client_Subscriptions</relationshipName>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <type>Lookup</type>
     </fields>
@@ -710,7 +693,6 @@ MAY BE ABLE TO DELETE - not sure if partner team uses anymore</description>
         <label>MKT Channel</label>
         <length>255</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -722,7 +704,6 @@ MAY BE ABLE TO DELETE - not sure if partner team uses anymore</description>
         <inlineHelpText>CAN PROBABLY BE DELETED but check with Dan</inlineHelpText>
         <label>zChurn Date</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Date</type>
     </fields>
@@ -759,7 +740,6 @@ CAN PROBABLY BE DELETED but check with Dan</description>
             </picklistValues>
             <sorted>false</sorted>
         </picklist>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
     </fields>
@@ -769,7 +749,6 @@ CAN PROBABLY BE DELETED but check with Dan</description>
         <externalId>false</externalId>
         <label>zClient Revenue Update Date</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Date</type>
     </fields>
@@ -781,7 +760,6 @@ CAN PROBABLY BE DELETED but check with Dan</description>
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
@@ -792,7 +770,6 @@ CAN PROBABLY BE DELETED but check with Dan</description>
         <inlineHelpText>Date the incoming trial is expected to convert to a paid store</inlineHelpText>
         <label>zClose Date</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Date</type>
     </fields>
@@ -801,7 +778,6 @@ CAN PROBABLY BE DELETED but check with Dan</description>
         <externalId>false</externalId>
         <label>zConsultation Completion Date</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>DateTime</type>
     </fields>
@@ -811,7 +787,6 @@ CAN PROBABLY BE DELETED but check with Dan</description>
         <externalId>false</externalId>
         <label>zConsultation Notes</label>
         <length>32768</length>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>LongTextArea</type>
         <visibleLines>5</visibleLines>
@@ -880,7 +855,6 @@ CAN PROBABLY BE DELETED but check with Dan</description>
             </picklistValues>
             <sorted>false</sorted>
         </picklist>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
     </fields>
@@ -895,7 +869,6 @@ CAN PROBABLY BE DELETED but check with Dan</description>
         <relationshipLabel>Subscriptions</relationshipLabel>
         <relationshipName>Subscriptions</relationshipName>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
@@ -920,7 +893,6 @@ CAN PROBABLY BE DELETED but check with Dan</description>
         <label>MBA Country</label>
         <length>255</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -932,7 +904,6 @@ CAN PROBABLY BE DELETED but check with Dan</description>
         <label>zCoupon Code</label>
         <length>255</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -1011,7 +982,6 @@ IF(StartDate__c = TODAY(), 0, NULL))</formula>
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
@@ -1025,7 +995,6 @@ IF(StartDate__c = TODAY(), 0, NULL))</formula>
         <relationshipLabel>Design Client Subscriptions</relationshipLabel>
         <relationshipName>Design_Client_Subscriptions</relationshipName>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
@@ -1036,7 +1005,6 @@ IF(StartDate__c = TODAY(), 0, NULL))</formula>
         <externalId>false</externalId>
         <inlineHelpText>Populated by a workflow but may not be great data since the sub has to be created in the proper order for it to fire. Was the only way we could flag stores purchased directly vs trial upgrades, but hopefully the value can be pushed from MBA at some poin</inlineHelpText>
         <label>Direct Purchase</label>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
@@ -1048,7 +1016,6 @@ IF(StartDate__c = TODAY(), 0, NULL))</formula>
         <label>MKT Display Ad</label>
         <length>255</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -1073,7 +1040,6 @@ IF(StartDate__c = TODAY(), 0, NULL))</formula>
         <inlineHelpText>Populated by a workflow capturing the associated contact or lead email address each time the contact name is changed. Also used in case workflows to send email notifications if no lead or contact is called out on the case</inlineHelpText>
         <label>Email</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Email</type>
         <unique>false</unique>
@@ -1106,7 +1072,6 @@ IF(StartDate__c = TODAY(), 0, NULL))</formula>
             </picklistValues>
             <sorted>false</sorted>
         </picklist>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
     </fields>
@@ -1170,7 +1135,6 @@ IF(StartDate__c = TODAY(), 0, NULL))</formula>
             </picklistValues>
             <sorted>false</sorted>
         </picklist>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
     </fields>
@@ -1182,7 +1146,6 @@ IF(StartDate__c = TODAY(), 0, NULL))</formula>
         <label>BA Experiment</label>
         <length>255</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -1194,7 +1157,6 @@ IF(StartDate__c = TODAY(), 0, NULL))</formula>
         <inlineHelpText>Populated by MBA.  Date the trial expires</inlineHelpText>
         <label>MBA Expiration Date</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <type>Date</type>
     </fields>
@@ -1205,7 +1167,6 @@ IF(StartDate__c = TODAY(), 0, NULL))</formula>
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
@@ -1215,7 +1176,6 @@ IF(StartDate__c = TODAY(), 0, NULL))</formula>
         <description>When the Upsell team offers clients a free month on the Gold plan.</description>
         <externalId>false</externalId>
         <label>zFree Gold Promo</label>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
@@ -1226,7 +1186,6 @@ IF(StartDate__c = TODAY(), 0, NULL))</formula>
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
@@ -1266,7 +1225,6 @@ IF(StartDate__c = TODAY(), 0, NULL))</formula>
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
@@ -1280,7 +1238,6 @@ IF(StartDate__c = TODAY(), 0, NULL))</formula>
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
@@ -1501,7 +1458,6 @@ IF(StartDate__c = TODAY(), 0, NULL))</formula>
             </picklistValues>
             <sorted>false</sorted>
         </picklist>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
     </fields>
@@ -1513,7 +1469,6 @@ IF(StartDate__c = TODAY(), 0, NULL))</formula>
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
@@ -1526,7 +1481,6 @@ IF(StartDate__c = TODAY(), 0, NULL))</formula>
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
@@ -1538,7 +1492,6 @@ IF(StartDate__c = TODAY(), 0, NULL))</formula>
         <externalId>false</externalId>
         <inlineHelpText>Value pushed from MBA and is used in a trigger to convert leads when it&apos;s unchecked. Can also be used to force the account rollups to recalculate</inlineHelpText>
         <label>MBA Is Trial</label>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
@@ -1586,7 +1539,6 @@ ISPICKVAL( Status__c , &quot;Suspended&quot;)
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
@@ -1597,7 +1549,6 @@ ISPICKVAL( Status__c , &quot;Suspended&quot;)
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
@@ -1608,7 +1559,6 @@ ISPICKVAL( Status__c , &quot;Suspended&quot;)
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
@@ -1620,7 +1570,6 @@ ISPICKVAL( Status__c , &quot;Suspended&quot;)
         <label>MKT Landing Page</label>
         <length>255</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -1645,7 +1594,6 @@ ISPICKVAL( Status__c , &quot;Suspended&quot;)
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
@@ -1721,7 +1669,6 @@ Note true historical as it will only contain the plan name prior to the current 
         <inlineHelpText>Date the store was fully launched by the Success Squad</inlineHelpText>
         <label>zLaunch Date</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Date</type>
     </fields>
@@ -1734,7 +1681,6 @@ Note true historical as it will only contain the plan name prior to the current 
         <referenceTo>User</referenceTo>
         <relationshipName>Subscriptions1</relationshipName>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
@@ -1868,7 +1814,6 @@ Note true historical as it will only contain the plan name prior to the current 
         <relationshipLabel>Subscriptions</relationshipLabel>
         <relationshipName>Subscriptions</relationshipName>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
@@ -1892,7 +1837,6 @@ Note true historical as it will only contain the plan name prior to the current 
         <label>MBA Account ID</label>
         <length>255</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -1904,7 +1848,6 @@ Note true historical as it will only contain the plan name prior to the current 
         <label>zMBA Client ID</label>
         <length>255</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -1916,7 +1859,6 @@ Note true historical as it will only contain the plan name prior to the current 
         <label>MBA Partner ID</label>
         <length>255</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -1929,7 +1871,6 @@ Note true historical as it will only contain the plan name prior to the current 
         <label>MBA Subscription ID</label>
         <length>255</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <type>Text</type>
         <unique>true</unique>
@@ -1941,7 +1882,6 @@ Note true historical as it will only contain the plan name prior to the current 
         <label>MBA Channel Partner</label>
         <length>255</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -1953,7 +1893,6 @@ Note true historical as it will only contain the plan name prior to the current 
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
@@ -1964,7 +1903,6 @@ Note true historical as it will only contain the plan name prior to the current 
         <externalId>false</externalId>
         <inlineHelpText>Check when client received a free theme.</inlineHelpText>
         <label>zMKT PROMO-Free Theme</label>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <type>Checkbox</type>
     </fields>
@@ -1975,7 +1913,6 @@ Note true historical as it will only contain the plan name prior to the current 
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
@@ -1987,7 +1924,6 @@ Note true historical as it will only contain the plan name prior to the current 
         <label>MKT MBA Marketing Campaign</label>
         <length>255</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -2000,7 +1936,6 @@ Note true historical as it will only contain the plan name prior to the current 
         <label>MKT MBA Marketing Source</label>
         <length>255</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -2013,7 +1948,6 @@ Note true historical as it will only contain the plan name prior to the current 
         <label>MKT Marketing Test Group</label>
         <length>20</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -2025,7 +1959,6 @@ Note true historical as it will only contain the plan name prior to the current 
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
@@ -2035,7 +1968,6 @@ Note true historical as it will only contain the plan name prior to the current 
         <description>EIG migration field.  Populated during case insert (dataloader) to indicate that the case creation is complete</description>
         <externalId>false</externalId>
         <label>zMigration Case Created</label>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
@@ -2045,7 +1977,6 @@ Note true historical as it will only contain the plan name prior to the current 
         <externalId>false</externalId>
         <label>Migration Request Date</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Date</type>
     </fields>
@@ -2055,7 +1986,6 @@ Note true historical as it will only contain the plan name prior to the current 
         <description>Populated by Success Squad.  Not sure what criteria are</description>
         <externalId>false</externalId>
         <label>zMigration Verified</label>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
@@ -2066,7 +1996,6 @@ Note true historical as it will only contain the plan name prior to the current 
         <externalId>false</externalId>
         <inlineHelpText>Was this store ever a Migration product?</inlineHelpText>
         <label>zMigration</label>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
@@ -2112,7 +2041,6 @@ Note true historical as it will only contain the plan name prior to the current 
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>true</trackTrending>
         <type>Currency</type>
@@ -2142,7 +2070,6 @@ Product__c ) ))))))</formula>
         <label>zNext Steps</label>
         <length>255</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -2174,7 +2101,6 @@ Product__c ) ))))))</formula>
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
@@ -2185,7 +2111,6 @@ Product__c ) ))))))</formula>
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
@@ -2198,7 +2123,6 @@ Product__c ) ))))))</formula>
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
@@ -2250,7 +2174,6 @@ Product__c ) ))))))</formula>
         <relationshipLabel>Subscriptions</relationshipLabel>
         <relationshipName>Subscriptions</relationshipName>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
@@ -2260,7 +2183,6 @@ Product__c ) ))))))</formula>
         <externalId>false</externalId>
         <label>zOps Notes</label>
         <length>32768</length>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>LongTextArea</type>
         <visibleLines>5</visibleLines>
@@ -2272,7 +2194,6 @@ Product__c ) ))))))</formula>
         <label>Original Plan Purchased</label>
         <length>255</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -2285,7 +2206,6 @@ Product__c ) ))))))</formula>
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <type>Currency</type>
     </fields>
@@ -2333,7 +2253,6 @@ IF( Lead__c &lt;&gt; NULL,  Lead__r.Owner:User.Department , NULL
         <label>zInitial Store Password</label>
         <length>255</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -2345,7 +2264,6 @@ IF( Lead__c &lt;&gt; NULL,  Lead__r.Owner:User.Department , NULL
         <label>zPayment Status</label>
         <length>255</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -2356,7 +2274,6 @@ IF( Lead__c &lt;&gt; NULL,  Lead__r.Owner:User.Department , NULL
         <externalId>false</externalId>
         <label>zPhone</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Phone</type>
     </fields>
@@ -2366,7 +2283,6 @@ IF( Lead__c &lt;&gt; NULL,  Lead__r.Owner:User.Department , NULL
         <externalId>false</externalId>
         <label>REPORT Plan Change Date</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>true</trackTrending>
         <type>Date</type>
@@ -2420,7 +2336,6 @@ null))))))))))))</formula>
         <label>Previous Product Name</label>
         <length>80</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -2433,7 +2348,6 @@ null))))))))))))</formula>
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
@@ -2456,7 +2370,6 @@ null))))))))))))</formula>
         <externalId>false</externalId>
         <label>Previous Upgrade Date</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Date</type>
     </fields>
@@ -2468,7 +2381,6 @@ null))))))))))))</formula>
         <label>zMKT MBA Pricing Test Group</label>
         <length>255</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -2482,7 +2394,6 @@ Populated by MBA</description>
         <label>MBA Product ID</label>
         <length>255</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -2508,7 +2419,6 @@ Populated by MBA</description>
             </picklistValues>
             <sorted>false</sorted>
         </picklist>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
     </fields>
@@ -2520,7 +2430,6 @@ Populated by MBA</description>
         <label>MBA Product</label>
         <length>255</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -2553,7 +2462,6 @@ Populated by MBA</description>
             </picklistValues>
             <sorted>false</sorted>
         </picklist>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
     </fields>
@@ -2565,7 +2473,6 @@ Populated by MBA</description>
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
@@ -2577,7 +2484,6 @@ Populated by MBA</description>
         <label>MKT MBA Promotion</label>
         <length>255</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -2589,7 +2495,6 @@ Populated by MBA</description>
         <externalId>false</externalId>
         <inlineHelpText>Check this if the store did not provision properly and the URL returns an error</inlineHelpText>
         <label>zProvisioning Error</label>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
@@ -2599,7 +2504,6 @@ Populated by MBA</description>
         <externalId>false</externalId>
         <label>Purchase Date</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>true</trackTrending>
         <type>Date</type>
@@ -2626,7 +2530,6 @@ Populated by MBA</description>
         <referenceTo>User</referenceTo>
         <relationshipName>Subscriptions</relationshipName>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
@@ -2638,7 +2541,6 @@ Populated by MBA</description>
         <label>Purchase Rep</label>
         <length>225</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -2650,7 +2552,6 @@ Populated by MBA</description>
         <label>Purchase Team</label>
         <length>255</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -2663,7 +2564,6 @@ Populated by MBA</description>
         <label>SBD MBA Referral ID</label>
         <length>255</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -2675,7 +2575,6 @@ Populated by MBA</description>
         <inlineHelpText>For Orion. Indicates the Date/Time for which the client indicated whether they would like a migration or not.</inlineHelpText>
         <label>SBD Requested Migration At</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>DateTime</type>
     </fields>
@@ -2696,7 +2595,6 @@ Populated by MBA</description>
             </picklistValues>
             <sorted>false</sorted>
         </picklist>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
     </fields>
@@ -2864,7 +2762,6 @@ IF ( ISBLANK( Upgrade_Rep__c ) = FALSE &amp;&amp; NOT(ISPICKVAL( Upgrade_Stage__
         <label>SBD ChannelUnity Coupon Code</label>
         <length>255</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -2875,7 +2772,6 @@ IF ( ISBLANK( Upgrade_Rep__c ) = FALSE &amp;&amp; NOT(ISPICKVAL( Upgrade_Stage__
         <externalId>false</externalId>
         <label>SBD Domain Name</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Url</type>
     </fields>
@@ -2887,7 +2783,6 @@ IF ( ISBLANK( Upgrade_Rep__c ) = FALSE &amp;&amp; NOT(ISPICKVAL( Upgrade_Stage__
         <label>SBD Store ID</label>
         <length>255</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -2973,7 +2868,6 @@ null)
             </picklistValues>
             <sorted>false</sorted>
         </picklist>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
     </fields>
@@ -3021,7 +2915,6 @@ null)
             </picklistValues>
             <sorted>false</sorted>
         </picklist>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
     </fields>
@@ -3043,7 +2936,6 @@ null)
         <externalId>false</externalId>
         <inlineHelpText>Is this a sandbox store?</inlineHelpText>
         <label>Sandbox?</label>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
@@ -3054,7 +2946,6 @@ null)
         <externalId>false</externalId>
         <inlineHelpText>Used by Client Services to track which clients called in to cancel but were retained by CS</inlineHelpText>
         <label>Saved from Cancellation</label>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
@@ -3066,7 +2957,6 @@ null)
         <label>MKT MBA Search Terms</label>
         <length>255</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -3079,7 +2969,6 @@ null)
         <label>MKT MBA Segment</label>
         <length>255</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -3092,7 +2981,6 @@ null)
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
@@ -3104,7 +2992,6 @@ null)
         <label>MBA Store Server</label>
         <length>255</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -3142,7 +3029,6 @@ null)
             </picklistValues>
             <sorted>false</sorted>
         </picklist>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
     </fields>
@@ -3152,7 +3038,6 @@ null)
         <externalId>false</externalId>
         <label>Start Date</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>true</trackTrending>
         <type>Date</type>
@@ -3176,7 +3061,6 @@ Used in portal dashboard</description>
         <label>Start Month</label>
         <length>255</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -3190,7 +3074,6 @@ Used in portal dashboard</description>
         <label>Start Year Month</label>
         <length>255</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -3248,7 +3131,6 @@ Used in portal dashboard</description>
             </picklistValues>
             <sorted>false</sorted>
         </picklist>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>true</trackTrending>
         <type>Picklist</type>
@@ -3260,7 +3142,6 @@ Used in portal dashboard</description>
         <label>zStore Name</label>
         <length>255</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -3272,7 +3153,6 @@ Used in portal dashboard</description>
         <inlineHelpText>URL of the BC trial or store populated by MBA</inlineHelpText>
         <label>MBA Store URL</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Url</type>
     </fields>
@@ -3297,7 +3177,6 @@ Used in portal dashboard</description>
         <externalId>false</externalId>
         <inlineHelpText>To be completed by Client Services</inlineHelpText>
         <label>zStore Launched</label>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
@@ -3308,7 +3187,6 @@ Used in portal dashboard</description>
         <label>zStore URL TEXT</label>
         <length>255</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -3336,7 +3214,6 @@ Used in portal dashboard</description>
         <relationshipLabel>Strategic Client Subscriptions</relationshipLabel>
         <relationshipName>Strategic_Client_Subscriptions</relationshipName>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
@@ -3430,7 +3307,6 @@ IF(FIND(MID(Id,11,1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;)&gt;0,1,0)
         <referenceTo>User</referenceTo>
         <relationshipName>SS_Rep_Subscriptions</relationshipName>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
@@ -3452,7 +3328,6 @@ IF(FIND(MID(Id,11,1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;)&gt;0,1,0)
         <precision>18</precision>
         <required>false</required>
         <scale>3</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
@@ -3476,7 +3351,6 @@ ISBLANK(Account__r.SupportPin__c), Lead__r.SupportPin__c ,Account__r.SupportPin_
         <label>Sync Issue</label>
         <length>255</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -3488,7 +3362,6 @@ ISBLANK(Account__r.SupportPin__c), Lead__r.SupportPin__c ,Account__r.SupportPin_
         <label>zTEMP: MBA Partner Sync</label>
         <length>20</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -3512,7 +3385,6 @@ ISBLANK(Account__r.SupportPin__c), Lead__r.SupportPin__c ,Account__r.SupportPin_
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>true</trackTrending>
         <type>Currency</type>
@@ -3524,7 +3396,6 @@ ISBLANK(Account__r.SupportPin__c), Lead__r.SupportPin__c ,Account__r.SupportPin_
         <inlineHelpText>Original URL given to a store that never changes even if the live store URL does.  Pushed from MBA</inlineHelpText>
         <label>MBA Temp URL</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Url</type>
     </fields>
@@ -3535,7 +3406,6 @@ ISBLANK(Account__r.SupportPin__c), Lead__r.SupportPin__c ,Account__r.SupportPin_
         <externalId>false</externalId>
         <inlineHelpText>Is this a test store? MANUALLY populated! Do not assume stores that are &quot;false&quot; are not test stores...</inlineHelpText>
         <label>BA Test Store</label>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
@@ -3610,7 +3480,6 @@ NULL)
         <label>Totango Insights</label>
         <length>255</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -3621,7 +3490,6 @@ NULL)
         <externalId>false</externalId>
         <label>Totango Last Update</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Date</type>
     </fields>
@@ -3644,7 +3512,6 @@ NULL)
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
@@ -3657,7 +3524,6 @@ NULL)
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Number</type>
         <unique>false</unique>
@@ -3668,7 +3534,6 @@ NULL)
         <externalId>false</externalId>
         <label>Totango URL</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Url</type>
     </fields>
@@ -3678,7 +3543,6 @@ NULL)
         <description>Updated by MBA if a trial is extended</description>
         <externalId>false</externalId>
         <label>Trial Extended</label>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
@@ -3689,7 +3553,6 @@ NULL)
         <label>Trial Form Page</label>
         <length>255</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -3744,7 +3607,6 @@ NULL)
             </picklistValues>
             <sorted>false</sorted>
         </picklist>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
     </fields>
@@ -3766,7 +3628,6 @@ NULL)
         <description>Updated by the success squad when a migration is &quot;unpacked&quot;</description>
         <externalId>false</externalId>
         <label>zUnpacked</label>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
@@ -3776,7 +3637,6 @@ NULL)
         <description>success squad field to determine if a rep has been given this store to work</description>
         <externalId>false</externalId>
         <label>zUnpacking Assigned</label>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
@@ -3786,7 +3646,6 @@ NULL)
         <description>success squad field - ask Steven Bennett</description>
         <externalId>false</externalId>
         <label>zUnpacking Not Ready</label>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
@@ -3811,7 +3670,6 @@ NULL)
         <referenceTo>User</referenceTo>
         <relationshipName>Subscriptions2</relationshipName>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
@@ -3843,7 +3701,6 @@ NULL)
             </picklistValues>
             <sorted>false</sorted>
         </picklist>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <type>Picklist</type>
     </fields>
@@ -3852,7 +3709,6 @@ NULL)
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>zUpsell Team to Call</label>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
@@ -3863,7 +3719,6 @@ NULL)
         <externalId>false</externalId>
         <inlineHelpText>Checkbox used to force an edit/save of records when we need workflows to fire</inlineHelpText>
         <label>WFR Trigger</label>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
@@ -3874,7 +3729,6 @@ NULL)
         <externalId>false</externalId>
         <inlineHelpText>Populated by workflow for any sub that was a trial at any time so we can report between those that upgraded vs purchased directly</inlineHelpText>
         <label>Was Trial</label>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
@@ -3898,7 +3752,6 @@ NULL)
         <inlineHelpText>Populated by WFR https://na13.salesforce.com/01Qa0000000Vnaj to capture when a store upgrades</inlineHelpText>
         <label>First Upgrade Date</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Date</type>
     </fields>
@@ -3910,7 +3763,6 @@ NULL)
         <label>First Upgrade Product Name</label>
         <length>255</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
@@ -3924,7 +3776,6 @@ NULL)
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
@@ -3936,7 +3787,6 @@ NULL)
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Currency</type>
     </fields>
@@ -3974,15 +3824,6 @@ NULL)
         <queue>Bad_Contact_Info_Lead_Queue</queue>
         <sharedTo>
             <allInternalUsers></allInternalUsers>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>Client_Development_Upsell</fullName>
-        <filterScope>Queue</filterScope>
-        <label>Client Development/Upsell Queue</label>
-        <queue>Client_Development_Upsell</queue>
-        <sharedTo>
-            <role>Outbound_Sales_II</role>
         </sharedTo>
     </listViews>
     <listViews>
@@ -5093,12 +4934,10 @@ NULL)
     <nameField>
         <displayFormat>SUB-{00000}</displayFormat>
         <label>Subscription #</label>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Subscriptions</pluralLabel>
-    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
     <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <recordTypes>
         <fullName>Forecast_Subscription</fullName>

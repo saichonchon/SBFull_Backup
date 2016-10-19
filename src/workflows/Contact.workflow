@@ -75,31 +75,20 @@
         <protected>false</protected>
     </flowActions>
     <rules>
-        <fullName>Contact Demo Request Date changed</fullName>
-        <actions>
-            <name>Customer_has_requested_a_product_demo</name>
-            <type>Task</type>
-        </actions>
-        <active>false</active>
-        <description>When a contact is added as a campaign member for a demo request, this date is set.  Create a task for the contact owner.
-For BAP-3811</description>
-        <formula>AND( NOT(ISBLANK(Demo_Requested_Date__c)), OR(Owner.Profile.Id = &apos;00e13000000jUNJ&apos;, /* Lead Development Rep */    Owner.Profile.Id = &apos;00e130000024OSc&apos;, /* Sales Rep */    Owner.Profile.Id = &apos;00e13000000jUyt&apos;, /* Sales Rep - Dial on Opps */    Owner.Profile.Id = &apos;00e130000024OSX&apos;) /* Sales Leader */ )</formula>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
-    </rules>
-    <rules>
         <fullName>Demo Request Task - Contact</fullName>
         <actions>
             <name>Demo_Requested</name>
             <type>Task</type>
         </actions>
-        <active>false</active>
+        <active>true</active>
         <description>When a contact is added as a campaign member for a demo request, this date is set.  Create a task for the contact owner.
 For BAP-3811</description>
-        <formula>AND( 
-NOT(ISBLANK(Demo_Requested_Date__c)), 
-OR(Owner.Profile.Id = &apos;00e13000000jUNJ&apos;, /* Lead Development Rep */    
-Owner.Profile.Id = &apos;00e130000024OSc&apos;, /* Sales Rep */    
-Owner.Profile.Id = &apos;00e13000000jUyt&apos;, /* Sales Rep - Dial on Opps */    
+        <formula>AND(  
+NOT(ISBLANK(Demo_Requested_Date__c)),  
+OR(
+Owner.Profile.Id = &apos;00e13000000jUNJ&apos;, /* Lead Development Rep */     
+Owner.Profile.Id = &apos;00e130000024OSc&apos;, /* Sales Rep */     
+Owner.Profile.Id = &apos;00e13000000jUyt&apos;, /* Sales Rep - Dial on Opps */     
 Owner.Profile.Id = &apos;00e130000024OSX&apos;) /* Sales Leader */ )</formula>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
@@ -113,25 +102,6 @@ Owner.Profile.Id = &apos;00e130000024OSX&apos;) /* Sales Leader */ )</formula>
         <description>Captures the owner phone number if the owner ever changes so that Hubspot can use it in email template signatures. Workflow is required because HS can&apos;t read formula fields.</description>
         <formula>ISCHANGED(OwnerId) ||  (OwnerId &lt;&gt; &quot;00530000004W020&quot; &amp;&amp; ISBLANK( Owner_Phone__c ) = TRUE)</formula>
         <triggerType>onAllChanges</triggerType>
-    </rules>
-    <rules>
-        <fullName>Populate Recorded Product Tour Date</fullName>
-        <actions>
-            <name>Populate_Recorded_Product_Tour_Date</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <criteriaItems>
-            <field>Contact.Openend_Product_Tour_Recording__c</field>
-            <operation>equals</operation>
-            <value>True</value>
-        </criteriaItems>
-        <criteriaItems>
-            <field>Contact.Recorded_Product_Tour_Date__c</field>
-            <operation>equals</operation>
-        </criteriaItems>
-        <description>Captures date the Opened Product Tour Recording = True</description>
-        <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
         <fullName>Send App Partner Application Received Email</fullName>
@@ -188,7 +158,7 @@ Owner.Profile.Id = &apos;00e130000024OSX&apos;) /* Sales Leader */ )</formula>
     </rules>
     <tasks>
         <fullName>App_Approved_Contact_Email_Sent</fullName>
-        <assignedTo>maria.huemmer@bigcommerce.com</assignedTo>
+        <assignedTo>miles.leymeister@bigcommerce.com</assignedTo>
         <assignedToType>user</assignedToType>
         <dueDateOffset>0</dueDateOffset>
         <notifyAssignee>false</notifyAssignee>
@@ -196,16 +166,6 @@ Owner.Profile.Id = &apos;00e130000024OSX&apos;) /* Sales Leader */ )</formula>
         <protected>false</protected>
         <status>Completed</status>
         <subject>App Approved Contact Email Sent</subject>
-    </tasks>
-    <tasks>
-        <fullName>Customer_has_requested_a_product_demo</fullName>
-        <assignedToType>owner</assignedToType>
-        <dueDateOffset>0</dueDateOffset>
-        <notifyAssignee>false</notifyAssignee>
-        <priority>High</priority>
-        <protected>false</protected>
-        <status>Not Started</status>
-        <subject>Customer has requested a product demo</subject>
     </tasks>
     <tasks>
         <fullName>Demo_Requested</fullName>
@@ -220,7 +180,7 @@ Owner.Profile.Id = &apos;00e130000024OSX&apos;) /* Sales Leader */ )</formula>
     </tasks>
     <tasks>
         <fullName>Send_App_Partner_App_Decline_Email_CONTACT</fullName>
-        <assignedTo>maria.huemmer@bigcommerce.com</assignedTo>
+        <assignedTo>miles.leymeister@bigcommerce.com</assignedTo>
         <assignedToType>user</assignedToType>
         <dueDateOffset>0</dueDateOffset>
         <notifyAssignee>false</notifyAssignee>
@@ -231,7 +191,7 @@ Owner.Profile.Id = &apos;00e130000024OSX&apos;) /* Sales Leader */ )</formula>
     </tasks>
     <tasks>
         <fullName>Sent_App_Partner_App_Received_Email</fullName>
-        <assignedTo>maria.huemmer@bigcommerce.com</assignedTo>
+        <assignedTo>miles.leymeister@bigcommerce.com</assignedTo>
         <assignedToType>user</assignedToType>
         <dueDateOffset>0</dueDateOffset>
         <notifyAssignee>false</notifyAssignee>

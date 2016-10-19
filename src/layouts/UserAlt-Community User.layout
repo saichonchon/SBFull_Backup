@@ -20,7 +20,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>website__c</field>
+                <field>Website__c</field>
             </layoutItems>
         </layoutColumns>
         <style>OneColumn</style>

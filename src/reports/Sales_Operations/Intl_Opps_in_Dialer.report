@@ -34,6 +34,11 @@
             <operator>notEqual</operator>
             <value></value>
         </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Sample_100__c</column>
+            <operator>lessThan</operator>
+            <value>96</value>
+        </criteriaItems>
     </filter>
     <format>Tabular</format>
     <name>Intl Opps in Dialer</name>

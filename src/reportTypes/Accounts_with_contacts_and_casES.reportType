@@ -12,7 +12,7 @@
         <outerJoin>false</outerJoin>
         <relationship>Contacts</relationship>
     </join>
-    <label>Accounts with contacts and cases</label>
+    <label>zAccounts with contacts and cases</label>
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>

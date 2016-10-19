@@ -19,7 +19,7 @@
         </recipients>
         <senderAddress>no-reply@bigcommerce.com</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
-        <template>Internal_Workflow_Communications_Sales/Account_New_Trial</template>
+        <template>Internal_Email_Template/Account_New_Trial</template>
     </alerts>
     <alerts>
         <fullName>New_Subscription_Added_to_Account</fullName>
@@ -326,17 +326,6 @@
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
-        <fullName>Hubspot Client Age</fullName>
-        <actions>
-            <name>Hubspot_Client_Age</name>
-            <type>FieldUpdate</type>
-        </actions>
-        <active>true</active>
-        <description>Created in an attempt to offer a non-formula field for Hubspot to know the age of a client, but the workflow can&apos;t fire off the formula field calculating it.  ISSUE: should be deleted or troubleshoot to fix it</description>
-        <formula>ISCHANGED( Client_Age__c )</formula>
-        <triggerType>onAllChanges</triggerType>
-    </rules>
-    <rules>
         <fullName>Hubspot Store URL</fullName>
         <actions>
             <name>MaxSub_Store_URL_Update</name>
@@ -608,7 +597,7 @@ NOT( ISNULL( AppDeveloperContact__c ))</formula>
     </rules>
     <tasks>
         <fullName>Sent_App_Partner_App_Approved_Email</fullName>
-        <assignedTo>maria.huemmer@bigcommerce.com</assignedTo>
+        <assignedTo>miles.leymeister@bigcommerce.com</assignedTo>
         <assignedToType>user</assignedToType>
         <dueDateOffset>0</dueDateOffset>
         <notifyAssignee>false</notifyAssignee>
@@ -619,7 +608,7 @@ NOT( ISNULL( AppDeveloperContact__c ))</formula>
     </tasks>
     <tasks>
         <fullName>Sent_App_Partner_App_Declined_Email</fullName>
-        <assignedTo>maria.huemmer@bigcommerce.com</assignedTo>
+        <assignedTo>miles.leymeister@bigcommerce.com</assignedTo>
         <assignedToType>user</assignedToType>
         <dueDateOffset>0</dueDateOffset>
         <notifyAssignee>false</notifyAssignee>
@@ -630,7 +619,7 @@ NOT( ISNULL( AppDeveloperContact__c ))</formula>
     </tasks>
     <tasks>
         <fullName>Sent_App_Partner_App_Received_Email</fullName>
-        <assignedTo>maria.huemmer@bigcommerce.com</assignedTo>
+        <assignedTo>miles.leymeister@bigcommerce.com</assignedTo>
         <assignedToType>user</assignedToType>
         <dueDateOffset>0</dueDateOffset>
         <notifyAssignee>false</notifyAssignee>
@@ -641,7 +630,7 @@ NOT( ISNULL( AppDeveloperContact__c ))</formula>
     </tasks>
     <tasks>
         <fullName>WFR_Ran</fullName>
-        <assignedTo>maria.huemmer@bigcommerce.com</assignedTo>
+        <assignedTo>miles.leymeister@bigcommerce.com</assignedTo>
         <assignedToType>user</assignedToType>
         <description>WFR Ran</description>
         <dueDateOffset>0</dueDateOffset>

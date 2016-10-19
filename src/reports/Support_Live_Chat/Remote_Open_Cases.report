@@ -31,7 +31,7 @@
         <criteriaItems>
             <column>STATUS</column>
             <operator>notEqual</operator>
-            <value>Closed,Pending Acceptance,Waiting on Client,On Hold</value>
+            <value>Auto-Closed,Closed,Pending Acceptance,Waiting on Client,On Hold</value>
         </criteriaItems>
         <criteriaItems>
             <column>ORIGIN</column>

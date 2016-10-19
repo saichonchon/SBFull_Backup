@@ -2,13 +2,13 @@
 <ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
     <baseObject>Case</baseObject>
     <category>cases</category>
-    <deployed>true</deployed>
+    <deployed>false</deployed>
     <description>Cases With Activities &amp; Lookup Data</description>
     <join>
         <outerJoin>false</outerJoin>
         <relationship>Activities</relationship>
     </join>
-    <label>Cases With Activities &amp; Lookup Data</label>
+    <label>zCases With Activities &amp; Lookup Data</label>
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>

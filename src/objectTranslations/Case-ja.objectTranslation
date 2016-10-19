@@ -2212,10 +2212,6 @@ Referral : needs booking --></help>
         <name>Current_Store_URL__c</name>
     </fields>
     <fields>
-        <label><!-- Current User Title --></label>
-        <name>Current_User_Title__c</name>
-    </fields>
-    <fields>
         <label><!-- Custom Page 1 --></label>
         <name>Custom_Page_1__c</name>
     </fields>
@@ -3108,6 +3104,10 @@ Referral : needs booking --></help>
             <translation><!-- AceShop --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Amazon Marketplace</masterLabel>
+            <translation><!-- Amazon Marketplace --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Amazon Webstore</masterLabel>
             <translation><!-- Amazon Webstore --></translation>
         </picklistValues>
@@ -3160,6 +3160,10 @@ Referral : needs booking --></help>
             <translation><!-- GoDaddy --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>GoDaddy QuickCart</masterLabel>
+            <translation><!-- GoDaddy QuickCart --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>HHG multistore</masterLabel>
             <translation><!-- HHG multistore --></translation>
         </picklistValues>
@@ -3190,6 +3194,10 @@ Referral : needs booking --></help>
         <picklistValues>
             <masterLabel>Magento</masterLabel>
             <translation><!-- Magento --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Magento CE/EE</masterLabel>
+            <translation><!-- Magento CE/EE --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Magento Community</masterLabel>
@@ -3611,10 +3619,6 @@ Referral : needs booking --></help>
         <picklistValues>
             <masterLabel>Premium Services Email</masterLabel>
             <translation><!-- Premium Services Email --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Promoter.io</masterLabel>
-            <translation><!-- Promoter.io --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>SBD - Escalations</masterLabel>
@@ -4191,6 +4195,10 @@ Referral : needs booking --></help>
             <translation><!-- Client Success Coaching --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Client Training Request</masterLabel>
+            <translation><!-- Client Training Request --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Commissions</masterLabel>
             <translation><!-- Commissions --></translation>
         </picklistValues>
@@ -4251,12 +4259,24 @@ Referral : needs booking --></help>
             <translation><!-- Downgrade --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Downgrade/Cancellation</masterLabel>
+            <translation><!-- Downgrade/Cancellation --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Email Setup</masterLabel>
             <translation><!-- Email Setup --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Enterprise Task</masterLabel>
+            <translation><!-- Enterprise Task --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Escalated</masterLabel>
             <translation><!-- Escalated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Escalation</masterLabel>
+            <translation><!-- Escalation --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Existing Case Follow-up</masterLabel>
@@ -4317,6 +4337,10 @@ Referral : needs booking --></help>
         <picklistValues>
             <masterLabel>Login Issues</masterLabel>
             <translation><!-- Login Issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manager Callback/Escalation</masterLabel>
+            <translation><!-- Manager Callback/Escalation --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Marketing</masterLabel>
@@ -4487,6 +4511,14 @@ Referral : needs booking --></help>
             <translation><!-- Shipping --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Site Security</masterLabel>
+            <translation><!-- Site Security --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Specialist Task</masterLabel>
+            <translation><!-- Specialist Task --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Store Down/Performance</masterLabel>
             <translation><!-- Store Down/Performance --></translation>
         </picklistValues>
@@ -4507,6 +4539,10 @@ Referral : needs booking --></help>
             <translation><!-- Success Plan --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Success Plan Review</masterLabel>
+            <translation><!-- Success Plan Review --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Support Request</masterLabel>
             <translation><!-- Support Request --></translation>
         </picklistValues>
@@ -4525,6 +4561,10 @@ Referral : needs booking --></help>
         <picklistValues>
             <masterLabel>Upgrades</masterLabel>
             <translation><!-- Upgrades --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uptime/SLA Event</masterLabel>
+            <translation><!-- Uptime/SLA Event --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>User didn&apos;t attend training</masterLabel>
@@ -4606,10 +4646,6 @@ Referral : needs booking --></help>
         <picklistValues>
             <masterLabel>Bug</masterLabel>
             <translation><!-- Bug --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Cancellation</masterLabel>
-            <translation><!-- Cancellation --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Change in Payment Amount</masterLabel>
@@ -7348,6 +7384,10 @@ Source_Details_Confirmed__c  -  DATEVALUE(CreatedDate ) --></help>
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- Is archived --></label>
+        <name>n2de__Is_archived__c</name>
+    </fields>
+    <fields>
         <label><!-- Is distributed --></label>
         <name>n2de__Is_distributed__c</name>
     </fields>
@@ -7364,12 +7404,20 @@ Source_Details_Confirmed__c  -  DATEVALUE(CreatedDate ) --></help>
         <name>n2de__Is_triggered__c</name>
     </fields>
     <fields>
+        <label><!-- Last archive date --></label>
+        <name>n2de__Last_archive_date__c</name>
+    </fields>
+    <fields>
         <label><!-- Date last distributed to user --></label>
         <name>n2de__Last_distributed__c</name>
     </fields>
     <fields>
         <label><!-- Date last auto reassigned --></label>
         <name>n2de__Last_reassigned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source queue --></label>
+        <name>n2de__Source_queue__c</name>
     </fields>
     <fields>
         <label><!-- Time to action (mins) --></label>
@@ -7870,7 +7918,7 @@ Source_Details_Confirmed__c  -  DATEVALUE(CreatedDate ) --></help>
         <name>Direct_Sales</name>
     </recordTypes>
     <recordTypes>
-        <label><!-- zEnterprise Account Services --></label>
+        <label><!-- Enterprise Account Services --></label>
         <name>Enterprise_Account_Services</name>
     </recordTypes>
     <recordTypes>

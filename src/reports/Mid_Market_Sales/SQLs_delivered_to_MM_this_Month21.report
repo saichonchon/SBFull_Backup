@@ -23,6 +23,9 @@
             <sourceValues>
                 <sourceValue>Bob Farrell</sourceValue>
             </sourceValues>
+            <sourceValues>
+                <sourceValue>Amanda Mancuso</sourceValue>
+            </sourceValues>
             <value>IB</value>
         </values>
         <values>
@@ -46,6 +49,12 @@
             </sourceValues>
             <sourceValues>
                 <sourceValue>Elisabeth Ahlburg</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Halie Adams</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mike McBride</sourceValue>
             </sourceValues>
             <value>SDR</value>
         </values>
@@ -85,6 +94,12 @@
         <values>
             <sourceValues>
                 <sourceValue>API User</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Juan Jacinto</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Alecia Wall</sourceValue>
             </sourceValues>
             <value>Trial</value>
         </values>
